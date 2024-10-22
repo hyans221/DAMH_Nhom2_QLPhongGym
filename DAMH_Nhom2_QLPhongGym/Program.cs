@@ -16,7 +16,9 @@ namespace DAMH_Nhom2_QLPhongGym
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMember());
+//             Application.Run(new frmMember());
+            Application.Run(new frmHome());
+
         }
     }
 }
