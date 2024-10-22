@@ -37,7 +37,7 @@
       <HintPath>..\packages\Guna.Charts.WinForms.1.0.9\lib\net472\Guna.Charts.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+      <HintPath>..\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -61,6 +61,12 @@
     </Compile>
     <Compile Include="frmBaoCaoVaThongKe.Designer.cs">
       <DependentUpon>frmBaoCaoVaThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatLichTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatLichTap.Designer.cs">
+      <DependentUpon>frmDatLichTap.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
@@ -90,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="frmBaoCaoVaThongKe.resx">
       <DependentUpon>frmBaoCaoVaThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatLichTap.resx">
+      <DependentUpon>frmDatLichTap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
