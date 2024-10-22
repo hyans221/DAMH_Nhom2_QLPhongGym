@@ -131,6 +131,7 @@
   <ItemGroup>
     <Content Include="Resources\capnhat.png" />
     <Content Include="Resources\ic18 %281%29.jpg" />
+    <None Include="Resources\logoLogin.png" />
     <Content Include="Resources\sua.png" />
     <Content Include="Resources\them.png" />
     <Content Include="Resources\xoa.png" />
