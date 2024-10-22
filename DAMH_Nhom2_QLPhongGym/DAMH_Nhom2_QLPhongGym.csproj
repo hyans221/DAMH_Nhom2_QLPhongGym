@@ -82,6 +82,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLiThietBiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiThietBiForm.Designer.cs">
+      <DependentUpon>QuanLiThietBiForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmBaoCaoVaThongKe.resx">
       <DependentUpon>frmBaoCaoVaThongKe.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +110,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuanLiThietBiForm.resx">
+      <DependentUpon>QuanLiThietBiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
