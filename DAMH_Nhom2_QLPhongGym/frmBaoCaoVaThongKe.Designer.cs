@@ -137,11 +137,11 @@
             this.guna2TabControl1.Controls.Add(this.tabPage2);
             this.guna2TabControl1.Controls.Add(this.tabPage3);
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.Location = new System.Drawing.Point(8, 8);
-            this.guna2TabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2TabControl1.Location = new System.Drawing.Point(11, 10);
+            this.guna2TabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(999, 445);
+            this.guna2TabControl1.Size = new System.Drawing.Size(1332, 548);
             this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -163,6 +163,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.LightSlateGray;
             this.tabPage1.Controls.Add(this.dtpTimeFrameEnd);
             this.tabPage1.Controls.Add(this.guna2HtmlLabel8);
             this.tabPage1.Controls.Add(this.dtpTimeFrameStart);
@@ -176,36 +177,40 @@
             this.tabPage1.Controls.Add(this.guna2HtmlLabel2);
             this.tabPage1.Controls.Add(this.cbStatus);
             this.tabPage1.Controls.Add(this.guna2HtmlLabel1);
+            this.tabPage1.ForeColor = System.Drawing.Color.Red;
             this.tabPage1.Location = new System.Drawing.Point(184, 4);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(811, 437);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(1144, 540);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Khách hàng";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // dtpTimeFrameEnd
             // 
             this.dtpTimeFrameEnd.Checked = true;
             this.dtpTimeFrameEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpTimeFrameEnd.ForeColor = System.Drawing.Color.Cyan;
             this.dtpTimeFrameEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpTimeFrameEnd.Location = new System.Drawing.Point(266, 60);
-            this.dtpTimeFrameEnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTimeFrameEnd.Location = new System.Drawing.Point(355, 54);
+            this.dtpTimeFrameEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpTimeFrameEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTimeFrameEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTimeFrameEnd.Name = "dtpTimeFrameEnd";
-            this.dtpTimeFrameEnd.Size = new System.Drawing.Size(151, 23);
+            this.dtpTimeFrameEnd.Size = new System.Drawing.Size(201, 28);
             this.dtpTimeFrameEnd.TabIndex = 13;
             this.dtpTimeFrameEnd.Value = new System.DateTime(2024, 10, 22, 19, 50, 51, 171);
             // 
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(43, 60);
-            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(47, 54);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(105, 15);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(219, 27);
             this.guna2HtmlLabel8.TabIndex = 12;
             this.guna2HtmlLabel8.Text = "Khoảng thời gian đến";
             // 
@@ -213,13 +218,14 @@
             // 
             this.dtpTimeFrameStart.Checked = true;
             this.dtpTimeFrameStart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpTimeFrameStart.ForeColor = System.Drawing.Color.Cyan;
             this.dtpTimeFrameStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpTimeFrameStart.Location = new System.Drawing.Point(266, 27);
-            this.dtpTimeFrameStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTimeFrameStart.Location = new System.Drawing.Point(355, 13);
+            this.dtpTimeFrameStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpTimeFrameStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTimeFrameStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTimeFrameStart.Name = "dtpTimeFrameStart";
-            this.dtpTimeFrameStart.Size = new System.Drawing.Size(151, 23);
+            this.dtpTimeFrameStart.Size = new System.Drawing.Size(201, 28);
             this.dtpTimeFrameStart.TabIndex = 11;
             this.dtpTimeFrameStart.Value = new System.DateTime(2024, 10, 22, 19, 50, 51, 171);
             // 
@@ -228,13 +234,12 @@
             this.btnExportCustomerExcel.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExportCustomerExcel.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExportCustomerExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportCustomerExcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportCustomerExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExportCustomerExcel.ForeColor = System.Drawing.Color.White;
-            this.btnExportCustomerExcel.Location = new System.Drawing.Point(392, 373);
-            this.btnExportCustomerExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportCustomerExcel.ForeColor = System.Drawing.Color.Red;
+            this.btnExportCustomerExcel.Location = new System.Drawing.Point(705, 459);
+            this.btnExportCustomerExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExportCustomerExcel.Name = "btnExportCustomerExcel";
-            this.btnExportCustomerExcel.Size = new System.Drawing.Size(120, 29);
+            this.btnExportCustomerExcel.Size = new System.Drawing.Size(160, 36);
             this.btnExportCustomerExcel.TabIndex = 10;
             this.btnExportCustomerExcel.Text = "Excel";
             // 
@@ -243,39 +248,39 @@
             this.btnExportCustomerPDF.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExportCustomerPDF.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExportCustomerPDF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportCustomerPDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportCustomerPDF.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExportCustomerPDF.ForeColor = System.Drawing.Color.White;
-            this.btnExportCustomerPDF.Location = new System.Drawing.Point(211, 373);
-            this.btnExportCustomerPDF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportCustomerPDF.ForeColor = System.Drawing.Color.Red;
+            this.btnExportCustomerPDF.Location = new System.Drawing.Point(396, 459);
+            this.btnExportCustomerPDF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExportCustomerPDF.Name = "btnExportCustomerPDF";
-            this.btnExportCustomerPDF.Size = new System.Drawing.Size(120, 29);
+            this.btnExportCustomerPDF.Size = new System.Drawing.Size(160, 36);
             this.btnExportCustomerPDF.TabIndex = 9;
             this.btnExportCustomerPDF.Text = "PDF";
+            this.btnExportCustomerPDF.Click += new System.EventHandler(this.btnExportCustomerPDF_Click);
             // 
             // btnGenerateCustomerReport
             // 
             this.btnGenerateCustomerReport.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGenerateCustomerReport.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGenerateCustomerReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGenerateCustomerReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGenerateCustomerReport.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnGenerateCustomerReport.ForeColor = System.Drawing.Color.White;
-            this.btnGenerateCustomerReport.Location = new System.Drawing.Point(43, 373);
-            this.btnGenerateCustomerReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGenerateCustomerReport.ForeColor = System.Drawing.Color.Red;
+            this.btnGenerateCustomerReport.Location = new System.Drawing.Point(57, 459);
+            this.btnGenerateCustomerReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGenerateCustomerReport.Name = "btnGenerateCustomerReport";
-            this.btnGenerateCustomerReport.Size = new System.Drawing.Size(120, 29);
+            this.btnGenerateCustomerReport.Size = new System.Drawing.Size(160, 36);
             this.btnGenerateCustomerReport.TabIndex = 8;
             this.btnGenerateCustomerReport.Text = "Tạo báo cáo";
+            this.btnGenerateCustomerReport.Click += new System.EventHandler(this.btnGenerateCustomerReport_Click);
             // 
             // chartCustomerStatistics
             // 
             chartFont1.FontName = "Arial";
             this.chartCustomerStatistics.Legend.LabelFont = chartFont1;
-            this.chartCustomerStatistics.Location = new System.Drawing.Point(491, 129);
-            this.chartCustomerStatistics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartCustomerStatistics.Location = new System.Drawing.Point(647, 159);
+            this.chartCustomerStatistics.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartCustomerStatistics.Name = "chartCustomerStatistics";
-            this.chartCustomerStatistics.Size = new System.Drawing.Size(359, 196);
+            this.chartCustomerStatistics.Size = new System.Drawing.Size(479, 241);
             this.chartCustomerStatistics.TabIndex = 7;
             chartFont2.FontName = "Arial";
             chartFont2.Size = 12;
@@ -321,19 +326,19 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCustomerStatistics.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCustomerStatistics.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvCustomerStatistics.Location = new System.Drawing.Point(43, 129);
-            this.dgvCustomerStatistics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCustomerStatistics.Location = new System.Drawing.Point(57, 159);
+            this.dgvCustomerStatistics.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvCustomerStatistics.Name = "dgvCustomerStatistics";
             this.dgvCustomerStatistics.RowHeadersVisible = false;
             this.dgvCustomerStatistics.RowHeadersWidth = 62;
             this.dgvCustomerStatistics.RowTemplate.Height = 28;
-            this.dgvCustomerStatistics.Size = new System.Drawing.Size(408, 196);
+            this.dgvCustomerStatistics.Size = new System.Drawing.Size(544, 241);
             this.dgvCustomerStatistics.TabIndex = 6;
             this.dgvCustomerStatistics.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvCustomerStatistics.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -360,10 +365,12 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(43, 94);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(47, 116);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(57, 15);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(116, 27);
             this.guna2HtmlLabel3.TabIndex = 5;
             this.guna2HtmlLabel3.Text = "Gói dịch vụ";
             // 
@@ -377,19 +384,21 @@
             this.cbServicePackage.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbServicePackage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbServicePackage.ItemHeight = 30;
-            this.cbServicePackage.Location = new System.Drawing.Point(266, 94);
-            this.cbServicePackage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbServicePackage.Location = new System.Drawing.Point(355, 116);
+            this.cbServicePackage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbServicePackage.Name = "cbServicePackage";
-            this.cbServicePackage.Size = new System.Drawing.Size(152, 36);
+            this.cbServicePackage.Size = new System.Drawing.Size(201, 36);
             this.cbServicePackage.TabIndex = 4;
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(491, 27);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(622, 14);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(111, 15);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(232, 27);
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Trạng thái khách hàng";
             // 
@@ -403,24 +412,27 @@
             this.cbStatus.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbStatus.ItemHeight = 30;
-            this.cbStatus.Location = new System.Drawing.Point(653, 27);
-            this.cbStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbStatus.Location = new System.Drawing.Point(860, 14);
+            this.cbStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(152, 36);
+            this.cbStatus.Size = new System.Drawing.Size(201, 36);
             this.cbStatus.TabIndex = 2;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(43, 27);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(47, 13);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(95, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(204, 27);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Khoảng thời gian từ ";
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.LightSlateGray;
             this.tabPage2.Controls.Add(this.dtpTimeFrameRevenueEnd);
             this.tabPage2.Controls.Add(this.guna2HtmlLabel4);
             this.tabPage2.Controls.Add(this.dtpTimeFrameRevenueStart);
@@ -435,35 +447,36 @@
             this.tabPage2.Controls.Add(this.guna2HtmlLabel5);
             this.tabPage2.Controls.Add(this.cbRevenueServicePackage);
             this.tabPage2.Location = new System.Drawing.Point(184, 4);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(811, 437);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(1144, 540);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Doanh thu";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // dtpTimeFrameRevenueEnd
             // 
             this.dtpTimeFrameRevenueEnd.Checked = true;
             this.dtpTimeFrameRevenueEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpTimeFrameRevenueEnd.ForeColor = System.Drawing.Color.Cyan;
             this.dtpTimeFrameRevenueEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpTimeFrameRevenueEnd.Location = new System.Drawing.Point(256, 48);
-            this.dtpTimeFrameRevenueEnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTimeFrameRevenueEnd.Location = new System.Drawing.Point(341, 59);
+            this.dtpTimeFrameRevenueEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpTimeFrameRevenueEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTimeFrameRevenueEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTimeFrameRevenueEnd.Name = "dtpTimeFrameRevenueEnd";
-            this.dtpTimeFrameRevenueEnd.Size = new System.Drawing.Size(151, 23);
+            this.dtpTimeFrameRevenueEnd.Size = new System.Drawing.Size(201, 28);
             this.dtpTimeFrameRevenueEnd.TabIndex = 17;
             this.dtpTimeFrameRevenueEnd.Value = new System.DateTime(2024, 10, 22, 19, 50, 51, 171);
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(33, 48);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(44, 59);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(105, 15);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(219, 27);
             this.guna2HtmlLabel4.TabIndex = 16;
             this.guna2HtmlLabel4.Text = "Khoảng thời gian đến";
             // 
@@ -471,23 +484,25 @@
             // 
             this.dtpTimeFrameRevenueStart.Checked = true;
             this.dtpTimeFrameRevenueStart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpTimeFrameRevenueStart.ForeColor = System.Drawing.Color.Cyan;
             this.dtpTimeFrameRevenueStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpTimeFrameRevenueStart.Location = new System.Drawing.Point(256, 14);
-            this.dtpTimeFrameRevenueStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTimeFrameRevenueStart.Location = new System.Drawing.Point(341, 17);
+            this.dtpTimeFrameRevenueStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpTimeFrameRevenueStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTimeFrameRevenueStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTimeFrameRevenueStart.Name = "dtpTimeFrameRevenueStart";
-            this.dtpTimeFrameRevenueStart.Size = new System.Drawing.Size(151, 23);
+            this.dtpTimeFrameRevenueStart.Size = new System.Drawing.Size(201, 28);
             this.dtpTimeFrameRevenueStart.TabIndex = 15;
             this.dtpTimeFrameRevenueStart.Value = new System.DateTime(2024, 10, 22, 19, 50, 51, 171);
             // 
             // guna2HtmlLabel9
             // 
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(33, 14);
-            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(44, 17);
+            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(95, 15);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(204, 27);
             this.guna2HtmlLabel9.TabIndex = 14;
             this.guna2HtmlLabel9.Text = "Khoảng thời gian từ ";
             // 
@@ -496,13 +511,12 @@
             this.btnExportRevenueExcel.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExportRevenueExcel.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExportRevenueExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportRevenueExcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportRevenueExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExportRevenueExcel.ForeColor = System.Drawing.Color.White;
-            this.btnExportRevenueExcel.Location = new System.Drawing.Point(386, 366);
-            this.btnExportRevenueExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportRevenueExcel.ForeColor = System.Drawing.Color.Red;
+            this.btnExportRevenueExcel.Location = new System.Drawing.Point(623, 450);
+            this.btnExportRevenueExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExportRevenueExcel.Name = "btnExportRevenueExcel";
-            this.btnExportRevenueExcel.Size = new System.Drawing.Size(120, 29);
+            this.btnExportRevenueExcel.Size = new System.Drawing.Size(160, 36);
             this.btnExportRevenueExcel.TabIndex = 13;
             this.btnExportRevenueExcel.Text = "Excel";
             // 
@@ -511,13 +525,12 @@
             this.btnExportRevenuePDF.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExportRevenuePDF.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExportRevenuePDF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportRevenuePDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportRevenuePDF.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExportRevenuePDF.ForeColor = System.Drawing.Color.White;
-            this.btnExportRevenuePDF.Location = new System.Drawing.Point(205, 366);
-            this.btnExportRevenuePDF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportRevenuePDF.ForeColor = System.Drawing.Color.Red;
+            this.btnExportRevenuePDF.Location = new System.Drawing.Point(341, 450);
+            this.btnExportRevenuePDF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExportRevenuePDF.Name = "btnExportRevenuePDF";
-            this.btnExportRevenuePDF.Size = new System.Drawing.Size(120, 29);
+            this.btnExportRevenuePDF.Size = new System.Drawing.Size(160, 36);
             this.btnExportRevenuePDF.TabIndex = 12;
             this.btnExportRevenuePDF.Text = "PDF";
             // 
@@ -526,13 +539,12 @@
             this.btnGenerateRevenueReport.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGenerateRevenueReport.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGenerateRevenueReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGenerateRevenueReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGenerateRevenueReport.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnGenerateRevenueReport.ForeColor = System.Drawing.Color.White;
-            this.btnGenerateRevenueReport.Location = new System.Drawing.Point(37, 366);
-            this.btnGenerateRevenueReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGenerateRevenueReport.ForeColor = System.Drawing.Color.Red;
+            this.btnGenerateRevenueReport.Location = new System.Drawing.Point(49, 450);
+            this.btnGenerateRevenueReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGenerateRevenueReport.Name = "btnGenerateRevenueReport";
-            this.btnGenerateRevenueReport.Size = new System.Drawing.Size(120, 29);
+            this.btnGenerateRevenueReport.Size = new System.Drawing.Size(160, 36);
             this.btnGenerateRevenueReport.TabIndex = 11;
             this.btnGenerateRevenueReport.Text = "Tạo báo cáo";
             // 
@@ -540,10 +552,10 @@
             // 
             chartFont9.FontName = "Arial";
             this.chartRevenue.Legend.LabelFont = chartFont9;
-            this.chartRevenue.Location = new System.Drawing.Point(481, 122);
-            this.chartRevenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartRevenue.Location = new System.Drawing.Point(641, 150);
+            this.chartRevenue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartRevenue.Name = "chartRevenue";
-            this.chartRevenue.Size = new System.Drawing.Size(359, 196);
+            this.chartRevenue.Size = new System.Drawing.Size(479, 241);
             this.chartRevenue.TabIndex = 9;
             chartFont10.FontName = "Arial";
             chartFont10.Size = 12;
@@ -595,13 +607,13 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvRevenueDetails.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvRevenueDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvRevenueDetails.Location = new System.Drawing.Point(33, 122);
-            this.dgvRevenueDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvRevenueDetails.Location = new System.Drawing.Point(44, 150);
+            this.dgvRevenueDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvRevenueDetails.Name = "dgvRevenueDetails";
             this.dgvRevenueDetails.RowHeadersVisible = false;
             this.dgvRevenueDetails.RowHeadersWidth = 62;
             this.dgvRevenueDetails.RowTemplate.Height = 28;
-            this.dgvRevenueDetails.Size = new System.Drawing.Size(408, 196);
+            this.dgvRevenueDetails.Size = new System.Drawing.Size(544, 241);
             this.dgvRevenueDetails.TabIndex = 8;
             this.dgvRevenueDetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvRevenueDetails.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -628,10 +640,11 @@
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(35, 93);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(47, 114);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(51, 15);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(108, 27);
             this.guna2HtmlLabel6.TabIndex = 7;
             this.guna2HtmlLabel6.Text = "Chi nhánh";
             // 
@@ -645,19 +658,20 @@
             this.cbBranch.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbBranch.ItemHeight = 30;
-            this.cbBranch.Location = new System.Drawing.Point(257, 93);
-            this.cbBranch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbBranch.Location = new System.Drawing.Point(343, 114);
+            this.cbBranch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbBranch.Name = "cbBranch";
-            this.cbBranch.Size = new System.Drawing.Size(152, 36);
+            this.cbBranch.Size = new System.Drawing.Size(201, 36);
             this.cbBranch.TabIndex = 6;
             // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(447, 36);
-            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(596, 44);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(57, 15);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(116, 27);
             this.guna2HtmlLabel5.TabIndex = 5;
             this.guna2HtmlLabel5.Text = "Gói dịch vụ";
             // 
@@ -671,14 +685,15 @@
             this.cbRevenueServicePackage.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbRevenueServicePackage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbRevenueServicePackage.ItemHeight = 30;
-            this.cbRevenueServicePackage.Location = new System.Drawing.Point(559, 36);
-            this.cbRevenueServicePackage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbRevenueServicePackage.Location = new System.Drawing.Point(745, 44);
+            this.cbRevenueServicePackage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbRevenueServicePackage.Name = "cbRevenueServicePackage";
-            this.cbRevenueServicePackage.Size = new System.Drawing.Size(152, 36);
+            this.cbRevenueServicePackage.Size = new System.Drawing.Size(201, 36);
             this.cbRevenueServicePackage.TabIndex = 4;
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.LightSlateGray;
             this.tabPage3.Controls.Add(this.btnExportPackageExcel);
             this.tabPage3.Controls.Add(this.btnExportPackagePDF);
             this.tabPage3.Controls.Add(this.btnGeneratePackageReport);
@@ -689,26 +704,24 @@
             this.tabPage3.Controls.Add(this.dtpServicePackageTimeFrameStart);
             this.tabPage3.Controls.Add(this.guna2HtmlLabel10);
             this.tabPage3.Location = new System.Drawing.Point(184, 4);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage3.Size = new System.Drawing.Size(811, 437);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage3.Size = new System.Drawing.Size(1144, 540);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Gói dịch vụ";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnExportPackageExcel
             // 
             this.btnExportPackageExcel.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExportPackageExcel.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExportPackageExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportPackageExcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportPackageExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExportPackageExcel.ForeColor = System.Drawing.Color.White;
-            this.btnExportPackageExcel.Location = new System.Drawing.Point(387, 365);
-            this.btnExportPackageExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportPackageExcel.ForeColor = System.Drawing.Color.Red;
+            this.btnExportPackageExcel.Location = new System.Drawing.Point(658, 447);
+            this.btnExportPackageExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExportPackageExcel.Name = "btnExportPackageExcel";
-            this.btnExportPackageExcel.Size = new System.Drawing.Size(120, 29);
+            this.btnExportPackageExcel.Size = new System.Drawing.Size(160, 36);
             this.btnExportPackageExcel.TabIndex = 26;
             this.btnExportPackageExcel.Text = "Excel";
             // 
@@ -717,13 +730,12 @@
             this.btnExportPackagePDF.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExportPackagePDF.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExportPackagePDF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportPackagePDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportPackagePDF.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExportPackagePDF.ForeColor = System.Drawing.Color.White;
-            this.btnExportPackagePDF.Location = new System.Drawing.Point(206, 365);
-            this.btnExportPackagePDF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportPackagePDF.ForeColor = System.Drawing.Color.Red;
+            this.btnExportPackagePDF.Location = new System.Drawing.Point(401, 447);
+            this.btnExportPackagePDF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExportPackagePDF.Name = "btnExportPackagePDF";
-            this.btnExportPackagePDF.Size = new System.Drawing.Size(120, 29);
+            this.btnExportPackagePDF.Size = new System.Drawing.Size(160, 36);
             this.btnExportPackagePDF.TabIndex = 25;
             this.btnExportPackagePDF.Text = "PDF";
             // 
@@ -732,13 +744,12 @@
             this.btnGeneratePackageReport.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGeneratePackageReport.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGeneratePackageReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGeneratePackageReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGeneratePackageReport.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnGeneratePackageReport.ForeColor = System.Drawing.Color.White;
-            this.btnGeneratePackageReport.Location = new System.Drawing.Point(38, 365);
-            this.btnGeneratePackageReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGeneratePackageReport.ForeColor = System.Drawing.Color.Red;
+            this.btnGeneratePackageReport.Location = new System.Drawing.Point(126, 447);
+            this.btnGeneratePackageReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGeneratePackageReport.Name = "btnGeneratePackageReport";
-            this.btnGeneratePackageReport.Size = new System.Drawing.Size(120, 29);
+            this.btnGeneratePackageReport.Size = new System.Drawing.Size(160, 36);
             this.btnGeneratePackageReport.TabIndex = 24;
             this.btnGeneratePackageReport.Text = "Tạo báo cáo";
             // 
@@ -746,10 +757,10 @@
             // 
             chartFont17.FontName = "Arial";
             this.chartServicePackages.Legend.LabelFont = chartFont17;
-            this.chartServicePackages.Location = new System.Drawing.Point(481, 122);
-            this.chartServicePackages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartServicePackages.Location = new System.Drawing.Point(641, 150);
+            this.chartServicePackages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartServicePackages.Name = "chartServicePackages";
-            this.chartServicePackages.Size = new System.Drawing.Size(359, 196);
+            this.chartServicePackages.Size = new System.Drawing.Size(479, 241);
             this.chartServicePackages.TabIndex = 23;
             chartFont18.FontName = "Arial";
             chartFont18.Size = 12;
@@ -801,13 +812,13 @@
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvServicePackageDetails.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvServicePackageDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvServicePackageDetails.Location = new System.Drawing.Point(33, 122);
-            this.dgvServicePackageDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvServicePackageDetails.Location = new System.Drawing.Point(44, 150);
+            this.dgvServicePackageDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvServicePackageDetails.Name = "dgvServicePackageDetails";
             this.dgvServicePackageDetails.RowHeadersVisible = false;
             this.dgvServicePackageDetails.RowHeadersWidth = 62;
             this.dgvServicePackageDetails.RowTemplate.Height = 28;
-            this.dgvServicePackageDetails.Size = new System.Drawing.Size(408, 196);
+            this.dgvServicePackageDetails.Size = new System.Drawing.Size(544, 241);
             this.dgvServicePackageDetails.TabIndex = 22;
             this.dgvServicePackageDetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvServicePackageDetails.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -835,23 +846,25 @@
             // 
             this.dtpServicePackageTimeFrameEnd.Checked = true;
             this.dtpServicePackageTimeFrameEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpServicePackageTimeFrameEnd.ForeColor = System.Drawing.Color.Cyan;
             this.dtpServicePackageTimeFrameEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpServicePackageTimeFrameEnd.Location = new System.Drawing.Point(261, 80);
-            this.dtpServicePackageTimeFrameEnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpServicePackageTimeFrameEnd.Location = new System.Drawing.Point(348, 98);
+            this.dtpServicePackageTimeFrameEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpServicePackageTimeFrameEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpServicePackageTimeFrameEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpServicePackageTimeFrameEnd.Name = "dtpServicePackageTimeFrameEnd";
-            this.dtpServicePackageTimeFrameEnd.Size = new System.Drawing.Size(151, 23);
+            this.dtpServicePackageTimeFrameEnd.Size = new System.Drawing.Size(201, 28);
             this.dtpServicePackageTimeFrameEnd.TabIndex = 21;
             this.dtpServicePackageTimeFrameEnd.Value = new System.DateTime(2024, 10, 22, 19, 50, 51, 171);
             // 
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(39, 80);
-            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(52, 98);
+            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(105, 15);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(219, 27);
             this.guna2HtmlLabel7.TabIndex = 20;
             this.guna2HtmlLabel7.Text = "Khoảng thời gian đến";
             // 
@@ -859,33 +872,36 @@
             // 
             this.dtpServicePackageTimeFrameStart.Checked = true;
             this.dtpServicePackageTimeFrameStart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpServicePackageTimeFrameStart.ForeColor = System.Drawing.Color.Cyan;
             this.dtpServicePackageTimeFrameStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpServicePackageTimeFrameStart.Location = new System.Drawing.Point(261, 46);
-            this.dtpServicePackageTimeFrameStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpServicePackageTimeFrameStart.Location = new System.Drawing.Point(348, 57);
+            this.dtpServicePackageTimeFrameStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpServicePackageTimeFrameStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpServicePackageTimeFrameStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpServicePackageTimeFrameStart.Name = "dtpServicePackageTimeFrameStart";
-            this.dtpServicePackageTimeFrameStart.Size = new System.Drawing.Size(151, 23);
+            this.dtpServicePackageTimeFrameStart.Size = new System.Drawing.Size(201, 28);
             this.dtpServicePackageTimeFrameStart.TabIndex = 19;
             this.dtpServicePackageTimeFrameStart.Value = new System.DateTime(2024, 10, 22, 19, 50, 51, 171);
             // 
             // guna2HtmlLabel10
             // 
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(39, 46);
-            this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(52, 57);
+            this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(95, 15);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(204, 27);
             this.guna2HtmlLabel10.TabIndex = 18;
             this.guna2HtmlLabel10.Text = "Khoảng thời gian từ ";
             // 
             // frmBaoCaoVaThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 451);
+            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.ClientSize = new System.Drawing.Size(1351, 555);
             this.Controls.Add(this.guna2TabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmBaoCaoVaThongKe";
             this.Text = "frmBaoCaoVaThongKe";
             this.guna2TabControl1.ResumeLayout(false);
