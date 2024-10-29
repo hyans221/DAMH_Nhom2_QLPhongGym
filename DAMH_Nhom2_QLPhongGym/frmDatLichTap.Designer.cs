@@ -40,12 +40,12 @@
             this.btnDatLich = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ngaytap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thoigianbatdau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thoigianketthuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.huanluyenvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,14 +95,13 @@
             // 
             // guna2DateTimePicker1
             // 
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
             this.guna2DateTimePicker1.Location = new System.Drawing.Point(17, 37);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(198, 54);
             this.guna2DateTimePicker1.TabIndex = 9;
             this.guna2DateTimePicker1.Value = new System.DateTime(2024, 10, 29, 9, 28, 33, 345);
@@ -113,29 +112,21 @@
             this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Location = new System.Drawing.Point(315, 55);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(186, 36);
             this.guna2ComboBox1.TabIndex = 10;
             // 
             // btnDatLich
             // 
-            this.btnDatLich.CheckedState.Parent = this.btnDatLich;
-            this.btnDatLich.CustomImages.Parent = this.btnDatLich;
             this.btnDatLich.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDatLich.ForeColor = System.Drawing.Color.White;
-            this.btnDatLich.HoverState.Parent = this.btnDatLich;
             this.btnDatLich.Location = new System.Drawing.Point(835, 138);
             this.btnDatLich.Name = "btnDatLich";
-            this.btnDatLich.ShadowDecoration.Parent = this.btnDatLich;
             this.btnDatLich.Size = new System.Drawing.Size(120, 45);
             this.btnDatLich.TabIndex = 11;
             this.btnDatLich.Text = "Đặt lịch";
@@ -146,16 +137,12 @@
             this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox2.FormattingEnabled = true;
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Location = new System.Drawing.Point(755, 55);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Size = new System.Drawing.Size(200, 36);
             this.guna2ComboBox2.TabIndex = 12;
             // 
@@ -163,11 +150,6 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -176,7 +158,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ColumnHeadersHeight = 27;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ngaytap,
             this.thoigianbatdau,
@@ -190,17 +173,14 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(17, 189);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridView1.Size = new System.Drawing.Size(938, 531);
             this.guna2DataGridView1.TabIndex = 13;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -212,7 +192,7 @@
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 27;
             this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -222,36 +202,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(564, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 25);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Gói tập";
-            // 
-            // guna2ComboBox3
-            // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.FormattingEnabled = true;
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(569, 55);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(145, 36);
-            this.guna2ComboBox3.TabIndex = 15;
             // 
             // ngaytap
             // 
@@ -280,6 +230,32 @@
             this.huanluyenvien.MinimumWidth = 6;
             this.huanluyenvien.Name = "huanluyenvien";
             this.huanluyenvien.ReadOnly = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(564, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 25);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Gói tập";
+            // 
+            // guna2ComboBox3
+            // 
+            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox3.FormattingEnabled = true;
+            this.guna2ComboBox3.ItemHeight = 30;
+            this.guna2ComboBox3.Location = new System.Drawing.Point(569, 55);
+            this.guna2ComboBox3.Name = "guna2ComboBox3";
+            this.guna2ComboBox3.Size = new System.Drawing.Size(145, 36);
+            this.guna2ComboBox3.TabIndex = 15;
             // 
             // frmDatLichTap
             // 
