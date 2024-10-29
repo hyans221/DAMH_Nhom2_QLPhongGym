@@ -225,10 +225,10 @@
             // 
             // btnExportCustomerExcel
             // 
-            this.btnExportCustomerExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportCustomerExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportCustomerExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportCustomerExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExportCustomerExcel.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportCustomerExcel.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportCustomerExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExportCustomerExcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportCustomerExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExportCustomerExcel.ForeColor = System.Drawing.Color.White;
             this.btnExportCustomerExcel.Location = new System.Drawing.Point(392, 373);
@@ -240,10 +240,10 @@
             // 
             // btnExportCustomerPDF
             // 
-            this.btnExportCustomerPDF.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportCustomerPDF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportCustomerPDF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportCustomerPDF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExportCustomerPDF.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportCustomerPDF.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportCustomerPDF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExportCustomerPDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportCustomerPDF.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExportCustomerPDF.ForeColor = System.Drawing.Color.White;
             this.btnExportCustomerPDF.Location = new System.Drawing.Point(211, 373);
@@ -255,10 +255,10 @@
             // 
             // btnGenerateCustomerReport
             // 
-            this.btnGenerateCustomerReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGenerateCustomerReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGenerateCustomerReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGenerateCustomerReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGenerateCustomerReport.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGenerateCustomerReport.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGenerateCustomerReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGenerateCustomerReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGenerateCustomerReport.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGenerateCustomerReport.ForeColor = System.Drawing.Color.White;
             this.btnGenerateCustomerReport.Location = new System.Drawing.Point(43, 373);
@@ -493,10 +493,10 @@
             // 
             // btnExportRevenueExcel
             // 
-            this.btnExportRevenueExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportRevenueExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportRevenueExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportRevenueExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExportRevenueExcel.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportRevenueExcel.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportRevenueExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExportRevenueExcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportRevenueExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExportRevenueExcel.ForeColor = System.Drawing.Color.White;
             this.btnExportRevenueExcel.Location = new System.Drawing.Point(386, 366);
@@ -508,10 +508,10 @@
             // 
             // btnExportRevenuePDF
             // 
-            this.btnExportRevenuePDF.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportRevenuePDF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportRevenuePDF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportRevenuePDF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExportRevenuePDF.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportRevenuePDF.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportRevenuePDF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExportRevenuePDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportRevenuePDF.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExportRevenuePDF.ForeColor = System.Drawing.Color.White;
             this.btnExportRevenuePDF.Location = new System.Drawing.Point(205, 366);
@@ -523,10 +523,10 @@
             // 
             // btnGenerateRevenueReport
             // 
-            this.btnGenerateRevenueReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGenerateRevenueReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGenerateRevenueReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGenerateRevenueReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGenerateRevenueReport.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGenerateRevenueReport.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGenerateRevenueReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGenerateRevenueReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGenerateRevenueReport.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGenerateRevenueReport.ForeColor = System.Drawing.Color.White;
             this.btnGenerateRevenueReport.Location = new System.Drawing.Point(37, 366);
@@ -699,10 +699,10 @@
             // 
             // btnExportPackageExcel
             // 
-            this.btnExportPackageExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportPackageExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportPackageExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportPackageExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExportPackageExcel.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportPackageExcel.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportPackageExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExportPackageExcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportPackageExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExportPackageExcel.ForeColor = System.Drawing.Color.White;
             this.btnExportPackageExcel.Location = new System.Drawing.Point(387, 365);
@@ -714,10 +714,10 @@
             // 
             // btnExportPackagePDF
             // 
-            this.btnExportPackagePDF.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportPackagePDF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportPackagePDF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportPackagePDF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExportPackagePDF.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportPackagePDF.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExportPackagePDF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExportPackagePDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportPackagePDF.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExportPackagePDF.ForeColor = System.Drawing.Color.White;
             this.btnExportPackagePDF.Location = new System.Drawing.Point(206, 365);
@@ -729,10 +729,10 @@
             // 
             // btnGeneratePackageReport
             // 
-            this.btnGeneratePackageReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGeneratePackageReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGeneratePackageReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGeneratePackageReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGeneratePackageReport.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeneratePackageReport.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeneratePackageReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGeneratePackageReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGeneratePackageReport.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGeneratePackageReport.ForeColor = System.Drawing.Color.White;
             this.btnGeneratePackageReport.Location = new System.Drawing.Point(38, 365);
