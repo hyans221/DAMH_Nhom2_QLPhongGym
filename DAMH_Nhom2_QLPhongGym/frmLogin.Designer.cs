@@ -32,36 +32,21 @@ namespace DAMH_Nhom2_QLPhongGym
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btnDangNhap = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblQuenMK = new System.Windows.Forms.LinkLabel();
-            this.txtPass = new System.Windows.Forms.TextBox();
             this.lblDangNhap = new System.Windows.Forms.Label();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnDangNhap = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnDangNhap
-            // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.LightSlateGray;
-            this.btnDangNhap.FlatAppearance.BorderSize = 0;
-            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(114, 315);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(205, 40);
-            this.btnDangNhap.TabIndex = 14;
-            this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -74,10 +59,10 @@ namespace DAMH_Nhom2_QLPhongGym
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.txtUsername);
-            this.panel1.Controls.Add(this.lblQuenMK);
-            this.panel1.Controls.Add(this.txtPass);
             this.panel1.Controls.Add(this.btnDangNhap);
+            this.panel1.Controls.Add(this.guna2TextBox2);
+            this.panel1.Controls.Add(this.guna2TextBox1);
+            this.panel1.Controls.Add(this.lblQuenMK);
             this.panel1.Controls.Add(this.lblDangNhap);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(611, 0);
@@ -85,56 +70,85 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panel1.Size = new System.Drawing.Size(404, 461);
             this.panel1.TabIndex = 15;
             // 
-            // txtUsername
-            // 
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(114, 204);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(205, 29);
-            this.txtUsername.TabIndex = 17;
-            // 
             // lblQuenMK
             // 
             this.lblQuenMK.AutoSize = true;
             this.lblQuenMK.LinkColor = System.Drawing.Color.White;
-            this.lblQuenMK.Location = new System.Drawing.Point(239, 380);
+            this.lblQuenMK.Location = new System.Drawing.Point(239, 338);
             this.lblQuenMK.Name = "lblQuenMK";
             this.lblQuenMK.Size = new System.Drawing.Size(80, 13);
             this.lblQuenMK.TabIndex = 16;
             this.lblQuenMK.TabStop = true;
             this.lblQuenMK.Text = "Quên mật khẩu";
             // 
-            // txtPass
-            // 
-            this.txtPass.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(114, 244);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(205, 29);
-            this.txtPass.TabIndex = 15;
-            // 
             // lblDangNhap
             // 
             this.lblDangNhap.AutoSize = true;
             this.lblDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangNhap.ForeColor = System.Drawing.Color.White;
-            this.lblDangNhap.Location = new System.Drawing.Point(62, 113);
+            this.lblDangNhap.Location = new System.Drawing.Point(140, 68);
             this.lblDangNhap.Name = "lblDangNhap";
-            this.lblDangNhap.Size = new System.Drawing.Size(310, 55);
+            this.lblDangNhap.Size = new System.Drawing.Size(125, 55);
             this.lblDangNhap.TabIndex = 0;
-            this.lblDangNhap.Text = "ĐĂNG NHẬP";
+            this.lblDangNhap.Text = "Gym";
             this.lblDangNhap.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btnBack
+            // guna2TextBox1
             // 
-            this.btnBack.BackColor = System.Drawing.Color.LightSlateGray;
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnBack.Location = new System.Drawing.Point(293, 399);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(112, 34);
-            this.btnBack.TabIndex = 20;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = false;
+            this.guna2TextBox1.BorderRadius = 10;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(105, 157);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "Tên đăng nhập";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(214, 36);
+            this.guna2TextBox1.TabIndex = 18;
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.BorderRadius = 10;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Location = new System.Drawing.Point(105, 212);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '●';
+            this.guna2TextBox2.PlaceholderText = "Mật khẩu";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(214, 36);
+            this.guna2TextBox2.TabIndex = 19;
+            this.guna2TextBox2.UseSystemPasswordChar = true;
+            // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.BorderRadius = 10;
+            this.btnDangNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDangNhap.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
+            this.btnDangNhap.Location = new System.Drawing.Point(122, 270);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(180, 38);
+            this.btnDangNhap.TabIndex = 20;
+            this.btnDangNhap.Text = "Đăng nhập";
             // 
             // pictureBox1
             // 
@@ -152,34 +166,32 @@ namespace DAMH_Nhom2_QLPhongGym
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 461);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Button btnDangNhap;
         private BindingSource bindingSource1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Panel panel2;
         private Panel panel1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private Label lblDangNhap;
-        private TextBox txtPass;
         private LinkLabel lblQuenMK;
-        private TextBox txtUsername;
-        private Button btnBack;
         private PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btnDangNhap;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 
 }

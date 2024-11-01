@@ -16,5 +16,35 @@ namespace DAMH_Nhom2_QLPhongGym
         {
             InitializeComponent();
         }
+
+        private void btnThanhVieb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGoiDVu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLichTap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThietBiDVu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBaoCaoThongKe_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

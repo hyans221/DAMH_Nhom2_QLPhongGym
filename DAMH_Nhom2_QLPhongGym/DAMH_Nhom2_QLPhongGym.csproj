@@ -89,6 +89,12 @@
     <Compile Include="frmQuanLyKhachHang.Designer.cs">
       <DependentUpon>frmQuanLyKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuanLyThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyThietBi.Designer.cs">
+      <DependentUpon>frmQuanLyThietBi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemThanhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +103,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLiThietBiForm.cs">
+    <Compile Include="QuanLyThietBiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLiThietBiForm.Designer.cs">
-      <DependentUpon>QuanLiThietBiForm.cs</DependentUpon>
+    <Compile Include="QuanLyThietBiForm.Designer.cs">
+      <DependentUpon>QuanLyThietBiForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmBaoCaoVaThongKe.resx">
       <DependentUpon>frmBaoCaoVaThongKe.cs</DependentUpon>
@@ -131,8 +137,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="QuanLiThietBiForm.resx">
-      <DependentUpon>QuanLiThietBiForm.cs</DependentUpon>
+    <EmbeddedResource Include="QuanLyThietBiForm.resx">
+      <DependentUpon>QuanLyThietBiForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -155,6 +161,18 @@
     <Content Include="Resources\capnhat.png" />
     <Content Include="Resources\ic18 %281%29.jpg" />
     <None Include="Resources\logoLogin.png" />
+    <None Include="Resources\iconFix.png" />
+    <None Include="Resources\iconDelete.png" />
+    <None Include="Resources\iconAdd.png" />
+    <None Include="Resources\iconFind.png" />
+    <None Include="Resources\iconNhap.png" />
+    <None Include="Resources\iconFind1.png" />
+    <None Include="Resources\iconFind2.png" />
+    <None Include="Resources\iconFix2.png" />
+    <None Include="Resources\iconAdd2.png" />
+    <None Include="Resources\iconNhap2.png" />
+    <None Include="Resources\iconDelete2.png" />
+    <None Include="Resources\iconFix3.png" />
     <Content Include="Resources\sua.png" />
     <Content Include="Resources\them.png" />
     <Content Include="Resources\xoa.png" />

@@ -118,22 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="xoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconDelete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconDelete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconFix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNhap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconNhap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic18 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic18 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="capnhat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\capnhat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sua" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="capnhat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\capnhat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconFind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconFind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFind1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconFind1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFix2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconFix2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="them" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\them.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconAdd2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconAdd2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFind2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconFind2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNhap2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconNhap2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFix3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconFix3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

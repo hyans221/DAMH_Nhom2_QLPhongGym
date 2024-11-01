@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace DAMH_Nhom2_QLPhongGym
 {
-    public partial class QuanLiThietBiForm : Form
+    public partial class frmQuanLyThietBi : Form
     {
-        public QuanLiThietBiForm()
+        public frmQuanLyThietBi()
         {
             InitializeComponent();
-        }
-
-        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GroupBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

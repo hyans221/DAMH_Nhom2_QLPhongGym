@@ -39,13 +39,13 @@ namespace DAMH_Nhom2_QLPhongGym
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnThanhToan = new System.Windows.Forms.Button();
             this.btnVaiTro = new System.Windows.Forms.Button();
             this.btnThietBiDVu = new System.Windows.Forms.Button();
             this.btnLichTap = new System.Windows.Forms.Button();
             this.btnGoiDVu = new System.Windows.Forms.Button();
             this.btnThanhVieb = new System.Windows.Forms.Button();
             this.desktopPanel = new System.Windows.Forms.Panel();
+            this.btnThanhToan = new System.Windows.Forms.Button();
             this.btnBaoCaoThongKe = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.UserNamePanel.SuspendLayout();
@@ -61,7 +61,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1174, 68);
+            this.panel2.Size = new System.Drawing.Size(1184, 62);
             this.panel2.TabIndex = 0;
             // 
             // UserNamePanel
@@ -72,25 +72,21 @@ namespace DAMH_Nhom2_QLPhongGym
             this.UserNamePanel.Controls.Add(this.btnhome);
             this.UserNamePanel.Controls.Add(this.usr_type);
             this.UserNamePanel.Controls.Add(this.lblUsername);
-            this.UserNamePanel.Location = new System.Drawing.Point(832, 0);
+            this.UserNamePanel.Location = new System.Drawing.Point(842, 0);
             this.UserNamePanel.Name = "UserNamePanel";
-            this.UserNamePanel.Size = new System.Drawing.Size(239, 77);
+            this.UserNamePanel.Size = new System.Drawing.Size(239, 71);
             this.UserNamePanel.TabIndex = 9;
             // 
             // btnhome
             // 
             this.btnhome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnhome.CheckedState.Parent = this.btnhome;
-            this.btnhome.CustomImages.Parent = this.btnhome;
             this.btnhome.FillColor = System.Drawing.Color.Empty;
             this.btnhome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnhome.ForeColor = System.Drawing.Color.White;
-            this.btnhome.HoverState.Parent = this.btnhome;
             this.btnhome.ImageSize = new System.Drawing.Size(40, 40);
             this.btnhome.Location = new System.Drawing.Point(176, 0);
             this.btnhome.Name = "btnhome";
             this.btnhome.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.btnhome.ShadowDecoration.Parent = this.btnhome;
             this.btnhome.Size = new System.Drawing.Size(64, 69);
             this.btnhome.TabIndex = 4;
             // 
@@ -101,9 +97,9 @@ namespace DAMH_Nhom2_QLPhongGym
             this.usr_type.ForeColor = System.Drawing.Color.White;
             this.usr_type.Location = new System.Drawing.Point(70, 39);
             this.usr_type.Name = "usr_type";
-            this.usr_type.Size = new System.Drawing.Size(47, 13);
+            this.usr_type.Size = new System.Drawing.Size(13, 13);
             this.usr_type.TabIndex = 2;
-            this.usr_type.Text = "usr_type";
+            this.usr_type.Text = "..";
             // 
             // lblUsername
             // 
@@ -115,19 +111,19 @@ namespace DAMH_Nhom2_QLPhongGym
             this.lblUsername.Location = new System.Drawing.Point(65, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Padding = new System.Windows.Forms.Padding(0, 13, 0, 0);
-            this.lblUsername.Size = new System.Drawing.Size(123, 43);
+            this.lblUsername.Size = new System.Drawing.Size(28, 43);
             this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "USERNAME";
+            this.lblUsername.Text = "...";
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(0, -2);
+            this.lblTitle.Location = new System.Drawing.Point(3, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Padding = new System.Windows.Forms.Padding(9, 17, 0, 0);
-            this.lblTitle.Size = new System.Drawing.Size(249, 59);
+            this.lblTitle.Size = new System.Drawing.Size(240, 56);
             this.lblTitle.TabIndex = 8;
             this.lblTitle.Text = "TRANG CHỦ";
             // 
@@ -138,12 +134,12 @@ namespace DAMH_Nhom2_QLPhongGym
             this.label1.BackColor = System.Drawing.Color.LightSlateGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1053, -7);
+            this.label1.Location = new System.Drawing.Point(1063, -7);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(9, 26, 9, 0);
-            this.label1.Size = new System.Drawing.Size(121, 76);
+            this.label1.Size = new System.Drawing.Size(48, 76);
             this.label1.TabIndex = 7;
-            this.label1.Text = "TRAINER\r\n\r\n";
+            this.label1.Text = "...\r\n\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelMenu
@@ -157,28 +153,10 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panelMenu.Controls.Add(this.btnGoiDVu);
             this.panelMenu.Controls.Add(this.btnThanhVieb);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 68);
+            this.panelMenu.Location = new System.Drawing.Point(0, 62);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(217, 581);
+            this.panelMenu.Size = new System.Drawing.Size(217, 587);
             this.panelMenu.TabIndex = 1;
-            // 
-            // btnThanhToan
-            // 
-            this.btnThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnThanhToan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThanhToan.FlatAppearance.BorderSize = 0;
-            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhToan.Font = new System.Drawing.Font("Ebrima", 12.25F);
-            this.btnThanhToan.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThanhToan.Location = new System.Drawing.Point(0, 244);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.btnThanhToan.Size = new System.Drawing.Size(217, 61);
-            this.btnThanhToan.TabIndex = 14;
-            this.btnThanhToan.Text = "Thanh toán";
-            this.btnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThanhToan.UseVisualStyleBackColor = false;
             // 
             // btnVaiTro
             // 
@@ -189,7 +167,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnVaiTro.Font = new System.Drawing.Font("Ebrima", 12.25F);
             this.btnVaiTro.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnVaiTro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVaiTro.Location = new System.Drawing.Point(0, 520);
+            this.btnVaiTro.Location = new System.Drawing.Point(0, 526);
             this.btnVaiTro.Name = "btnVaiTro";
             this.btnVaiTro.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnVaiTro.Size = new System.Drawing.Size(217, 61);
@@ -204,17 +182,19 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnThietBiDVu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnThietBiDVu.FlatAppearance.BorderSize = 0;
             this.btnThietBiDVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThietBiDVu.Font = new System.Drawing.Font("Ebrima", 12.25F);
-            this.btnThietBiDVu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnThietBiDVu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnThietBiDVu.ForeColor = System.Drawing.Color.Snow;
             this.btnThietBiDVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThietBiDVu.Location = new System.Drawing.Point(0, 183);
             this.btnThietBiDVu.Name = "btnThietBiDVu";
             this.btnThietBiDVu.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnThietBiDVu.Size = new System.Drawing.Size(217, 61);
             this.btnThietBiDVu.TabIndex = 11;
-            this.btnThietBiDVu.Text = "Quản Lý Thiết Bị, Dịch Vụ";
+            this.btnThietBiDVu.Text = "Quản Lý Thiết Bị";
+            this.btnThietBiDVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThietBiDVu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThietBiDVu.UseVisualStyleBackColor = false;
+            this.btnThietBiDVu.Click += new System.EventHandler(this.btnThietBiDVu_Click);
             // 
             // btnLichTap
             // 
@@ -222,8 +202,8 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnLichTap.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLichTap.FlatAppearance.BorderSize = 0;
             this.btnLichTap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichTap.Font = new System.Drawing.Font("Ebrima", 12.25F);
-            this.btnLichTap.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLichTap.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnLichTap.ForeColor = System.Drawing.Color.Snow;
             this.btnLichTap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLichTap.Location = new System.Drawing.Point(0, 122);
             this.btnLichTap.Name = "btnLichTap";
@@ -231,8 +211,10 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnLichTap.Size = new System.Drawing.Size(217, 61);
             this.btnLichTap.TabIndex = 10;
             this.btnLichTap.Text = "Quản Lý Lịch Tập";
+            this.btnLichTap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLichTap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLichTap.UseVisualStyleBackColor = false;
+            this.btnLichTap.Click += new System.EventHandler(this.btnLichTap_Click);
             // 
             // btnGoiDVu
             // 
@@ -240,8 +222,8 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnGoiDVu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGoiDVu.FlatAppearance.BorderSize = 0;
             this.btnGoiDVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoiDVu.Font = new System.Drawing.Font("Ebrima", 12.25F);
-            this.btnGoiDVu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnGoiDVu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnGoiDVu.ForeColor = System.Drawing.Color.Snow;
             this.btnGoiDVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoiDVu.Location = new System.Drawing.Point(0, 61);
             this.btnGoiDVu.Name = "btnGoiDVu";
@@ -249,8 +231,10 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnGoiDVu.Size = new System.Drawing.Size(217, 61);
             this.btnGoiDVu.TabIndex = 9;
             this.btnGoiDVu.Text = "Quản Lý Gói Dịch Vụ";
+            this.btnGoiDVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoiDVu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGoiDVu.UseVisualStyleBackColor = false;
+            this.btnGoiDVu.Click += new System.EventHandler(this.btnGoiDVu_Click);
             // 
             // btnThanhVieb
             // 
@@ -258,8 +242,8 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnThanhVieb.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnThanhVieb.FlatAppearance.BorderSize = 0;
             this.btnThanhVieb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhVieb.Font = new System.Drawing.Font("Ebrima", 12.25F);
-            this.btnThanhVieb.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnThanhVieb.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnThanhVieb.ForeColor = System.Drawing.Color.Snow;
             this.btnThanhVieb.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThanhVieb.Location = new System.Drawing.Point(0, 0);
             this.btnThanhVieb.Name = "btnThanhVieb";
@@ -267,17 +251,38 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnThanhVieb.Size = new System.Drawing.Size(217, 61);
             this.btnThanhVieb.TabIndex = 8;
             this.btnThanhVieb.Text = "Quản Lý Thành Viên";
+            this.btnThanhVieb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThanhVieb.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThanhVieb.UseVisualStyleBackColor = false;
+            this.btnThanhVieb.Click += new System.EventHandler(this.btnThanhVieb_Click);
             // 
             // desktopPanel
             // 
             this.desktopPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.desktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.desktopPanel.Location = new System.Drawing.Point(217, 68);
+            this.desktopPanel.Location = new System.Drawing.Point(217, 62);
             this.desktopPanel.Name = "desktopPanel";
-            this.desktopPanel.Size = new System.Drawing.Size(957, 581);
+            this.desktopPanel.Size = new System.Drawing.Size(967, 587);
             this.desktopPanel.TabIndex = 2;
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnThanhToan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThanhToan.FlatAppearance.BorderSize = 0;
+            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanhToan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnThanhToan.ForeColor = System.Drawing.Color.Snow;
+            this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThanhToan.Location = new System.Drawing.Point(0, 244);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnThanhToan.Size = new System.Drawing.Size(217, 61);
+            this.btnThanhToan.TabIndex = 16;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThanhToan.UseVisualStyleBackColor = false;
             // 
             // btnBaoCaoThongKe
             // 
@@ -285,27 +290,28 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnBaoCaoThongKe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBaoCaoThongKe.FlatAppearance.BorderSize = 0;
             this.btnBaoCaoThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCaoThongKe.Font = new System.Drawing.Font("Ebrima", 12.25F);
-            this.btnBaoCaoThongKe.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBaoCaoThongKe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnBaoCaoThongKe.ForeColor = System.Drawing.Color.Snow;
             this.btnBaoCaoThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBaoCaoThongKe.Location = new System.Drawing.Point(0, 305);
             this.btnBaoCaoThongKe.Name = "btnBaoCaoThongKe";
-            this.btnBaoCaoThongKe.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.btnBaoCaoThongKe.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnBaoCaoThongKe.Size = new System.Drawing.Size(217, 61);
-            this.btnBaoCaoThongKe.TabIndex = 15;
-            this.btnBaoCaoThongKe.Text = "Báo Cáo và Thống Kê";
+            this.btnBaoCaoThongKe.TabIndex = 17;
+            this.btnBaoCaoThongKe.Text = "Báo cáo và thông kê";
+            this.btnBaoCaoThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBaoCaoThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBaoCaoThongKe.UseVisualStyleBackColor = false;
             // 
-            // home
+            // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 649);
+            this.ClientSize = new System.Drawing.Size(1184, 649);
             this.Controls.Add(this.desktopPanel);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panel2);
-            this.Name = "home";
+            this.Name = "frmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "+";
             this.panel2.ResumeLayout(false);
@@ -333,7 +339,7 @@ namespace DAMH_Nhom2_QLPhongGym
         private Label usr_type;
         private Guna.UI2.WinForms.Guna2Button btnhome;
         private Button btnVaiTro;
-        private Button btnThanhToan;
         private Button btnBaoCaoThongKe;
+        private Button btnThanhToan;
     }
 }
