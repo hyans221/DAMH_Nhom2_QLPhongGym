@@ -90,7 +90,7 @@
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(279, 32);
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(279, 38);
             this.guna2DateTimePicker2.TabIndex = 57;
             this.guna2DateTimePicker2.Value = new System.DateTime(2024, 10, 22, 19, 41, 2, 987);
             // 
@@ -140,7 +140,7 @@
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderText = "";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(279, 30);
+            this.guna2TextBox5.Size = new System.Drawing.Size(279, 38);
             this.guna2TextBox5.TabIndex = 48;
             // 
             // guna2RadioButton5
@@ -160,7 +160,7 @@
             this.guna2RadioButton5.Size = new System.Drawing.Size(167, 26);
             this.guna2RadioButton5.TabIndex = 0;
             this.guna2RadioButton5.Text = "Thẻ tập 15 tháng";
-            this.guna2RadioButton5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioButton5.UncheckedState.BorderColor = System.Drawing.Color.Snow;
             this.guna2RadioButton5.UncheckedState.BorderThickness = 2;
             this.guna2RadioButton5.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton5.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -183,7 +183,7 @@
             this.guna2RadioButton4.Size = new System.Drawing.Size(167, 26);
             this.guna2RadioButton4.TabIndex = 0;
             this.guna2RadioButton4.Text = "Thẻ tập 12 tháng";
-            this.guna2RadioButton4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioButton4.UncheckedState.BorderColor = System.Drawing.Color.Snow;
             this.guna2RadioButton4.UncheckedState.BorderThickness = 2;
             this.guna2RadioButton4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -206,7 +206,7 @@
             this.guna2RadioButton2.Size = new System.Drawing.Size(157, 26);
             this.guna2RadioButton2.TabIndex = 0;
             this.guna2RadioButton2.Text = "Thẻ tập 2 tháng";
-            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.Snow;
             this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
             this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -241,7 +241,7 @@
             this.guna2RadioButton1.Size = new System.Drawing.Size(157, 26);
             this.guna2RadioButton1.TabIndex = 0;
             this.guna2RadioButton1.Text = "Thẻ tập 1 tháng";
-            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.Snow;
             this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
             this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -281,7 +281,7 @@
             this.guna2RadioButton3.Size = new System.Drawing.Size(157, 26);
             this.guna2RadioButton3.TabIndex = 0;
             this.guna2RadioButton3.Text = "Thẻ tập 6 tháng";
-            this.guna2RadioButton3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioButton3.UncheckedState.BorderColor = System.Drawing.Color.Snow;
             this.guna2RadioButton3.UncheckedState.BorderThickness = 2;
             this.guna2RadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -299,12 +299,12 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(562, 447);
+            this.guna2TextBox2.Location = new System.Drawing.Point(566, 441);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(191, 30);
+            this.guna2TextBox2.Size = new System.Drawing.Size(191, 33);
             this.guna2TextBox2.TabIndex = 50;
             // 
             // guna2HtmlLabel6
@@ -312,7 +312,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(451, 450);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(463, 447);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(96, 24);
@@ -321,6 +321,7 @@
             // 
             // guna2GroupBox1
             // 
+            this.guna2GroupBox1.BorderRadius = 10;
             this.guna2GroupBox1.Controls.Add(this.guna2RadioButton3);
             this.guna2GroupBox1.Controls.Add(this.guna2RadioButton5);
             this.guna2GroupBox1.Controls.Add(this.guna2RadioButton4);
@@ -330,7 +331,7 @@
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel7);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox1.Location = new System.Drawing.Point(114, 286);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(114, 276);
             this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(643, 152);
@@ -366,7 +367,7 @@
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(279, 30);
+            this.guna2TextBox3.Size = new System.Drawing.Size(279, 38);
             this.guna2TextBox3.TabIndex = 52;
             // 
             // guna2HtmlLabel5
@@ -442,7 +443,7 @@
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "";
             this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(279, 30);
+            this.guna2TextBox4.Size = new System.Drawing.Size(279, 38);
             this.guna2TextBox4.TabIndex = 51;
             // 
             // frmThemThanhVien
