@@ -147,9 +147,9 @@
             // 
             this.guna2RadioButton5.AutoSize = true;
             this.guna2RadioButton5.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton5.CheckedState.BorderColor = System.Drawing.Color.Black;
             this.guna2RadioButton5.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton5.CheckedState.FillColor = System.Drawing.Color.DimGray;
             this.guna2RadioButton5.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton5.CheckedState.InnerOffset = -4;
             this.guna2RadioButton5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
@@ -170,9 +170,9 @@
             // 
             this.guna2RadioButton4.AutoSize = true;
             this.guna2RadioButton4.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton4.CheckedState.BorderColor = System.Drawing.Color.Black;
             this.guna2RadioButton4.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton4.CheckedState.FillColor = System.Drawing.Color.DimGray;
             this.guna2RadioButton4.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton4.CheckedState.InnerOffset = -4;
             this.guna2RadioButton4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
@@ -193,9 +193,9 @@
             // 
             this.guna2RadioButton2.AutoSize = true;
             this.guna2RadioButton2.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.Black;
             this.guna2RadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.DimGray;
             this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton2.CheckedState.InnerOffset = -4;
             this.guna2RadioButton2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
@@ -228,9 +228,9 @@
             // 
             this.guna2RadioButton1.AutoSize = true;
             this.guna2RadioButton1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.Black;
             this.guna2RadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.DimGray;
             this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton1.CheckedState.InnerOffset = -4;
             this.guna2RadioButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
@@ -268,14 +268,14 @@
             // 
             this.guna2RadioButton3.AutoSize = true;
             this.guna2RadioButton3.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton3.CheckedState.BorderColor = System.Drawing.Color.Black;
             this.guna2RadioButton3.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton3.CheckedState.FillColor = System.Drawing.Color.DimGray;
             this.guna2RadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2RadioButton3.CheckedState.InnerOffset = -4;
             this.guna2RadioButton3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton3.Location = new System.Drawing.Point(472, 56);
+            this.guna2RadioButton3.Location = new System.Drawing.Point(476, 56);
             this.guna2RadioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RadioButton3.Name = "guna2RadioButton3";
             this.guna2RadioButton3.Size = new System.Drawing.Size(157, 26);
