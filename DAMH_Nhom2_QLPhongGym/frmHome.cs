@@ -29,7 +29,6 @@ namespace DAMH_Nhom2_QLPhongGym
             Panel_container.Controls.Add(frm);
             Panel_container.Tag = frm;
             frm.Show();
-
         }
 
         private void btnThanhVien_Click(object sender, EventArgs e)
@@ -46,7 +45,7 @@ namespace DAMH_Nhom2_QLPhongGym
 
         private void btnLichTap_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "Quản lý đạt lịch tập";
+            lblTitle.Text = "Quản lý lịch tập";
             container(new frmDatLichTap());
         }
 

@@ -154,7 +154,7 @@
             this.guna2RadioButton5.CheckedState.InnerOffset = -4;
             this.guna2RadioButton5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton5.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton5.Location = new System.Drawing.Point(296, 98);
+            this.guna2RadioButton5.Location = new System.Drawing.Point(301, 98);
             this.guna2RadioButton5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RadioButton5.Name = "guna2RadioButton5";
             this.guna2RadioButton5.Size = new System.Drawing.Size(167, 26);
@@ -177,7 +177,7 @@
             this.guna2RadioButton4.CheckedState.InnerOffset = -4;
             this.guna2RadioButton4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton4.Location = new System.Drawing.Point(115, 98);
+            this.guna2RadioButton4.Location = new System.Drawing.Point(119, 98);
             this.guna2RadioButton4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RadioButton4.Name = "guna2RadioButton4";
             this.guna2RadioButton4.Size = new System.Drawing.Size(167, 26);
@@ -200,7 +200,7 @@
             this.guna2RadioButton2.CheckedState.InnerOffset = -4;
             this.guna2RadioButton2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.Location = new System.Drawing.Point(296, 56);
+            this.guna2RadioButton2.Location = new System.Drawing.Point(302, 56);
             this.guna2RadioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RadioButton2.Name = "guna2RadioButton2";
             this.guna2RadioButton2.Size = new System.Drawing.Size(157, 26);
@@ -215,12 +215,12 @@
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(49, 97);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(48, 97);
             this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(36, 17);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(56, 24);
             this.guna2HtmlLabel8.TabIndex = 1;
             this.guna2HtmlLabel8.Text = "Royal:";
             // 
@@ -235,7 +235,7 @@
             this.guna2RadioButton1.CheckedState.InnerOffset = -4;
             this.guna2RadioButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.Location = new System.Drawing.Point(115, 56);
+            this.guna2RadioButton1.Location = new System.Drawing.Point(130, 56);
             this.guna2RadioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RadioButton1.Name = "guna2RadioButton1";
             this.guna2RadioButton1.Size = new System.Drawing.Size(157, 26);
@@ -275,7 +275,7 @@
             this.guna2RadioButton3.CheckedState.InnerOffset = -4;
             this.guna2RadioButton3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton3.Location = new System.Drawing.Point(476, 56);
+            this.guna2RadioButton3.Location = new System.Drawing.Point(474, 56);
             this.guna2RadioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RadioButton3.Name = "guna2RadioButton3";
             this.guna2RadioButton3.Size = new System.Drawing.Size(157, 26);
@@ -341,12 +341,12 @@
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(49, 60);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(48, 57);
             this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(41, 17);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(67, 24);
             this.guna2HtmlLabel7.TabIndex = 1;
             this.guna2HtmlLabel7.Text = "Classic:";
             // 
