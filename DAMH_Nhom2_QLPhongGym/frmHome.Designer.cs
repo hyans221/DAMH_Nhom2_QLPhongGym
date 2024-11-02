@@ -58,7 +58,7 @@ namespace DAMH_Nhom2_QLPhongGym
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.SlateGray;
+            this.panel2.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel2.Controls.Add(this.UserNamePanel);
             this.panel2.Controls.Add(this.lblTitle);
             this.panel2.Controls.Add(this.label1);
@@ -123,7 +123,7 @@ namespace DAMH_Nhom2_QLPhongGym
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblTitle.Location = new System.Drawing.Point(220, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Padding = new System.Windows.Forms.Padding(9, 17, 0, 0);
@@ -149,7 +149,7 @@ namespace DAMH_Nhom2_QLPhongGym
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panelMenu.BackColor = System.Drawing.Color.SlateGray;
             this.panelMenu.Controls.Add(this.guna2TabControl1);
             this.panelMenu.Controls.Add(this.btnBaoCaoThongKe);
             this.panelMenu.Controls.Add(this.btnThanhToan);
