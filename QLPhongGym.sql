@@ -27,7 +27,7 @@ CREATE TABLE HuanLuyenVien (
     HoTen NVARCHAR(100) NOT NULL,
     ChuyenMon NVARCHAR(100),
     SoDienThoai NVARCHAR(15),
-    Email NVARCHAR(100) UNIQUE
+    Email NVARCHAR(100) UNIQUE,
 	FOREIGN KEY (NhanVienID) REFERENCES NhanVien(NhanVienID)
 );
 go
@@ -71,7 +71,7 @@ CREATE TABLE HoaDon (
     TheKhachHangID INT,
 	NhanVienID int,
     NgayThanhToan DATE,
-	LoaiHoaDon NVARCHAR(10), --Thanh toán mới, gia hạn
+	LoaiHoaDon NVARCHAR(100), --Thanh toán mới, gia hạn
 	GoiTapID int,
 	GoiThuePTID int,
 	FOREIGN KEY (GoiThuePTID) REFERENCES ThuePT(GoiThuePTID),
@@ -87,6 +87,7 @@ CREATE TABLE LichTap (
 	ChiNhanhID INT,
     ThoiGianBatDau TIME,
     ThoiGianKetThuc TIME,
+	NgayBatDau DATETIME,
 	TrangThai NVARCHAR(50), --Đã đặt, trống
     FOREIGN KEY (HLV_ID) REFERENCES HuanLuyenVien(HLV_ID),
 	FOREIGN KEY (ChiNhanhID) REFERENCES ChiNhanh(ChiNhanhID),
@@ -100,11 +101,6 @@ CREATE TABLE DangKyLichTap (
     FOREIGN KEY (LichTapID) REFERENCES LichTap(LichTapID)
 );
 
-
-
-
-
-
 go
 CREATE TABLE ThietBi (
     ThietBiID INT IDENTITY(1,1) PRIMARY KEY,
@@ -112,7 +108,8 @@ CREATE TABLE ThietBi (
 	PhongTapID INT, -- phòng thì có nhiều thiết bị để sử dụng
     MoTa NVARCHAR(255),
     TrangThai NVARCHAR(50),
-	FOREIGN KEY (PhongTapID) REFERENCES PhongTap(PhongTapID)
+	ChiNhanhID INT,
+	FOREIGN KEY (ChiNhanhID) REFERENCES ChiNhanh(ChiNhanhID)
 );
 go
 CREATE TABLE SuDungThietBi (
@@ -132,130 +129,122 @@ CREATE TABLE LichSuBaoTri (
 );
 go
 
+
 --Thêm dữ liệu
--- Bảng NhanVien
+
+-- Thêm dữ liệu cho bảng NhanVien
 INSERT INTO NhanVien (HoTen, ChucVu, SoDienThoai, Email, NgayVaoLam)
 VALUES 
-('Nguyen Van A', 'Nhân viên', '0123456789', 'vana@example.com', '2022-01-01'),
-('Le Thi B', 'Quản lý', '0987654321', 'leb@example.com', '2022-02-01'),
-('Tran Van C', 'Nhân viên', '0912345678', 'tranc@example.com', '2022-03-01'),
-('Pham Thi D', 'Nhân viên', '0934567890', 'phamd@example.com', '2022-04-01'),
-('Doan Van E', 'Quản lý', '0945678901', 'doane@example.com', '2022-05-01'),
-('Ngo Thi F', 'Nhân viên', '0923456789', 'ngof@example.com', '2022-06-01'),
-('Vu Van G', 'Nhân viên', '0913456789', 'vug@example.com', '2022-07-01'),
-('Ly Thi H', 'Quản lý', '0901234567', 'lyh@example.com', '2022-08-01'),
-('Dang Van I', 'Nhân viên', '0986543210', 'dangi@example.com', '2022-09-01'),
-('Hoang Thi J', 'Nhân viên', '0971234567', 'hoangj@example.com', '2022-10-01');
+(N'Nguyen Van A', N'Nhân viên', '0123456789', 'vana@example.com', '2022-01-01'),
+(N'Le Thi B', N'Quản lý', '0987654321', 'leb@example.com', '2022-02-01'),
+(N'Tran Van C', N'Nhân viên', '0912345678', 'tranc@example.com', '2022-03-01'),
+(N'Pham Thi D', N'Nhân viên', '0934567890', 'phamd@example.com', '2022-04-01'),
+(N'Doan Van E', N'Quản lý', '0945678901', 'doane@example.com', '2022-05-01');
 
--- Bảng TaiKhoan
+-- Thêm dữ liệu cho bảng TaiKhoan
 INSERT INTO TaiKhoan (TenDN, MatKhau, NhanVienID, Quyen)
 VALUES 
-('vana', 'pass123', 1, 'Admin'),
-('leb', 'pass123', 2, 'User'),
-('tranc', 'pass123', 3, 'User'),
-('phamd', 'pass123', 4, 'Admin'),
-('doane', 'pass123', 5, 'User'),
-('ngof', 'pass123', 6, 'User'),
-('vug', 'pass123', 7, 'User'),
-('lyh', 'pass123', 8, 'Admin'),
-('dangi', 'pass123', 9, 'User'),
-('hoangj', 'pass123', 10, 'User');
+(N'vana', 'pass123', 1, 'Admin'),
+(N'leb', 'pass123', 2, 'User'),
+(N'tranc', 'pass123', 3, 'User'),
+(N'phamd', 'pass123', 4, 'Admin'),
+(N'doane', 'pass123', 5, 'User');
 
--- Bảng HuanLuyenVien
+-- Thêm dữ liệu cho bảng HuanLuyenVien
 INSERT INTO HuanLuyenVien (NhanVienID, HoTen, ChuyenMon, SoDienThoai, Email)
 VALUES 
-(1, 'Nguyen Van A', 'Thể hình', '0123456789', 'vana@example.com'),
-(2, 'Le Thi B', 'Yoga', '0987654321', 'leb@example.com'),
-(3, 'Tran Van C', 'Thể lực', '0912345678', 'tranc@example.com'),
-(4, 'Pham Thi D', 'Kickboxing', '0934567890', 'phamd@example.com'),
-(5, 'Doan Van E', 'Pilates', '0945678901', 'doane@example.com'),
-(6, 'Ngo Thi F', 'Aerobics', '0923456789', 'ngof@example.com'),
-(7, 'Vu Van G', 'Crossfit', '0913456789', 'vug@example.com'),
-(8, 'Ly Thi H', 'Cardio', '0901234567', 'lyh@example.com'),
-(9, 'Dang Van I', 'Zumba', '0986543210', 'dangi@example.com'),
-(10, 'Hoang Thi J', 'Dance', '0971234567', 'hoangj@example.com');
+(1, N'Nguyen Van A', N'Thể hình', '0123456789', 'vana@example.com'),
+(2, N'Le Thi B', N'Yoga', '0987654321', 'leb@example.com'),
+(3, N'Tran Van C', N'Thể lực', '0912345678', 'tranc@example.com'),
+(4, N'Pham Thi D', N'Kickboxing', '0934567890', 'phamd@example.com'),
+(5, N'Doan Van E', N'Pilates', '0945678901', 'doane@example.com');
 
--- Bảng ChiNhanh
+-- Thêm dữ liệu cho bảng ChiNhanh
 INSERT INTO ChiNhanh (TenDiaDiem, DiaDiem, MoTa)
 VALUES 
-('Chi nhánh Bình Tân', 'Bình Tân', 'Phòng tập hiện đại'),
-('Chi nhánh Bình Thạnh', 'Bình Thạnh', 'Không gian thoáng mát'),
-('Chi nhánh Quận 1', 'Quận 1', 'Trang bị cao cấp'),
-('Chi nhánh Quận 3', 'Quận 3', 'Nằm ở trung tâm'),
-('Chi nhánh Quận 5', 'Quận 5', 'Gần các khu mua sắm'),
-('Chi nhánh Thủ Đức', 'Thủ Đức', 'Khuôn viên rộng rãi'),
-('Chi nhánh Phú Nhuận', 'Phú Nhuận', 'Dịch vụ chuyên nghiệp'),
-('Chi nhánh Tân Bình', 'Tân Bình', 'Giao thông thuận tiện'),
-('Chi nhánh Gò Vấp', 'Gò Vấp', 'Môi trường thân thiện'),
-('Chi nhánh Quận 7', 'Quận 7', 'View đẹp, thoáng đãng');
+(N'Chi nhánh Bình Tân', N'Bình Tân', N'Phòng tập hiện đại'),
+(N'Chi nhánh Bình Thạnh', N'Bình Thạnh', N'Không gian thoáng mát'),
+(N'Chi nhánh Quận 1', N'Quận 1', N'Trang bị cao cấp'),
+(N'Chi nhánh Quận 3', N'Quận 3', N'Nằm ở trung tâm'),
+(N'Chi nhánh Quận 5', N'Quận 5', N'Gần các khu mua sắm');
 
--- Bảng TheKhachHang
+-- Thêm dữ liệu cho bảng TheKhachHang
 INSERT INTO TheKhachHang (HoTen, NgaySinh, CCCD, GioiTinh, SoDienThoai, DiaChi, LoaiThanhVien, ThoiGianHieuLuc, SoBuoiTapCungPT)
 VALUES 
-('Nguyen A', '1990-01-01', '012345678912', 'Nam', '0912345678', 'Bình Tân', 'Classic', '2023-12-31', 10),
-('Le B', '1992-02-02', '012345678913', 'Nữ', '0912345679', 'Bình Thạnh', 'Royal', '2024-12-31', 15),
--- Thêm 8 bản ghi khác tương tự
+(N'Nguyen A', '1990-01-01', '012345678912', N'Nam', '0912345678', N'Bình Tân', N'Classic', '2023-12-31', 10),
+(N'Le B', '1992-02-02', '012345678913', N'Nữ', '0912345679', N'Bình Thạnh', N'Royal', '2024-12-31', 15),
+(N'Tran C', '1991-03-03', '012345678914', N'Nam', '0912345680', N'Quận 1', N'Classic', '2025-01-01', 5),
+(N'Pham D', '1993-04-04', '012345678915', N'Nữ', '0912345681', N'Quận 3', N'Royal', '2023-11-30', 20),
+(N'Doan E', '1994-05-05', '012345678916', N'Nam', '0912345682', N'Quận 5', N'Classic', '2026-02-28', 8);
 
--- Bảng GoiTap
+-- Thêm dữ liệu cho bảng GoiTap
 INSERT INTO GoiTap (ThoiGian, GiaTien, MoTa)
 VALUES 
-(3, 500000, 'Gói 3 tháng'),
-(6, 900000, 'Gói 6 tháng'),
-(12, 1600000, 'Gói 12 tháng'),
--- Thêm 7 bản ghi khác tương tự
+(3, 500000, N'Gói 3 tháng'),
+(6, 900000, N'Gói 6 tháng'),
+(12, 1600000, N'Gói 12 tháng'),
+(1, 100000, N'Gói tháng đầu tiên'),
+(24, 3000000, N'Gói 24 tháng');
 
--- Bảng ThuePT
+-- Thêm dữ liệu cho bảng ThuePT
 INSERT INTO ThuePT (SoBuoiThue, GiaTien, MoTa)
 VALUES 
-(5, 200000, 'Gói thuê 5 buổi'),
-(10, 350000, 'Gói thuê 10 buổi'),
--- Thêm 8 bản ghi khác tương tự
+(5, 200000, N'Gói thuê 5 buổi'),
+(10, 350000, N'Gói thuê 10 buổi'),
+(15, 500000, N'Gói thuê 15 buổi'),
+(20, 700000, N'Gói thuê 20 buổi'),
+(25, 850000, N'Gói thuê 25 buổi');
 
--- Bảng HoaDon
+-- Thêm dữ liệu cho bảng HoaDon
 INSERT INTO HoaDon (TheKhachHangID, NhanVienID, NgayThanhToan, LoaiHoaDon, GoiTapID, GoiThuePTID, TongTien)
 VALUES 
-(1, 1, '2023-01-01', 'Thanh toán mới', 1, 1, 700000),
-(2, 2, '2023-02-01', 'Gia hạn', 2, 2, 1200000),
--- Thêm 8 bản ghi khác tương tự
+(1, 1, '2023-01-01', N'Thanh toán mới', 1, 1, 700000),
+(2, 2, '2023-02-01', N'Gia hạn', 2, 2, 1200000),
+(3, 3, '2023-03-01', N'Thanh toán mới', 3, 3, 1800000),
+(4, 4, '2023-04-01', N'Gia hạn', 4, 4, 2300000),
+(5, 5, '2023-05-01', N'Thanh toán mới', 5, 5, 3200000);
 
--- Bảng LichTap
-INSERT INTO LichTap (HLV_ID, ChiNhanhID, ThoiGianBatDau, ThoiGianKetThuc, TrangThai)
+-- Thêm dữ liệu cho bảng LichTap
+INSERT INTO LichTap (HLV_ID, ChiNhanhID, ThoiGianBatDau, ThoiGianKetThuc, NgayBatDau, TrangThai)
 VALUES 
-(1, 1, '08:00:00', '09:00:00', 'Đã đặt'),
-(2, 2, '10:00:00', '11:00:00', 'Trống'),
--- Thêm 8 bản ghi khác tương tự
+(1, 1, '08:00', '09:00', '2023-06-01', N'Đã đặt'),
+(2, 2, '10:00', '11:00', '2023-06-02', N'Trống'),
+(3, 3, '12:00', '13:00', '2023-06-03', N'Đã đặt'),
+(4, 4, '14:00', '15:00', '2023-06-04', N'Trống'),
+(5, 5, '16:00', '17:00', '2023-06-05', N'Đã đặt');
 
--- Bảng DangKyLichTap
+-- Thêm dữ liệu cho bảng DangKyLichTap
 INSERT INTO DangKyLichTap (TheKhachHangID, LichTapID)
 VALUES 
 (1, 1),
 (2, 2),
--- Thêm 8 bản ghi khác tương tự
+(3, 3),
+(4, 4),
+(5, 5);
 
--- Bảng PhongTap
-INSERT INTO PhongTap (TenPhong, ChiNhanhID)
+-- Thêm dữ liệu cho bảng ThietBi
+INSERT INTO ThietBi (TenThietBi, PhongTapID, MoTa, TrangThai, ChiNhanhID)
 VALUES 
-('Phòng Gym A', 1),
-('Phòng Gym B', 2),
--- Thêm 8 bản ghi khác tương tự
+(N'Máy chạy bộ', 1, N'Máy hiện đại', N'Sẵn sàng', 1),
+(N'Xe đạp tập', 2, N'Xe bền bỉ', N'Đang sử dụng', 2),
+(N'Máy tập tạ', 3, N'Máy chất lượng cao', N'Sẵn sàng', 3),
+(N'Gậy thể hình', 4, N'Gậy nhẹ, chắc chắn', N'Đang sử dụng', 4),
+(N'Tạ tay', 5, N'Tạ chất lượng', N'Sẵn sàng', 5);
 
--- Bảng ThietBi
-INSERT INTO ThietBi (TenThietBi, PhongTapID, MoTa, TrangThai)
-VALUES 
-('Máy chạy bộ', 1, 'Máy hiện đại', 'Sẵn sàng'),
-('Xe đạp tập', 2, 'Xe bền bỉ', 'Đang sử dụng'),
--- Thêm 8 bản ghi khác tương tự
-
--- Bảng SuDungThietBi
+-- Thêm dữ liệu cho bảng SuDungThietBi
 INSERT INTO SuDungThietBi (ThietBiID, ThoiGianBatDau, ThoiGianKetThuc)
 VALUES 
 (1, '2023-01-01', '2023-01-15'),
 (2, '2023-01-10', '2023-01-20'),
--- Thêm 8 bản ghi khác tương tự
+(3, '2023-01-15', '2023-01-25'),
+(4, '2023-01-20', '2023-01-30'),
+(5, '2023-01-25', '2023-02-04');
 
--- Bảng LichSuBaoTri
+-- Thêm dữ liệu cho bảng LichSuBaoTri
 INSERT INTO LichSuBaoTri (ThietBiID, NgayBaoTri, MoTa)
 VALUES 
-(1, '2023-01-05', 'Bảo trì định kỳ'),
-(2, '2023-01-12', 'Thay dây đai'),
--- Thêm 8 bản ghi khác tương tự
+(1, '2023-02-01', N'Bảo trì định kỳ'),
+(2, '2023-02-05', N'Bảo trì sửa chữa'),
+(3, '2023-02-10', N'Bảo trì định kỳ'),
+(4, '2023-02-15', N'Bảo trì sửa chữa'),
+(5, '2023-02-20', N'Bảo trì định kỳ');
