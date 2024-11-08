@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLPhongGym" Class="QLPhongGymDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=MSI;Initial Catalog=QLPhongGym;Persist Security Info=True;User ID=sa;Trust Server Certificate=True" SettingsObjectName="DAMH_Nhom2_QLPhongGym.Properties.Settings" SettingsPropertyName="QLPhongGymConnectionString2" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=THY;Initial Catalog=QLPhongGym;User ID=sa;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAMH_Nhom2_QLPhongGym.Properties.Settings" SettingsPropertyName="QLPhongGymConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ThuePT" Member="ThuePTs">
+    <Type Name="ThuePT">
+      <Column Name="GoiThuePTID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SoBuoiThue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GiaTien" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Mota" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="ThuePT_HoaDon" Member="HoaDons" ThisKey="GoiThuePTID" OtherKey="GoiThuePTID" Type="HoaDon" />
+    </Type>
+  </Table>
   <Table Name="dbo.ChiNhanh" Member="ChiNhanhs">
     <Type Name="ChiNhanh">
       <Column Name="ChiNhanhID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -39,9 +48,9 @@
       <Column Name="GoiThuePTID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TongTien" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
       <Association Name="GoiTap_HoaDon" Member="GoiTap" ThisKey="GoiTapID" OtherKey="GoiTapID" Type="GoiTap" IsForeignKey="true" />
+      <Association Name="ThuePT_HoaDon" Member="ThuePT" ThisKey="GoiThuePTID" OtherKey="GoiThuePTID" Type="ThuePT" IsForeignKey="true" />
       <Association Name="NhanVien_HoaDon" Member="NhanVien" ThisKey="NhanVienID" OtherKey="NhanVienID" Type="NhanVien" IsForeignKey="true" />
       <Association Name="TheKhachHang_HoaDon" Member="TheKhachHang" ThisKey="TheKhachHangID" OtherKey="TheKhachHangID" Type="TheKhachHang" IsForeignKey="true" />
-      <Association Name="ThuePT_HoaDon" Member="ThuePT" ThisKey="GoiThuePTID" OtherKey="GoiThuePTID" Type="ThuePT" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.HuanLuyenVien" Member="HuanLuyenViens">
@@ -65,19 +74,6 @@
       <Association Name="ThietBi_LichSuBaoTri" Member="ThietBi" ThisKey="ThietBiID" OtherKey="ThietBiID" Type="ThietBi" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.NhanVien" Member="NhanViens">
-    <Type Name="NhanVien">
-      <Column Name="NhanVienID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="HoTen" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="ChucVu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="SoDienThoai" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="NgayVaoLam" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Association Name="NhanVien_HoaDon" Member="HoaDons" ThisKey="NhanVienID" OtherKey="NhanVienID" Type="HoaDon" />
-      <Association Name="NhanVien_HuanLuyenVien" Member="HuanLuyenViens" ThisKey="NhanVienID" OtherKey="NhanVienID" Type="HuanLuyenVien" />
-      <Association Name="NhanVien_TaiKhoan" Member="TaiKhoans" ThisKey="NhanVienID" OtherKey="NhanVienID" Type="TaiKhoan" />
-    </Type>
-  </Table>
   <Table Name="dbo.LichTap" Member="LichTaps">
     <Type Name="LichTap">
       <Column Name="LichTapID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -90,6 +86,19 @@
       <Association Name="LichTap_DangKyLichTap" Member="DangKyLichTaps" ThisKey="LichTapID" OtherKey="LichTapID" Type="DangKyLichTap" />
       <Association Name="ChiNhanh_LichTap" Member="ChiNhanh" ThisKey="ChiNhanhID" OtherKey="ChiNhanhID" Type="ChiNhanh" IsForeignKey="true" />
       <Association Name="HuanLuyenVien_LichTap" Member="HuanLuyenVien" ThisKey="HLV_ID" OtherKey="HLV_ID" Type="HuanLuyenVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhanVien" Member="NhanViens">
+    <Type Name="NhanVien">
+      <Column Name="NhanVienID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ChucVu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoDienThoai" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NgayVaoLam" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="NhanVien_HoaDon" Member="HoaDons" ThisKey="NhanVienID" OtherKey="NhanVienID" Type="HoaDon" />
+      <Association Name="NhanVien_HuanLuyenVien" Member="HuanLuyenViens" ThisKey="NhanVienID" OtherKey="NhanVienID" Type="HuanLuyenVien" />
+      <Association Name="NhanVien_TaiKhoan" Member="TaiKhoans" ThisKey="NhanVienID" OtherKey="NhanVienID" Type="TaiKhoan" />
     </Type>
   </Table>
   <Table Name="dbo.SuDungThietBi" Member="SuDungThietBis">
@@ -138,15 +147,6 @@
       <Association Name="ThietBi_LichSuBaoTri" Member="LichSuBaoTris" ThisKey="ThietBiID" OtherKey="ThietBiID" Type="LichSuBaoTri" />
       <Association Name="ThietBi_SuDungThietBi" Member="SuDungThietBis" ThisKey="ThietBiID" OtherKey="ThietBiID" Type="SuDungThietBi" />
       <Association Name="ChiNhanh_ThietBi" Member="ChiNhanh" ThisKey="ChiNhanhID" OtherKey="ChiNhanhID" Type="ChiNhanh" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.ThuePT" Member="ThuePTs">
-    <Type Name="ThuePT">
-      <Column Name="GoiThuePTID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="SoBuoiThue" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="GiaTien" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="Mota" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Association Name="ThuePT_HoaDon" Member="HoaDons" ThisKey="GoiThuePTID" OtherKey="GoiThuePTID" Type="HoaDon" />
     </Type>
   </Table>
 </Database>
