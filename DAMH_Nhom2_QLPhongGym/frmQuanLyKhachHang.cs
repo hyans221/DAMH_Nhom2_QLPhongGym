@@ -20,27 +20,35 @@ namespace DAMH_Nhom2_QLPhongGym
 
         private void Load_KhachHangs()
         {
-            var khachhang = from kh in qlpg.KhachHangs
+            var khachhang = from kh in qlpg.TheKhachHangs
                             select kh;
             dgvKhachHang.DataSource = khachhang;
         }
         private void frmQuanLyKhachHang_Load(object sender, EventArgs e)
         {
             Load_KhachHangs();
+            cboLoaiThanhVien.Items.Add("Classic"); 
+            cboLoaiThanhVien.Items.Add("Royal"); 
+
+            cboLoaiThanhVien.SelectedIndex = 0;
         }
 
         private void dgvKhachHang_SelectionChanged(object sender, EventArgs e)
         {
             if (dgvKhachHang.CurrentRow != null)
             {
-                var select = dgvKhachHang.CurrentRow.DataBoundItem as KhachHang;
+                var select = dgvKhachHang.CurrentRow.DataBoundItem as TheKhachHang;
                 if (select != null)
                 {
-                    txtMaKH.Text = select.KhachHangID.ToString();
+                    txtMaKH.Text = select.TheKhachHangID.ToString();
                     txtTenKH.Text = select.HoTen;
                     dtNgaySinh.Value = select.NgaySinh ?? DateTime.Now;
+                    txtCCCD.Text = select.CCCD;
                     txtSDT.Text = select.SoDienThoai;
                     txtDiaChi.Text = select.DiaChi;
+                    cboLoaiThanhVien.SelectedItem = select.LoaiThanhVien;
+                    txtSoBuoiTap.Text = select.SoBuoiTapCungPT.ToString();
+
                     if (select.GioiTinh == "Nam")
                     {
                         rdbNam.Checked = true;
@@ -60,13 +68,13 @@ namespace DAMH_Nhom2_QLPhongGym
                 if (string.IsNullOrEmpty(txtTenKH.Text))
                 {
                     MessageBox.Show("Vui lòng nhập họ tên khách hàng.");
-                    return; 
+                    return;
                 }
 
                 if (string.IsNullOrEmpty(txtSDT.Text))
                 {
                     MessageBox.Show("Vui lòng nhập số điện thoại.");
-                    return; 
+                    return;
                 }
 
                 if (string.IsNullOrEmpty(txtDiaChi.Text))
@@ -78,24 +86,34 @@ namespace DAMH_Nhom2_QLPhongGym
                 if (txtSDT.Text.Length != 11)
                 {
                     MessageBox.Show("Số điện thoại phải đủ 11 số.");
-                    return; 
+                    return;
                 }
 
                 if (!txtSDT.Text.All(char.IsDigit))
                 {
                     MessageBox.Show("Số điện thoại không hợp lệ. Vui lòng nhập chỉ số.");
-                    return; 
+                    return;
+                }
+
+                // Kiểm tra trùng CCCD
+                if (qlpg.TheKhachHangs.Any(t => t.CCCD == txtCCCD.Text))
+                {
+                    MessageBox.Show("Số CCCD đã tồn tại. Vui lòng nhập số CCCD khác.");
+                    return;
                 }
 
                 // Thêm khách hàng
-                KhachHang kh = new KhachHang();
+                TheKhachHang kh = new TheKhachHang();
                 kh.HoTen = txtTenKH.Text;
                 kh.NgaySinh = dtNgaySinh.Value;
+                kh.CCCD = txtCCCD.Text;
                 kh.SoDienThoai = txtSDT.Text;
                 kh.DiaChi = txtDiaChi.Text;
+                kh.LoaiThanhVien = cboLoaiThanhVien.SelectedItem.ToString();
+                kh.ThoiGianHieuLuc = DateTime.Now;
                 kh.GioiTinh = rdbNam.Checked ? "Nam" : "Nữ";
-                kh.LoaiKhachHangID = 1;
-                qlpg.KhachHangs.InsertOnSubmit(kh);
+                kh.SoBuoiTapCungPT = Convert.ToInt32(txtSoBuoiTap.Text);
+                qlpg.TheKhachHangs.InsertOnSubmit(kh);
 
                 qlpg.SubmitChanges();
 
@@ -113,8 +131,8 @@ namespace DAMH_Nhom2_QLPhongGym
             try
             {
                 int makh = int.Parse(txtMaKH.Text);
-                KhachHang kh = qlpg.KhachHangs.Where(t => t.KhachHangID == makh).FirstOrDefault();
-                qlpg.KhachHangs.DeleteOnSubmit(kh);
+                TheKhachHang kh = qlpg.TheKhachHangs.Where(t => t.TheKhachHangID == makh).FirstOrDefault();
+                qlpg.TheKhachHangs.DeleteOnSubmit(kh);
 
                 qlpg.SubmitChanges();
 
@@ -132,13 +150,16 @@ namespace DAMH_Nhom2_QLPhongGym
             try
             {
                 int makh = int.Parse(txtMaKH.Text);
-                KhachHang kh = qlpg.KhachHangs.Where(t => t.KhachHangID == makh).FirstOrDefault();
+                TheKhachHang kh = qlpg.TheKhachHangs.Where(t => t.TheKhachHangID == makh).FirstOrDefault();
 
                 kh.HoTen = txtTenKH.Text;
                 kh.NgaySinh = dtNgaySinh.Value;
+                kh.CCCD = txtCCCD.Text;
                 kh.SoDienThoai = txtSDT.Text;
                 kh.DiaChi = txtDiaChi.Text;
+                kh.LoaiThanhVien = cboLoaiThanhVien.SelectedItem.ToString();
                 kh.GioiTinh = rdbNam.Checked ? "Nam" : "Nữ";
+                kh.SoBuoiTapCungPT = Convert.ToInt32(txtSoBuoiTap.Text);
 
                 qlpg.SubmitChanges();
                 Load_KhachHangs();
@@ -153,9 +174,12 @@ namespace DAMH_Nhom2_QLPhongGym
         {
             txtMaKH.Clear();
             txtTenKH.Clear();
+            txtCCCD.Clear();
             txtDiaChi.Clear();
             txtSDT.Clear();
             dtNgaySinh.Value = DateTime.Now;
+            cboLoaiThanhVien.SelectedIndex = 0;
+            txtSoBuoiTap.Clear();
             rdbNam.Checked = true;
         }
 
@@ -167,31 +191,37 @@ namespace DAMH_Nhom2_QLPhongGym
 
                 if (string.IsNullOrEmpty(timKiem))
                 {
-                    MessageBox.Show("Vui lòng nhập thông tin tìm kiếm.");
+                    var khang = from kh in qlpg.TheKhachHangs
+                                    select kh;
+                    dgvKhachHang.DataSource = khang.ToList();
                     return; 
                 }
 
-                var khachhang = from kh in qlpg.KhachHangs
+    
+                var khachhang = from kh in qlpg.TheKhachHangs
                                 where kh.HoTen.Contains(timKiem)
                                 select kh;
 
                 if (!khachhang.Any())
                 {
-                    int maKH;
-                    if (int.TryParse(timKiem, out maKH))
+            
+                    if (int.TryParse(timKiem, out int maKH))
                     {
-                        khachhang = from kh in qlpg.KhachHangs
-                                    where kh.KhachHangID == maKH
+             
+                        khachhang = from kh in qlpg.TheKhachHangs
+                                    where kh.TheKhachHangID == maKH
                                     select kh;
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy khách hàng phù hợp.");
-                        return; 
+             
+                        khachhang = from kh in qlpg.TheKhachHangs
+                                    where kh.CCCD == timKiem
+                                    select kh;
                     }
                 }
 
-            
+     
                 dgvKhachHang.DataSource = khachhang.ToList();
             }
             catch
