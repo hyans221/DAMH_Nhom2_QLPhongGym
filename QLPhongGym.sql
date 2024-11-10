@@ -9,90 +9,95 @@ CREATE TABLE NhanVien (
     ChucVu NVARCHAR(50),
     SoDienThoai NVARCHAR(15),
     Email NVARCHAR(100) UNIQUE,
-    NgayVaoLam DATE,
+    NgayVaoLam DATE
 );
 go
 CREATE TABLE TaiKhoan (
     TaiKhoanID INT IDENTITY(1,1) PRIMARY KEY,
     TenDN NVARCHAR(100) NOT NULL,
     MatKhau NVARCHAR(50),
-	NhanVienID int,
-	Quyen NVARCHAR(50),
-	FOREIGN KEY (NhanVienID) REFERENCES NhanVien(NhanVienID)
+    NhanVienID INT,
+    Quyen NVARCHAR(50),
+    FOREIGN KEY (NhanVienID) REFERENCES NhanVien(NhanVienID)
 );
 go
 CREATE TABLE HuanLuyenVien (
     HLV_ID INT IDENTITY(1,1) PRIMARY KEY,
-	NhanVienID INT,
+    NhanVienID INT,
     HoTen NVARCHAR(100) NOT NULL,
     ChuyenMon NVARCHAR(100),
     SoDienThoai NVARCHAR(15),
     Email NVARCHAR(100) UNIQUE,
-	FOREIGN KEY (NhanVienID) REFERENCES NhanVien(NhanVienID)
+    FOREIGN KEY (NhanVienID) REFERENCES NhanVien(NhanVienID)
 );
 go
 CREATE TABLE ChiNhanh (
     ChiNhanhID INT IDENTITY(1,1) PRIMARY KEY,
-    TenDiaDiem NVARCHAR(100), --Cti Bình tân, Cti Bình Thạnh
-	DiaDiem NVARCHAR(100), --Bình tân, Bình thạnh
-    MoTa NVARCHAR(255),
+    TenDiaDiem NVARCHAR(100), -- Ví dụ: Cti Bình Tân, Cti Bình Thạnh
+    DiaDiem NVARCHAR(100), -- Ví dụ: Bình Tân, Bình Thạnh
+    MoTa NVARCHAR(255)
 );
 go
 CREATE TABLE TheKhachHang (
-    TheKhachHangID INT IDENTITY(1,1) PRIMARY KEY, --Thêm 1 khách hàng mới, cũng là mã thẻ thành viên
+    TheKhachHangID INT IDENTITY(1,1) PRIMARY KEY, -- Mã thẻ thành viên
     HoTen NVARCHAR(100) NOT NULL,
     NgaySinh DATE,
-	CCCD VARCHAR(25),
+    CCCD VARCHAR(25),
     GioiTinh NVARCHAR(10),
     SoDienThoai NVARCHAR(15),
     DiaChi NVARCHAR(255),
-	LoaiThanhVien NVARCHAR(50), --Loại thành viên: Classic, Royal 
-	ThoiGianHieuLuc datetime, --Thời gian hiệu lực của thẻ
-	SoBuoiTapCungPT int default 0,
+    LoaiThanhVien NVARCHAR(50), -- Ví dụ: Classic, Royal
+    ThoiGianHieuLuc DATETIME, -- Thời gian hiệu lực của thẻ
+    SoBuoiTapCungPT INT DEFAULT 0
 );
 go
 CREATE TABLE GoiTap (
     GoiTapID INT IDENTITY(1,1) PRIMARY KEY,
-	ThoiGian int,
-	GiaTien DECIMAL(18, 2),
-	Mota   NVARCHAR(100),
+    ThoiGian INT,
+    GiaTien DECIMAL(18, 2),
+    Mota NVARCHAR(100)
 );
 go
-
 CREATE TABLE ThuePT (
     GoiThuePTID INT IDENTITY(1,1) PRIMARY KEY,
-	SoBuoiThue int,
-	GiaTien DECIMAL(18, 2),
-	Mota   NVARCHAR(100),
+    SoBuoiThue INT,
+    GiaTien DECIMAL(18, 2),
+    Mota NVARCHAR(100)
 );
 go
 CREATE TABLE HoaDon (
     HoaDonID INT IDENTITY(1,1) PRIMARY KEY,
     TheKhachHangID INT,
-	NhanVienID int,
+    NhanVienID INT,
     NgayThanhToan DATE,
-	LoaiHoaDon NVARCHAR(100), --Thanh toán mới, gia hạn
-	GoiTapID int,
-	GoiThuePTID int,
-	FOREIGN KEY (GoiThuePTID) REFERENCES ThuePT(GoiThuePTID),
-	TongTien DECIMAL(18, 2),
-	FOREIGN KEY (GoiTapID) REFERENCES GoiTap(GoiTapID),
+    LoaiHoaDon NVARCHAR(100), -- Ví dụ: Thanh toán mới, gia hạn
+    GoiTapID INT,
+    GoiThuePTID INT,
+    TongTien DECIMAL(18, 2),
     FOREIGN KEY (TheKhachHangID) REFERENCES TheKhachHang(TheKhachHangID),
-	FOREIGN KEY (NhanVienID) REFERENCES NhanVien(NhanVienID)
+    FOREIGN KEY (NhanVienID) REFERENCES NhanVien(NhanVienID),
+    FOREIGN KEY (GoiTapID) REFERENCES GoiTap(GoiTapID),
+    FOREIGN KEY (GoiThuePTID) REFERENCES ThuePT(GoiThuePTID)
 );
 go
 CREATE TABLE LichTap (
     LichTapID INT IDENTITY(1,1) PRIMARY KEY,
     HLV_ID INT,
-	ChiNhanhID INT,
     ThoiGianBatDau TIME,
     ThoiGianKetThuc TIME,
-	NgayBatDau DATETIME,
-	TrangThai NVARCHAR(50), --Đã đặt, trống
-    FOREIGN KEY (HLV_ID) REFERENCES HuanLuyenVien(HLV_ID),
-	FOREIGN KEY (ChiNhanhID) REFERENCES ChiNhanh(ChiNhanhID),
+    NgayBatDau DATETIME,
+    TrangThai NVARCHAR(50), -- Ví dụ: Đã đặt, trống
+    FOREIGN KEY (HLV_ID) REFERENCES HuanLuyenVien(HLV_ID)
 );
 go
+CREATE TABLE ChiTiet_ChiNhanh_LichTap (
+    ChiNhanhID INT,
+    LichTapID INT,
+    PRIMARY KEY (ChiNhanhID, LichTapID),
+    FOREIGN KEY (ChiNhanhID) REFERENCES ChiNhanh(ChiNhanhID),
+    FOREIGN KEY (LichTapID) REFERENCES LichTap(LichTapID)
+);
+GO
 CREATE TABLE DangKyLichTap (
     DangKyHLV_ID INT IDENTITY(1,1) PRIMARY KEY,
     TheKhachHangID INT,
@@ -100,18 +105,22 @@ CREATE TABLE DangKyLichTap (
     FOREIGN KEY (TheKhachHangID) REFERENCES TheKhachHang(TheKhachHangID),
     FOREIGN KEY (LichTapID) REFERENCES LichTap(LichTapID)
 );
-
 go
 CREATE TABLE ThietBi (
     ThietBiID INT IDENTITY(1,1) PRIMARY KEY,
     TenThietBi NVARCHAR(100) NOT NULL,
-	PhongTapID INT, -- phòng thì có nhiều thiết bị để sử dụng
     MoTa NVARCHAR(255),
-    TrangThai NVARCHAR(50),
-	ChiNhanhID INT,
-	FOREIGN KEY (ChiNhanhID) REFERENCES ChiNhanh(ChiNhanhID)
+    TrangThai NVARCHAR(50) -- Ví dụ: Hoạt động, bảo trì
 );
 go
+CREATE TABLE ChiTiet_ChiNhanh_ThietBi (
+    ChiNhanhID INT,
+    ThietBiID INT,
+    PRIMARY KEY (ChiNhanhID, ThietBiID),
+    FOREIGN KEY (ChiNhanhID) REFERENCES ChiNhanh(ChiNhanhID),
+    FOREIGN KEY (ThietBiID) REFERENCES ThietBi(ThietBiID)
+);
+GO
 CREATE TABLE SuDungThietBi (
     SuDungID INT IDENTITY(1,1) PRIMARY KEY,
     ThietBiID INT,
@@ -131,7 +140,6 @@ go
 
 
 --Thêm dữ liệu
-
 -- Thêm dữ liệu cho bảng NhanVien
 INSERT INTO NhanVien (HoTen, ChucVu, SoDienThoai, Email, NgayVaoLam)
 VALUES 
@@ -150,17 +158,8 @@ VALUES
 (N'phamd', 'pass123', 4, 'Admin'),
 (N'doane', 'pass123', 5, 'User');
 
--- Thêm dữ liệu cho bảng HuanLuyenVien
-INSERT INTO HuanLuyenVien (NhanVienID, HoTen, ChuyenMon, SoDienThoai, Email)
-VALUES 
-(1, N'Nguyen Van A', N'Thể hình', '0123456789', 'vana@example.com'),
-(2, N'Le Thi B', N'Yoga', '0987654321', 'leb@example.com'),
-(3, N'Tran Van C', N'Thể lực', '0912345678', 'tranc@example.com'),
-(4, N'Pham Thi D', N'Kickboxing', '0934567890', 'phamd@example.com'),
-(5, N'Doan Van E', N'Pilates', '0945678901', 'doane@example.com');
-
 -- Thêm dữ liệu cho bảng ChiNhanh
-INSERT INTO ChiNhanh (TenDiaDiem, DiaDiem, MoTa)
+INSERT INTO ChiNhanh (TenChiNhanh, DiaChi, MoTa)
 VALUES 
 (N'Chi nhánh Bình Tân', N'Bình Tân', N'Phòng tập hiện đại'),
 (N'Chi nhánh Bình Thạnh', N'Bình Thạnh', N'Không gian thoáng mát'),
@@ -205,13 +204,13 @@ VALUES
 (5, 5, '2023-05-01', N'Thanh toán mới', 5, 5, 3200000);
 
 -- Thêm dữ liệu cho bảng LichTap
-INSERT INTO LichTap (HLV_ID, ChiNhanhID, ThoiGianBatDau, ThoiGianKetThuc, NgayBatDau, TrangThai)
+INSERT INTO LichTap (HLV_ID, ChiNhanhID, GoiTapID, NgayHoc, ThoiGianBatDau, ThoiGianKetThuc, TrangThai)
 VALUES 
-(1, 1, '08:00', '09:00', '2023-06-01', N'Đã đặt'),
-(2, 2, '10:00', '11:00', '2023-06-02', N'Trống'),
-(3, 3, '12:00', '13:00', '2023-06-03', N'Đã đặt'),
-(4, 4, '14:00', '15:00', '2023-06-04', N'Trống'),
-(5, 5, '16:00', '17:00', '2023-06-05', N'Đã đặt');
+(1, 1, 1, '2023-06-01', '08:00', '09:00', N'Đã đặt'),
+(2, 2, 2, '2023-06-02', '10:00', '11:00', N'Trống'),
+(3, 3, 3, '2023-06-03', '12:00', '13:00', N'Đã đặt'),
+(4, 4, 4, '2023-06-04', '14:00', '15:00', N'Trống'),
+(5, 5, 5, '2023-06-05', '16:00', '17:00', N'Đã đặt');
 
 -- Thêm dữ liệu cho bảng DangKyLichTap
 INSERT INTO DangKyLichTap (TheKhachHangID, LichTapID)
@@ -223,16 +222,16 @@ VALUES
 (5, 5);
 
 -- Thêm dữ liệu cho bảng ThietBi
-INSERT INTO ThietBi (TenThietBi, PhongTapID, MoTa, TrangThai, ChiNhanhID)
+INSERT INTO ThietBi (TenThietBi, MoTa, TrangThai, ChiNhanhID)
 VALUES 
-(N'Máy chạy bộ', 1, N'Máy hiện đại', N'Sẵn sàng', 1),
-(N'Xe đạp tập', 2, N'Xe bền bỉ', N'Đang sử dụng', 2),
-(N'Máy tập tạ', 3, N'Máy chất lượng cao', N'Sẵn sàng', 3),
-(N'Gậy thể hình', 4, N'Gậy nhẹ, chắc chắn', N'Đang sử dụng', 4),
-(N'Tạ tay', 5, N'Tạ chất lượng', N'Sẵn sàng', 5);
+(N'Máy chạy bộ', N'Máy hiện đại', N'Sẵn sàng', 1),
+(N'Xe đạp tập', N'Xe bền bỉ', N'Đang sử dụng', 2),
+(N'Máy tập tạ', N'Máy chất lượng cao', N'Sẵn sàng', 3),
+(N'Gậy thể hình', N'Gậy nhẹ, chắc chắn', N'Đang sử dụng', 4),
+(N'Tạ tay', N'Tạ chất lượng', N'Sẵn sàng', 5);
 
 -- Thêm dữ liệu cho bảng SuDungThietBi
-INSERT INTO SuDungThietBi (ThietBiID, ThoiGianBatDau, ThoiGianKetThuc)
+INSERT INTO SuDungThietBi (ThietBiID, NgayBatDau, NgayKetThuc)
 VALUES 
 (1, '2023-01-01', '2023-01-15'),
 (2, '2023-01-10', '2023-01-20'),
@@ -248,3 +247,4 @@ VALUES
 (3, '2023-02-10', N'Bảo trì định kỳ'),
 (4, '2023-02-15', N'Bảo trì sửa chữa'),
 (5, '2023-02-20', N'Bảo trì định kỳ');
+
