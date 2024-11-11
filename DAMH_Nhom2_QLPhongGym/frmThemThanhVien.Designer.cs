@@ -29,6 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.guna2RadioButton6 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioButton7 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioButton8 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioButton9 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioButton10 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,25 +54,17 @@
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2RadioButton6 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton7 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton8 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton9 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton10 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1.SuspendLayout();
-            this.guna2GroupBox1.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
+            this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.guna2HtmlLabel3);
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.panel1.Controls.Add(this.guna2HtmlLabel4);
+            this.panel1.Controls.Add(this.guna2HtmlLabel2);
+            this.panel1.Controls.Add(this.guna2HtmlLabel3);
             this.panel1.Controls.Add(this.guna2GroupBox2);
             this.panel1.Controls.Add(this.guna2ComboBox1);
             this.panel1.Controls.Add(this.guna2Button3);
@@ -72,309 +74,35 @@
             this.panel1.Controls.Add(this.guna2HtmlLabel6);
             this.panel1.Controls.Add(this.guna2GroupBox1);
             this.panel1.Controls.Add(this.guna2TextBox3);
-            this.panel1.Controls.Add(this.guna2HtmlLabel4);
-            this.panel1.Controls.Add(this.guna2HtmlLabel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1296, 902);
+            this.panel1.Size = new System.Drawing.Size(864, 487);
             this.panel1.TabIndex = 0;
             // 
-            // guna2Button1
+            // guna2HtmlLabel3
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.LightSlateGray;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(404, 830);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 58);
-            this.guna2Button1.TabIndex = 54;
-            this.guna2Button1.Text = "Xác nhận";
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(140, 287);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(216, 24);
+            this.guna2HtmlLabel3.TabIndex = 59;
+            this.guna2HtmlLabel3.Text = "Tập cùng huấn luyện viên:";
             // 
-            // guna2Button2
+            // guna2HtmlLabel1
             // 
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Firebrick;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(694, 830);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(180, 58);
-            this.guna2Button2.TabIndex = 55;
-            this.guna2Button2.Text = "Hủy";
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.BorderRadius = 10;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(849, 731);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(286, 51);
-            this.guna2TextBox2.TabIndex = 50;
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(694, 741);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(147, 34);
-            this.guna2HtmlLabel6.TabIndex = 44;
-            this.guna2HtmlLabel6.Text = "Thành tiền:";
-            // 
-            // guna2GroupBox1
-            // 
-            this.guna2GroupBox1.BorderRadius = 10;
-            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton3);
-            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton5);
-            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton4);
-            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton2);
-            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel8);
-            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton1);
-            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel7);
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox1.Location = new System.Drawing.Point(190, 187);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(964, 234);
-            this.guna2GroupBox1.TabIndex = 53;
-            this.guna2GroupBox1.Text = "Các gói thẻ tập:";
-            // 
-            // guna2RadioButton3
-            // 
-            this.guna2RadioButton3.AutoSize = true;
-            this.guna2RadioButton3.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton3.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2RadioButton3.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton3.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.guna2RadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton3.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2RadioButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton3.Location = new System.Drawing.Point(711, 86);
-            this.guna2RadioButton3.Name = "guna2RadioButton3";
-            this.guna2RadioButton3.Size = new System.Drawing.Size(233, 36);
-            this.guna2RadioButton3.TabIndex = 0;
-            this.guna2RadioButton3.Text = "Thẻ tập 6 tháng";
-            this.guna2RadioButton3.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.guna2RadioButton3.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton3.UseVisualStyleBackColor = false;
-            // 
-            // guna2RadioButton5
-            // 
-            this.guna2RadioButton5.AutoSize = true;
-            this.guna2RadioButton5.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton5.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2RadioButton5.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton5.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.guna2RadioButton5.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton5.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2RadioButton5.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton5.Location = new System.Drawing.Point(452, 151);
-            this.guna2RadioButton5.Name = "guna2RadioButton5";
-            this.guna2RadioButton5.Size = new System.Drawing.Size(248, 36);
-            this.guna2RadioButton5.TabIndex = 0;
-            this.guna2RadioButton5.Text = "Thẻ tập 15 tháng";
-            this.guna2RadioButton5.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.guna2RadioButton5.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton5.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton5.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton5.UseVisualStyleBackColor = false;
-            // 
-            // guna2RadioButton4
-            // 
-            this.guna2RadioButton4.AutoSize = true;
-            this.guna2RadioButton4.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton4.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2RadioButton4.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton4.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.guna2RadioButton4.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton4.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2RadioButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton4.Location = new System.Drawing.Point(178, 151);
-            this.guna2RadioButton4.Name = "guna2RadioButton4";
-            this.guna2RadioButton4.Size = new System.Drawing.Size(248, 36);
-            this.guna2RadioButton4.TabIndex = 0;
-            this.guna2RadioButton4.Text = "Thẻ tập 12 tháng";
-            this.guna2RadioButton4.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.guna2RadioButton4.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton4.UseVisualStyleBackColor = false;
-            // 
-            // guna2RadioButton2
-            // 
-            this.guna2RadioButton2.AutoSize = true;
-            this.guna2RadioButton2.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2RadioButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.Location = new System.Drawing.Point(453, 86);
-            this.guna2RadioButton2.Name = "guna2RadioButton2";
-            this.guna2RadioButton2.Size = new System.Drawing.Size(233, 36);
-            this.guna2RadioButton2.TabIndex = 0;
-            this.guna2RadioButton2.Text = "Thẻ tập 2 tháng";
-            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UseVisualStyleBackColor = false;
-            // 
-            // guna2HtmlLabel8
-            // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(57, 151);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(84, 34);
-            this.guna2HtmlLabel8.TabIndex = 1;
-            this.guna2HtmlLabel8.Text = "Royal:";
-            // 
-            // guna2RadioButton1
-            // 
-            this.guna2RadioButton1.AutoSize = true;
-            this.guna2RadioButton1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2RadioButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.Location = new System.Drawing.Point(178, 86);
-            this.guna2RadioButton1.Name = "guna2RadioButton1";
-            this.guna2RadioButton1.Size = new System.Drawing.Size(233, 36);
-            this.guna2RadioButton1.TabIndex = 0;
-            this.guna2RadioButton1.Text = "Thẻ tập 1 tháng";
-            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UseVisualStyleBackColor = false;
-            // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(57, 86);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(99, 34);
-            this.guna2HtmlLabel7.TabIndex = 1;
-            this.guna2HtmlLabel7.Text = "Classic:";
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.BorderRadius = 10;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(882, 48);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(373, 46);
-            this.guna2TextBox3.TabIndex = 52;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(653, 60);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(188, 34);
-            this.guna2HtmlLabel4.TabIndex = 46;
-            this.guna2HtmlLabel4.Text = "Id khách hàng:";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 60);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(208, 34);
-            this.guna2HtmlLabel2.TabIndex = 47;
-            this.guna2HtmlLabel2.Text = "Loại thanh toán:";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.LightSlateGray;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(965, 105);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(280, 58);
-            this.guna2Button3.TabIndex = 56;
-            this.guna2Button3.Text = "Kiểm tra thông tin";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 10;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Thanh toán mới",
-            "Gia hạn",
-            "Thuê huấn luyện viên"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(243, 58);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(364, 36);
-            this.guna2ComboBox1.StartIndex = 0;
-            this.guna2ComboBox1.TabIndex = 57;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(148, 96);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(71, 24);
+            this.guna2HtmlLabel1.TabIndex = 58;
+            this.guna2HtmlLabel1.Text = "Thẻ tập:";
             // 
             // guna2GroupBox2
             // 
@@ -386,9 +114,10 @@
             this.guna2GroupBox2.Controls.Add(this.guna2RadioButton10);
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox2.Location = new System.Drawing.Point(186, 482);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(124, 313);
+            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(964, 234);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(643, 152);
             this.guna2GroupBox2.TabIndex = 54;
             this.guna2GroupBox2.Text = "Các gói tập cùng huấn luyện viên:";
             // 
@@ -403,9 +132,10 @@
             this.guna2RadioButton6.CheckedState.InnerOffset = -4;
             this.guna2RadioButton6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton6.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton6.Location = new System.Drawing.Point(711, 86);
+            this.guna2RadioButton6.Location = new System.Drawing.Point(474, 56);
+            this.guna2RadioButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2RadioButton6.Name = "guna2RadioButton6";
-            this.guna2RadioButton6.Size = new System.Drawing.Size(115, 36);
+            this.guna2RadioButton6.Size = new System.Drawing.Size(78, 26);
             this.guna2RadioButton6.TabIndex = 0;
             this.guna2RadioButton6.Text = "3 buổi";
             this.guna2RadioButton6.UncheckedState.BorderColor = System.Drawing.Color.Snow;
@@ -425,9 +155,10 @@
             this.guna2RadioButton7.CheckedState.InnerOffset = -4;
             this.guna2RadioButton7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton7.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton7.Location = new System.Drawing.Point(452, 151);
+            this.guna2RadioButton7.Location = new System.Drawing.Point(301, 98);
+            this.guna2RadioButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2RadioButton7.Name = "guna2RadioButton7";
-            this.guna2RadioButton7.Size = new System.Drawing.Size(115, 36);
+            this.guna2RadioButton7.Size = new System.Drawing.Size(78, 26);
             this.guna2RadioButton7.TabIndex = 0;
             this.guna2RadioButton7.Text = "8 buổi";
             this.guna2RadioButton7.UncheckedState.BorderColor = System.Drawing.Color.Snow;
@@ -447,9 +178,10 @@
             this.guna2RadioButton8.CheckedState.InnerOffset = -4;
             this.guna2RadioButton8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton8.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton8.Location = new System.Drawing.Point(178, 151);
+            this.guna2RadioButton8.Location = new System.Drawing.Point(119, 98);
+            this.guna2RadioButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2RadioButton8.Name = "guna2RadioButton8";
-            this.guna2RadioButton8.Size = new System.Drawing.Size(115, 36);
+            this.guna2RadioButton8.Size = new System.Drawing.Size(78, 26);
             this.guna2RadioButton8.TabIndex = 0;
             this.guna2RadioButton8.Text = "6 buổi";
             this.guna2RadioButton8.UncheckedState.BorderColor = System.Drawing.Color.Snow;
@@ -469,9 +201,10 @@
             this.guna2RadioButton9.CheckedState.InnerOffset = -4;
             this.guna2RadioButton9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton9.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton9.Location = new System.Drawing.Point(453, 86);
+            this.guna2RadioButton9.Location = new System.Drawing.Point(302, 56);
+            this.guna2RadioButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2RadioButton9.Name = "guna2RadioButton9";
-            this.guna2RadioButton9.Size = new System.Drawing.Size(115, 36);
+            this.guna2RadioButton9.Size = new System.Drawing.Size(78, 26);
             this.guna2RadioButton9.TabIndex = 0;
             this.guna2RadioButton9.Text = "2 buổi";
             this.guna2RadioButton9.UncheckedState.BorderColor = System.Drawing.Color.Snow;
@@ -491,9 +224,10 @@
             this.guna2RadioButton10.CheckedState.InnerOffset = -4;
             this.guna2RadioButton10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.guna2RadioButton10.ForeColor = System.Drawing.Color.White;
-            this.guna2RadioButton10.Location = new System.Drawing.Point(182, 86);
+            this.guna2RadioButton10.Location = new System.Drawing.Point(121, 56);
+            this.guna2RadioButton10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2RadioButton10.Name = "guna2RadioButton10";
-            this.guna2RadioButton10.Size = new System.Drawing.Size(115, 36);
+            this.guna2RadioButton10.Size = new System.Drawing.Size(78, 26);
             this.guna2RadioButton10.TabIndex = 0;
             this.guna2RadioButton10.Text = "1 buổi";
             this.guna2RadioButton10.UncheckedState.BorderColor = System.Drawing.Color.Snow;
@@ -502,43 +236,330 @@
             this.guna2RadioButton10.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton10.UseVisualStyleBackColor = false;
             // 
-            // guna2HtmlLabel1
+            // guna2ComboBox1
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(222, 147);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(107, 34);
-            this.guna2HtmlLabel1.TabIndex = 58;
-            this.guna2HtmlLabel1.Text = "Thẻ tập:";
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderRadius = 10;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "Thanh toán mới",
+            "Gia hạn",
+            "Thuê huấn luyện viên"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(162, 38);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(244, 36);
+            this.guna2ComboBox1.StartIndex = 0;
+            this.guna2ComboBox1.TabIndex = 57;
             // 
-            // guna2HtmlLabel3
+            // guna2Button3
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(210, 442);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(329, 34);
-            this.guna2HtmlLabel3.TabIndex = 59;
-            this.guna2HtmlLabel3.Text = "Tập cùng huấn luyện viên:";
+            this.guna2Button3.BorderRadius = 10;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.LightSlateGray;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.Location = new System.Drawing.Point(643, 68);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(187, 38);
+            this.guna2Button3.TabIndex = 56;
+            this.guna2Button3.Text = "Kiểm tra thông tin";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.LightSlateGray;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(269, 540);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(120, 38);
+            this.guna2Button1.TabIndex = 54;
+            this.guna2Button1.Text = "Xác nhận";
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderRadius = 10;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(463, 540);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(120, 38);
+            this.guna2Button2.TabIndex = 55;
+            this.guna2Button2.Text = "Hủy";
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.BorderRadius = 10;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Location = new System.Drawing.Point(566, 475);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(191, 33);
+            this.guna2TextBox2.TabIndex = 50;
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(463, 482);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(96, 24);
+            this.guna2HtmlLabel6.TabIndex = 44;
+            this.guna2HtmlLabel6.Text = "Thành tiền:";
+            // 
+            // guna2GroupBox1
+            // 
+            this.guna2GroupBox1.BorderRadius = 10;
+            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton3);
+            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton5);
+            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton4);
+            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton2);
+            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel8);
+            this.guna2GroupBox1.Controls.Add(this.guna2RadioButton1);
+            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel7);
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2GroupBox1.Location = new System.Drawing.Point(127, 122);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.Size = new System.Drawing.Size(643, 152);
+            this.guna2GroupBox1.TabIndex = 53;
+            this.guna2GroupBox1.Text = "Các gói thẻ tập:";
+            // 
+            // guna2RadioButton3
+            // 
+            this.guna2RadioButton3.AutoSize = true;
+            this.guna2RadioButton3.BackColor = System.Drawing.Color.LightSlateGray;
+            this.guna2RadioButton3.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.guna2RadioButton3.CheckedState.BorderThickness = 0;
+            this.guna2RadioButton3.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.guna2RadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioButton3.CheckedState.InnerOffset = -4;
+            this.guna2RadioButton3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2RadioButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2RadioButton3.Location = new System.Drawing.Point(474, 56);
+            this.guna2RadioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RadioButton3.Name = "guna2RadioButton3";
+            this.guna2RadioButton3.Size = new System.Drawing.Size(157, 26);
+            this.guna2RadioButton3.TabIndex = 0;
+            this.guna2RadioButton3.Text = "Thẻ tập 6 tháng";
+            this.guna2RadioButton3.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.guna2RadioButton3.UncheckedState.BorderThickness = 2;
+            this.guna2RadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton3.UseVisualStyleBackColor = false;
+            // 
+            // guna2RadioButton5
+            // 
+            this.guna2RadioButton5.AutoSize = true;
+            this.guna2RadioButton5.BackColor = System.Drawing.Color.LightSlateGray;
+            this.guna2RadioButton5.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.guna2RadioButton5.CheckedState.BorderThickness = 0;
+            this.guna2RadioButton5.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.guna2RadioButton5.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioButton5.CheckedState.InnerOffset = -4;
+            this.guna2RadioButton5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2RadioButton5.ForeColor = System.Drawing.Color.White;
+            this.guna2RadioButton5.Location = new System.Drawing.Point(301, 98);
+            this.guna2RadioButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RadioButton5.Name = "guna2RadioButton5";
+            this.guna2RadioButton5.Size = new System.Drawing.Size(167, 26);
+            this.guna2RadioButton5.TabIndex = 0;
+            this.guna2RadioButton5.Text = "Thẻ tập 15 tháng";
+            this.guna2RadioButton5.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.guna2RadioButton5.UncheckedState.BorderThickness = 2;
+            this.guna2RadioButton5.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton5.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton5.UseVisualStyleBackColor = false;
+            // 
+            // guna2RadioButton4
+            // 
+            this.guna2RadioButton4.AutoSize = true;
+            this.guna2RadioButton4.BackColor = System.Drawing.Color.LightSlateGray;
+            this.guna2RadioButton4.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.guna2RadioButton4.CheckedState.BorderThickness = 0;
+            this.guna2RadioButton4.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.guna2RadioButton4.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioButton4.CheckedState.InnerOffset = -4;
+            this.guna2RadioButton4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2RadioButton4.ForeColor = System.Drawing.Color.White;
+            this.guna2RadioButton4.Location = new System.Drawing.Point(119, 98);
+            this.guna2RadioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RadioButton4.Name = "guna2RadioButton4";
+            this.guna2RadioButton4.Size = new System.Drawing.Size(167, 26);
+            this.guna2RadioButton4.TabIndex = 0;
+            this.guna2RadioButton4.Text = "Thẻ tập 12 tháng";
+            this.guna2RadioButton4.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.guna2RadioButton4.UncheckedState.BorderThickness = 2;
+            this.guna2RadioButton4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton4.UseVisualStyleBackColor = false;
+            // 
+            // guna2RadioButton2
+            // 
+            this.guna2RadioButton2.AutoSize = true;
+            this.guna2RadioButton2.BackColor = System.Drawing.Color.LightSlateGray;
+            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
+            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
+            this.guna2RadioButton2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2RadioButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2RadioButton2.Location = new System.Drawing.Point(302, 56);
+            this.guna2RadioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RadioButton2.Name = "guna2RadioButton2";
+            this.guna2RadioButton2.Size = new System.Drawing.Size(157, 26);
+            this.guna2RadioButton2.TabIndex = 0;
+            this.guna2RadioButton2.Text = "Thẻ tập 2 tháng";
+            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
+            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton2.UseVisualStyleBackColor = false;
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(38, 98);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(56, 24);
+            this.guna2HtmlLabel8.TabIndex = 1;
+            this.guna2HtmlLabel8.Text = "Royal:";
+            // 
+            // guna2RadioButton1
+            // 
+            this.guna2RadioButton1.AutoSize = true;
+            this.guna2RadioButton1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
+            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
+            this.guna2RadioButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2RadioButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2RadioButton1.Location = new System.Drawing.Point(119, 56);
+            this.guna2RadioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RadioButton1.Name = "guna2RadioButton1";
+            this.guna2RadioButton1.Size = new System.Drawing.Size(157, 26);
+            this.guna2RadioButton1.TabIndex = 0;
+            this.guna2RadioButton1.Text = "Thẻ tập 1 tháng";
+            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
+            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton1.UseVisualStyleBackColor = false;
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(38, 56);
+            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(67, 24);
+            this.guna2HtmlLabel7.TabIndex = 1;
+            this.guna2HtmlLabel7.Text = "Classic:";
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.BorderRadius = 10;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Location = new System.Drawing.Point(588, 31);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.Size = new System.Drawing.Size(249, 30);
+            this.guna2TextBox3.TabIndex = 52;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(435, 39);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(125, 24);
+            this.guna2HtmlLabel4.TabIndex = 46;
+            this.guna2HtmlLabel4.Text = "Id khách hàng:";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 39);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(137, 24);
+            this.guna2HtmlLabel2.TabIndex = 47;
+            this.guna2HtmlLabel2.Text = "Loại thanh toán:";
             // 
             // frmThemThanhVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1296, 902);
+            this.ClientSize = new System.Drawing.Size(864, 487);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmThemThanhVien";
             this.Text = "frmThemThanhVien";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.guna2GroupBox1.ResumeLayout(false);
-            this.guna2GroupBox1.PerformLayout();
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();
+            this.guna2GroupBox1.ResumeLayout(false);
+            this.guna2GroupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
