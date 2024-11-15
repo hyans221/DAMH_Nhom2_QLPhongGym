@@ -221,5 +221,174 @@ namespace DAMH_Nhom2_QLPhongGym
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtThanhTien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNhanVien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GroupBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo3Buoi_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo8Buoi_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo6Buoi_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo2Buoi_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo1Buoi_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLoaiHoaDon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIDNhanVien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIDKhachHang_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2RadioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2RadioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2RadioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2RadioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2RadioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo6Thang_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo24Thang_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo12Thang_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo3Thang_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdo1Thang_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
