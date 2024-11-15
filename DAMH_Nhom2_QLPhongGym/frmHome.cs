@@ -34,7 +34,7 @@ namespace DAMH_Nhom2_QLPhongGym
         private void btnThanhVien_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "Quản lý thành viên";
-            container(new frmThemThanhVien());
+            container(new frmThanhToan());
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
