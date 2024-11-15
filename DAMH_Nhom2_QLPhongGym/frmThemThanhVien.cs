@@ -20,14 +20,6 @@ namespace DAMH_Nhom2_QLPhongGym
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
 
-
-
-
-
-
-
-
-
         }
     }
 }
