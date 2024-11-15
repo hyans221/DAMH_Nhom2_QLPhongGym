@@ -88,8 +88,8 @@ namespace DAMH_Nhom2_QLPhongGym
                 DateTime ngayKetThuc = DateTimeDEN.Value.Date;
                 var lichTaps = from lt in data.LichTaps
                                join hlv in data.HuanLuyenViens on lt.HLV_ID equals hlv.HLV_ID
-                               join cn in data.ChiNhanhs on lt.ChiNhanhID equals cn.ChiNhanhID
-                               where cn.TenDiaDiem == diaChi
+                               join cn in data.ChiTiet_ChiNhanh_LichTaps on lt.LichTapID equals cn.LichTapID
+                               where cn.ChiNhanh.TenDiaDiem == diaChi
                                && lt.TrangThai == trangThai
                                && lt.NgayBatDau >= ngayBatDau && lt.NgayBatDau <= ngayKetThuc
                                select new
@@ -99,7 +99,7 @@ namespace DAMH_Nhom2_QLPhongGym
                                    lt.NgayBatDau,
                                    lt.ThoiGianBatDau,
                                    lt.ThoiGianKetThuc,
-                                   HuanLuyenVien = hlv.HoTen 
+                                   HuanLuyenVien = hlv.HoTen
                                };
                 if (lichTaps.Any())
                 {
