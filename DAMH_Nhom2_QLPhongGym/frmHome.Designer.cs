@@ -32,13 +32,13 @@ namespace DAMH_Nhom2_QLPhongGym
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.UserNamePanel = new System.Windows.Forms.Panel();
-            this.btnhome = new Guna.UI2.WinForms.Guna2Button();
-            this.usr_type = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.UserNamePanel = new System.Windows.Forms.Panel();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnBaoCaoThongKe = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.btnVaiTro = new System.Windows.Forms.Button();
@@ -47,9 +47,6 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnThanhVien = new System.Windows.Forms.Button();
             this.Panel_container = new System.Windows.Forms.Panel();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.panel2.SuspendLayout();
             this.UserNamePanel.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -59,51 +56,37 @@ namespace DAMH_Nhom2_QLPhongGym
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSlateGray;
-            this.panel2.Controls.Add(this.UserNamePanel);
             this.panel2.Controls.Add(this.lblTitle);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.UserNamePanel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1184, 62);
+            this.panel2.Size = new System.Drawing.Size(1184, 56);
             this.panel2.TabIndex = 0;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTitle.Location = new System.Drawing.Point(220, -5);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Padding = new System.Windows.Forms.Padding(9, 17, 0, 0);
+            this.lblTitle.Size = new System.Drawing.Size(240, 56);
+            this.lblTitle.TabIndex = 8;
+            this.lblTitle.Text = "TRANG CHỦ";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // UserNamePanel
             // 
             this.UserNamePanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UserNamePanel.BackColor = System.Drawing.Color.SlateGray;
-            this.UserNamePanel.Controls.Add(this.btnhome);
-            this.UserNamePanel.Controls.Add(this.usr_type);
             this.UserNamePanel.Controls.Add(this.lblUsername);
-            this.UserNamePanel.Location = new System.Drawing.Point(842, 0);
+            this.UserNamePanel.Location = new System.Drawing.Point(1040, 0);
             this.UserNamePanel.Name = "UserNamePanel";
-            this.UserNamePanel.Size = new System.Drawing.Size(239, 71);
+            this.UserNamePanel.Size = new System.Drawing.Size(144, 65);
             this.UserNamePanel.TabIndex = 9;
-            // 
-            // btnhome
-            // 
-            this.btnhome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnhome.FillColor = System.Drawing.Color.Empty;
-            this.btnhome.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnhome.ForeColor = System.Drawing.Color.White;
-            this.btnhome.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnhome.Location = new System.Drawing.Point(176, 0);
-            this.btnhome.Name = "btnhome";
-            this.btnhome.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.btnhome.Size = new System.Drawing.Size(64, 69);
-            this.btnhome.TabIndex = 4;
-            // 
-            // usr_type
-            // 
-            this.usr_type.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.usr_type.AutoSize = true;
-            this.usr_type.ForeColor = System.Drawing.Color.White;
-            this.usr_type.Location = new System.Drawing.Point(70, 39);
-            this.usr_type.Name = "usr_type";
-            this.usr_type.Size = new System.Drawing.Size(13, 13);
-            this.usr_type.TabIndex = 2;
-            this.usr_type.Text = "..";
             // 
             // lblUsername
             // 
@@ -112,40 +95,12 @@ namespace DAMH_Nhom2_QLPhongGym
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(65, 0);
+            this.lblUsername.Location = new System.Drawing.Point(38, 2);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Padding = new System.Windows.Forms.Padding(0, 13, 0, 0);
             this.lblUsername.Size = new System.Drawing.Size(28, 43);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "...";
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTitle.Location = new System.Drawing.Point(220, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Padding = new System.Windows.Forms.Padding(9, 17, 0, 0);
-            this.lblTitle.Size = new System.Drawing.Size(240, 56);
-            this.lblTitle.TabIndex = 8;
-            this.lblTitle.Text = "TRANG CHỦ";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.SlateGray;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1063, -7);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(9, 26, 9, 0);
-            this.label1.Size = new System.Drawing.Size(48, 76);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "...\r\n\r\n";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelMenu
             // 
@@ -159,10 +114,59 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panelMenu.Controls.Add(this.btnKhachHang);
             this.panelMenu.Controls.Add(this.btnThanhVien);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 62);
+            this.panelMenu.Location = new System.Drawing.Point(0, 56);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(217, 587);
+            this.panelMenu.Size = new System.Drawing.Size(217, 593);
             this.panelMenu.TabIndex = 1;
+            // 
+            // guna2TabControl1
+            // 
+            this.guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.guna2TabControl1.Controls.Add(this.tabPage1);
+            this.guna2TabControl1.Controls.Add(this.tabPage2);
+            this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
+            this.guna2TabControl1.Location = new System.Drawing.Point(217, 33);
+            this.guna2TabControl1.Name = "guna2TabControl1";
+            this.guna2TabControl1.SelectedIndex = 0;
+            this.guna2TabControl1.Size = new System.Drawing.Size(500, 300);
+            this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.guna2TabControl1.TabIndex = 0;
+            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(184, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(312, 292);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(184, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(312, 292);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btnBaoCaoThongKe
             // 
@@ -213,7 +217,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnVaiTro.Font = new System.Drawing.Font("Ebrima", 12.25F);
             this.btnVaiTro.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnVaiTro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVaiTro.Location = new System.Drawing.Point(0, 526);
+            this.btnVaiTro.Location = new System.Drawing.Point(0, 532);
             this.btnVaiTro.Name = "btnVaiTro";
             this.btnVaiTro.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnVaiTro.Size = new System.Drawing.Size(217, 61);
@@ -306,59 +310,10 @@ namespace DAMH_Nhom2_QLPhongGym
             // 
             this.Panel_container.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_container.Location = new System.Drawing.Point(217, 62);
+            this.Panel_container.Location = new System.Drawing.Point(217, 56);
             this.Panel_container.Name = "Panel_container";
-            this.Panel_container.Size = new System.Drawing.Size(967, 587);
+            this.Panel_container.Size = new System.Drawing.Size(967, 593);
             this.Panel_container.TabIndex = 2;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(184, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(312, 292);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(184, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(312, 292);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // guna2TabControl1
-            // 
-            this.guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.guna2TabControl1.Controls.Add(this.tabPage1);
-            this.guna2TabControl1.Controls.Add(this.tabPage2);
-            this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.Location = new System.Drawing.Point(217, 33);
-            this.guna2TabControl1.Name = "guna2TabControl1";
-            this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(500, 300);
-            this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.TabIndex = 0;
-            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             // 
             // frmHome
             // 
@@ -371,6 +326,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.Name = "frmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "+";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHome_FormClosing);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.UserNamePanel.ResumeLayout(false);
@@ -389,13 +345,10 @@ namespace DAMH_Nhom2_QLPhongGym
         private Button btnLichTap;
         private Button btnKhachHang;
         private Button btnThanhVien;
-        private Label label1;
         private Label lblTitle;
         private Panel Panel_container;
         private Panel UserNamePanel;
         private Label lblUsername;
-        private Label usr_type;
-        private Guna.UI2.WinForms.Guna2Button btnhome;
         private Button btnVaiTro;
         private Button btnBaoCaoThongKe;
         private Button btnThanhToan;

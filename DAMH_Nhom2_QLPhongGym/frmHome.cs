@@ -12,9 +12,15 @@ namespace DAMH_Nhom2_QLPhongGym
 {
     public partial class frmHome : Form
     {
-        public frmHome()
+        private string username;
+        private string role;
+        public frmHome(string username, string role)
         {
             InitializeComponent();
+            this.username = username;
+            this.role = role;
+            lblUsername.Text = $"{role}";
+            ConfigureUIBasedOnRole();
         }
 
         private void container(object _form)
@@ -29,6 +35,7 @@ namespace DAMH_Nhom2_QLPhongGym
             Panel_container.Controls.Add(frm);
             Panel_container.Tag = frm;
             frm.Show();
+
         }
 
         private void btnThanhVien_Click(object sender, EventArgs e)
@@ -58,7 +65,7 @@ namespace DAMH_Nhom2_QLPhongGym
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "Thanh toán";
-            //container(new ());
+            container(new frmThanhToan());
         }
 
         private void btnBaoCaoThongKe_Click(object sender, EventArgs e)
@@ -67,6 +74,19 @@ namespace DAMH_Nhom2_QLPhongGym
             container(new frmBaoCaoVaThongKe());
         }
 
+        private void frmHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmLogin dangNhap = new frmLogin();
+            dangNhap.Show();
+        }
 
+        private void ConfigureUIBasedOnRole()
+        {
+            if (role == "User")
+            {
+                btnThietBiDVu.Enabled = false;
+                btnBaoCaoThongKe.Enabled = false;
+            }
+        }
     }
 }
