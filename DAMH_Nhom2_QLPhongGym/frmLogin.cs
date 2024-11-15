@@ -16,5 +16,10 @@ namespace DAMH_Nhom2_QLPhongGym
         {
             InitializeComponent();
         }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

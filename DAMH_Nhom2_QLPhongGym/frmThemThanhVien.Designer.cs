@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.label9 = new System.Windows.Forms.Label();
             this.btnTinhTien = new Guna.UI2.WinForms.Guna2Button();
             this.txtThanhTien = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,8 +46,20 @@
             this.txtLoaiHoaDon = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnKiemTraID = new Guna.UI2.WinForms.Guna2Button();
             this.btnXacNhan = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.guna2RadioButton6 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioButton7 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioButton8 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioButton9 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioButton10 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+
+
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.rdo6Thang = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -57,6 +70,8 @@
             this.txtIDKhachHang = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtIDNhanVien = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNhanVien = new System.Windows.Forms.Label();
+
+
             this.panel1.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
@@ -64,6 +79,7 @@
             // 
             // panel1
             // 
+
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.btnTinhTien);
             this.panel1.Controls.Add(this.txtThanhTien);
@@ -72,18 +88,21 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label6);
+
             this.panel1.Controls.Add(this.guna2GroupBox2);
             this.panel1.Controls.Add(this.txtLoaiHoaDon);
             this.panel1.Controls.Add(this.btnKiemTraID);
             this.panel1.Controls.Add(this.btnXacNhan);
             this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.guna2GroupBox1);
+
             this.panel1.Controls.Add(this.txtIDNhanVien);
             this.panel1.Controls.Add(this.txtIDKhachHang);
+
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
+
             this.panel1.Size = new System.Drawing.Size(1310, 902);
             this.panel1.TabIndex = 0;
             // 
@@ -180,10 +199,12 @@
             this.label6.Size = new System.Drawing.Size(288, 32);
             this.label6.TabIndex = 65;
             this.label6.Text = "Thuê huấn luyện viên:";
+
             // 
             // guna2GroupBox2
             // 
             this.guna2GroupBox2.BorderRadius = 10;
+
             this.guna2GroupBox2.Controls.Add(this.rdo3Buoi);
             this.guna2GroupBox2.Controls.Add(this.rdo8Buoi);
             this.guna2GroupBox2.Controls.Add(this.rdo6Buoi);
@@ -362,6 +383,7 @@
             this.btnXacNhan.TabIndex = 54;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
+
             // 
             // guna2Button2
             // 
@@ -373,12 +395,15 @@
             this.guna2Button2.FillColor = System.Drawing.Color.Firebrick;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
+
             this.guna2Button2.Location = new System.Drawing.Point(673, 822);
+
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(180, 58);
+            this.guna2Button2.Size = new System.Drawing.Size(120, 38);
             this.guna2Button2.TabIndex = 55;
             this.guna2Button2.Text = "Hủy";
             // 
+
             // guna2GroupBox1
             // 
             this.guna2GroupBox1.BorderRadius = 10;
@@ -391,6 +416,7 @@
             this.guna2GroupBox1.Controls.Add(this.rdo1Thang);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+
             this.guna2GroupBox1.Location = new System.Drawing.Point(122, 178);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(1015, 270);
@@ -583,14 +609,18 @@
             this.txtNhanVien.Size = new System.Drawing.Size(322, 32);
             this.txtNhanVien.TabIndex = 68;
             this.txtNhanVien.Text = "ID nhân viên thanh toán:";
+
             // 
             // frmThemThanhVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
             this.ClientSize = new System.Drawing.Size(1310, 902);
+
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmThemThanhVien";
             this.Text = "frmThemThanhVien";
             this.panel1.ResumeLayout(false);
