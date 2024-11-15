@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLPhongGym" Class="QLPhongGymDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+
   <Connection Mode="AppSettings" ConnectionString="Data Source=THY;Initial Catalog=QLPhongGym;User ID=sa;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAMH_Nhom2_QLPhongGym.Properties.Settings" SettingsPropertyName="QLPhongGymConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ThuePT" Member="ThuePTs">
     <Type Name="ThuePT">
@@ -17,6 +18,7 @@
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Association Name="ChiNhanh_LichTap" Member="LichTaps" ThisKey="ChiNhanhID" OtherKey="ChiNhanhID" Type="LichTap" />
       <Association Name="ChiNhanh_ThietBi" Member="ThietBis" ThisKey="ChiNhanhID" OtherKey="ChiNhanhID" Type="ThietBi" />
+
     </Type>
   </Table>
   <Table Name="dbo.DangKyLichTap" Member="DangKyLichTaps">

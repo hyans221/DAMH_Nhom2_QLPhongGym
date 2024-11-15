@@ -30,12 +30,14 @@ namespace DAMH_Nhom2_QLPhongGym
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
+
     partial void InsertThuePT(ThuePT instance);
     partial void UpdateThuePT(ThuePT instance);
     partial void DeleteThuePT(ThuePT instance);
     partial void InsertChiNhanh(ChiNhanh instance);
     partial void UpdateChiNhanh(ChiNhanh instance);
     partial void DeleteChiNhanh(ChiNhanh instance);
+
     partial void InsertDangKyLichTap(DangKyLichTap instance);
     partial void UpdateDangKyLichTap(DangKyLichTap instance);
     partial void DeleteDangKyLichTap(DangKyLichTap instance);
@@ -71,19 +73,24 @@ namespace DAMH_Nhom2_QLPhongGym
     partial void DeleteThietBi(ThietBi instance);
     #endregion
 		
+
 		public QLPhongGymDataContext() : 
 				base(global::DAMH_Nhom2_QLPhongGym.Properties.Settings.Default.QLPhongGymConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
 		
+
 		public QLPhongGymDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
-		
-		public QLPhongGymDataContext(System.Data.IDbConnection connection) : 
+        public QLPhongGymDataContext() : this(@"Data Source=LAPTOP-B7BV3SAD\SQLEXPRESSMAIN;Initial Catalog=QLPhongGym;User ID=sa;Password=123;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True")
+        {
+            OnCreated();
+        }
+        public QLPhongGymDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -101,6 +108,7 @@ namespace DAMH_Nhom2_QLPhongGym
 			OnCreated();
 		}
 		
+
 		public System.Data.Linq.Table<ThuePT> ThuePTs
 		{
 			get
@@ -114,6 +122,7 @@ namespace DAMH_Nhom2_QLPhongGym
 			get
 			{
 				return this.GetTable<ChiNhanh>();
+
 			}
 		}
 		
@@ -206,12 +215,15 @@ namespace DAMH_Nhom2_QLPhongGym
 		}
 	}
 	
+
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ThuePT")]
 	public partial class ThuePT : INotifyPropertyChanging, INotifyPropertyChanged
+
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
+
 		private int _GoiThuePTID;
 		
 		private System.Nullable<int> _SoBuoiThue;
@@ -221,11 +233,13 @@ namespace DAMH_Nhom2_QLPhongGym
 		private string _Mota;
 		
 		private EntitySet<HoaDon> _HoaDons;
+
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
+
     partial void OnGoiThuePTIDChanging(int value);
     partial void OnGoiThuePTIDChanged();
     partial void OnSoBuoiThueChanging(System.Nullable<int> value);
@@ -332,6 +346,7 @@ namespace DAMH_Nhom2_QLPhongGym
 			set
 			{
 				this._HoaDons.Assign(value);
+
 			}
 		}
 		
@@ -354,7 +369,7 @@ namespace DAMH_Nhom2_QLPhongGym
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
-		
+
 		private void attach_HoaDons(HoaDon entity)
 		{
 			this.SendPropertyChanging();
@@ -370,10 +385,12 @@ namespace DAMH_Nhom2_QLPhongGym
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChiNhanh")]
 	public partial class ChiNhanh : INotifyPropertyChanging, INotifyPropertyChanged
+
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
+
 		private int _ChiNhanhID;
 		
 		private string _TenDiaDiem;
@@ -385,11 +402,13 @@ namespace DAMH_Nhom2_QLPhongGym
 		private EntitySet<LichTap> _LichTaps;
 		
 		private EntitySet<ThietBi> _ThietBis;
+
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
+
     partial void OnChiNhanhIDChanging(int value);
     partial void OnChiNhanhIDChanged();
     partial void OnTenDiaDiemChanging(string value);
@@ -463,30 +482,32 @@ namespace DAMH_Nhom2_QLPhongGym
 					this._DiaDiem = value;
 					this.SendPropertyChanged("DiaDiem");
 					this.OnDiaDiemChanged();
+
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoTa", DbType="NVarChar(255)")]
-		public string MoTa
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Mota", DbType="NVarChar(100)")]
+		public string Mota
 		{
 			get
 			{
-				return this._MoTa;
+				return this._Mota;
 			}
 			set
 			{
-				if ((this._MoTa != value))
+				if ((this._Mota != value))
 				{
-					this.OnMoTaChanging(value);
+					this.OnMotaChanging(value);
 					this.SendPropertyChanging();
-					this._MoTa = value;
-					this.SendPropertyChanged("MoTa");
-					this.OnMoTaChanged();
+					this._Mota = value;
+					this.SendPropertyChanged("Mota");
+					this.OnMotaChanged();
 				}
 			}
 		}
 		
+
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChiNhanh_LichTap", Storage="_LichTaps", ThisKey="ChiNhanhID", OtherKey="ChiNhanhID")]
 		public EntitySet<LichTap> LichTaps
 		{
@@ -533,6 +554,7 @@ namespace DAMH_Nhom2_QLPhongGym
 			}
 		}
 		
+
 		private void attach_LichTaps(LichTap entity)
 		{
 			this.SendPropertyChanging();
@@ -1213,6 +1235,7 @@ namespace DAMH_Nhom2_QLPhongGym
 						this._GoiThuePTID = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("ThuePT");
+
 				}
 			}
 		}
@@ -1281,29 +1304,45 @@ namespace DAMH_Nhom2_QLPhongGym
 						this._TheKhachHangID = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("TheKhachHang");
+
 				}
 			}
 		}
 		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhanVien_HoaDon", Storage="_NhanVien", ThisKey="NhanVienID", OtherKey="NhanVienID", IsForeignKey=true)]
+		public NhanVien NhanVien
 		{
-			if ((this.PropertyChanging != null))
+			get
 			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
+				return this._NhanVien.Entity;
+			}
+			set
+			{
+				NhanVien previousValue = this._NhanVien.Entity;
+				if (((previousValue != value) 
+							|| (this._NhanVien.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._NhanVien.Entity = null;
+						previousValue.HoaDons.Remove(this);
+					}
+					this._NhanVien.Entity = value;
+					if ((value != null))
+					{
+						value.HoaDons.Add(this);
+						this._NhanVienID = value.NhanVienID;
+					}
+					else
+					{
+						this._NhanVienID = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("NhanVien");
+				}
 			}
 		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
+
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HuanLuyenVien")]
