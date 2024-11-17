@@ -47,7 +47,7 @@ namespace DAMH_Nhom2_QLPhongGym.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=THY;Initial Catalog=QLPhongGym;User ID=sa;Password=sa;Encrypt=True;Tr" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PHAPVO\\PHAPPHAP;Initial Catalog=QLPhongGym;User ID=saaa;Password=123;Encrypt=True;Tr" +
             "ustServerCertificate=True")]
         public string QLPhongGymConnectionString1 {
             get {
