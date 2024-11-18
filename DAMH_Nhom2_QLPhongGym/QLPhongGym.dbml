@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLPhongGym" Class="QLPhongGymDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=THY;Initial Catalog=QLPhongGym;User ID=sa;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAMH_Nhom2_QLPhongGym.Properties.Settings" SettingsPropertyName="QLPhongGymConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PHAPVO\PHAPPHAP;Initial Catalog=QLPhongGym;User ID=saaa;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAMH_Nhom2_QLPhongGym.Properties.Settings" SettingsPropertyName="QLPhongGymConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ThuePT" Member="ThuePTs">
     <Type Name="ThuePT">
       <Column Name="GoiThuePTID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -101,15 +101,6 @@
       <Association Name="NhanVien_TaiKhoan" Member="TaiKhoans" ThisKey="NhanVienID" OtherKey="NhanVienID" Type="TaiKhoan" />
     </Type>
   </Table>
-  <Table Name="dbo.SuDungThietBi" Member="SuDungThietBis">
-    <Type Name="SuDungThietBi">
-      <Column Name="SuDungID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="ThietBiID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ThoiGianBatDau" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="ThoiGianKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Association Name="ThietBi_SuDungThietBi" Member="ThietBi" ThisKey="ThietBiID" OtherKey="ThietBiID" Type="ThietBi" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
     <Type Name="TaiKhoan">
       <Column Name="TaiKhoanID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -144,8 +135,9 @@
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="TrangThai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="ChiNhanhID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayNhap" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="GiaNhap" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
       <Association Name="ThietBi_LichSuBaoTri" Member="LichSuBaoTris" ThisKey="ThietBiID" OtherKey="ThietBiID" Type="LichSuBaoTri" />
-      <Association Name="ThietBi_SuDungThietBi" Member="SuDungThietBis" ThisKey="ThietBiID" OtherKey="ThietBiID" Type="SuDungThietBi" />
       <Association Name="ChiNhanh_ThietBi" Member="ChiNhanh" ThisKey="ChiNhanhID" OtherKey="ChiNhanhID" Type="ChiNhanh" IsForeignKey="true" />
     </Type>
   </Table>
