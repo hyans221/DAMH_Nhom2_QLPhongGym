@@ -13,9 +13,10 @@ namespace DAMH_Nhom2_QLPhongGym
         // Cung cấp chuỗi kết nối khi khởi tạo QLPhongGymDataContext
         QLPhongGymDataContext ql = new QLPhongGymDataContext();
         
-        public frmThanhToan()
+        public frmThanhToan(int nhanVienID)
         {
             InitializeComponent();
+            txtIDNhanVien.Text = nhanVienID.ToString();
         }
 
     

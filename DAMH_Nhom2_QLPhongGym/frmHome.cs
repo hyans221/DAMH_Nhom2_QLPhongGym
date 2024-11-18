@@ -14,11 +14,13 @@ namespace DAMH_Nhom2_QLPhongGym
     {
         private string username;
         private string role;
-        public frmHome(string username, string role)
+        private int idNhanVien;
+        public frmHome(string username, string role,int id)
         {
             InitializeComponent();
             this.username = username;
             this.role = role;
+            this.idNhanVien = id;
             lblUsername.Text = $"{role}";
             ConfigureUIBasedOnRole();
         }
@@ -41,7 +43,7 @@ namespace DAMH_Nhom2_QLPhongGym
         private void btnThanhVien_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "Đăng ký thành viên và thanh toán";
-            container(new frmThanhToan());
+            container(new frmThanhToan(idNhanVien));
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
