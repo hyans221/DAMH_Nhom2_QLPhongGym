@@ -31,11 +31,17 @@ namespace DAMH_Nhom2_QLPhongGym
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnThemThanhVien = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.txt_ThanhTien = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_XacNhan = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.rdo_6Thang = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -48,6 +54,11 @@ namespace DAMH_Nhom2_QLPhongGym
             this.txtThanhTien = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNhanVien = new System.Windows.Forms.Label();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.rdo3Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdo8Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdo6Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -79,17 +90,6 @@ namespace DAMH_Nhom2_QLPhongGym
             this.rdo12Thang = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdo3Thang = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdo1Thang = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.btnThemThanhVien = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.guna2GroupBox3.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
@@ -125,6 +125,26 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnThemThanhVien
+            // 
+            this.btnThemThanhVien.BorderRadius = 10;
+            this.btnThemThanhVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThemThanhVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThemThanhVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThemThanhVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThemThanhVien.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btnThemThanhVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThemThanhVien.ForeColor = System.Drawing.Color.White;
+            this.btnThemThanhVien.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.them;
+            this.btnThemThanhVien.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnThemThanhVien.Location = new System.Drawing.Point(1107, 133);
+            this.btnThemThanhVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnThemThanhVien.Name = "btnThemThanhVien";
+            this.btnThemThanhVien.Size = new System.Drawing.Size(214, 46);
+            this.btnThemThanhVien.TabIndex = 79;
+            this.btnThemThanhVien.Text = "Thêm thành viên";
+            this.btnThemThanhVien.Click += new System.EventHandler(this.btnThemThanhVien_Click);
+            // 
             // guna2Button5
             // 
             this.guna2Button5.BorderRadius = 10;
@@ -137,10 +157,10 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.iconNhap2;
             this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(963, 589);
+            this.guna2Button5.Location = new System.Drawing.Point(887, 589);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(250, 57);
+            this.guna2Button5.Size = new System.Drawing.Size(326, 57);
             this.guna2Button5.TabIndex = 78;
             this.guna2Button5.Text = "Tính tiền";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
@@ -230,6 +250,71 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2GroupBox3.Size = new System.Drawing.Size(1032, 223);
             this.guna2GroupBox3.TabIndex = 55;
             this.guna2GroupBox3.Text = "Các gói tập cùng huấn luyện viên:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.ForeColor = System.Drawing.Color.Yellow;
+            this.label14.Location = new System.Drawing.Point(486, 179);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(100, 22);
+            this.label14.TabIndex = 81;
+            this.label14.Text = "2.700.000đ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label13.ForeColor = System.Drawing.Color.Yellow;
+            this.label13.Location = new System.Drawing.Point(205, 179);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(100, 22);
+            this.label13.TabIndex = 80;
+            this.label13.Text = "1.500.000đ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.ForeColor = System.Drawing.Color.Yellow;
+            this.label12.Location = new System.Drawing.Point(740, 106);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(85, 22);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "850.000đ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.ForeColor = System.Drawing.Color.Yellow;
+            this.label11.Location = new System.Drawing.Point(472, 106);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(85, 22);
+            this.label11.TabIndex = 78;
+            this.label11.Text = "300.000đ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label10.ForeColor = System.Drawing.Color.Yellow;
+            this.label10.Location = new System.Drawing.Point(205, 106);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(85, 22);
+            this.label10.TabIndex = 77;
+            this.label10.Text = "100.000đ";
             // 
             // label8
             // 
@@ -461,6 +546,71 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2GroupBox2.TabIndex = 54;
             this.guna2GroupBox2.Text = "Các gói tập cùng huấn luyện viên:";
             this.guna2GroupBox2.Click += new System.EventHandler(this.guna2GroupBox2_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label19.ForeColor = System.Drawing.Color.Yellow;
+            this.label19.Location = new System.Drawing.Point(488, 120);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(85, 22);
+            this.label19.TabIndex = 86;
+            this.label19.Text = "950.000đ";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label18.ForeColor = System.Drawing.Color.Yellow;
+            this.label18.Location = new System.Drawing.Point(260, 220);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(100, 22);
+            this.label18.TabIndex = 85;
+            this.label18.Text = "2.500.000đ";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label17.ForeColor = System.Drawing.Color.Yellow;
+            this.label17.Location = new System.Drawing.Point(54, 220);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(100, 22);
+            this.label17.TabIndex = 84;
+            this.label17.Text = "1.800.000đ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label16.ForeColor = System.Drawing.Color.Yellow;
+            this.label16.Location = new System.Drawing.Point(260, 120);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(85, 22);
+            this.label16.TabIndex = 83;
+            this.label16.Text = "500.000đ";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label15.ForeColor = System.Drawing.Color.Yellow;
+            this.label15.Location = new System.Drawing.Point(40, 120);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 22);
+            this.label15.TabIndex = 82;
+            this.label15.Text = "300.000đ";
             // 
             // rdo3Buoi
             // 
@@ -984,156 +1134,6 @@ namespace DAMH_Nhom2_QLPhongGym
             this.rdo1Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.rdo1Thang.UseVisualStyleBackColor = false;
             this.rdo1Thang.CheckedChanged += new System.EventHandler(this.rdo1Thang_CheckedChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.ForeColor = System.Drawing.Color.Yellow;
-            this.label10.Location = new System.Drawing.Point(205, 106);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 22);
-            this.label10.TabIndex = 77;
-            this.label10.Text = "100.000đ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.ForeColor = System.Drawing.Color.Yellow;
-            this.label11.Location = new System.Drawing.Point(472, 106);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 22);
-            this.label11.TabIndex = 78;
-            this.label11.Text = "300.000đ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.ForeColor = System.Drawing.Color.Yellow;
-            this.label12.Location = new System.Drawing.Point(740, 106);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 22);
-            this.label12.TabIndex = 79;
-            this.label12.Text = "850.000đ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.ForeColor = System.Drawing.Color.Yellow;
-            this.label13.Location = new System.Drawing.Point(205, 179);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 22);
-            this.label13.TabIndex = 80;
-            this.label13.Text = "1.500.000đ";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label14.ForeColor = System.Drawing.Color.Yellow;
-            this.label14.Location = new System.Drawing.Point(486, 179);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 22);
-            this.label14.TabIndex = 81;
-            this.label14.Text = "2.700.000đ";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label15.ForeColor = System.Drawing.Color.Yellow;
-            this.label15.Location = new System.Drawing.Point(40, 120);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 22);
-            this.label15.TabIndex = 82;
-            this.label15.Text = "300.000đ";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label16.ForeColor = System.Drawing.Color.Yellow;
-            this.label16.Location = new System.Drawing.Point(260, 120);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 22);
-            this.label16.TabIndex = 83;
-            this.label16.Text = "500.000đ";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label17.ForeColor = System.Drawing.Color.Yellow;
-            this.label17.Location = new System.Drawing.Point(54, 220);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 22);
-            this.label17.TabIndex = 84;
-            this.label17.Text = "1.800.000đ";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label18.ForeColor = System.Drawing.Color.Yellow;
-            this.label18.Location = new System.Drawing.Point(260, 220);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(100, 22);
-            this.label18.TabIndex = 85;
-            this.label18.Text = "2.500.000đ";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.LightSlateGray;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label19.ForeColor = System.Drawing.Color.Yellow;
-            this.label19.Location = new System.Drawing.Point(488, 120);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(85, 22);
-            this.label19.TabIndex = 86;
-            this.label19.Text = "950.000đ";
-            // 
-            // btnThemThanhVien
-            // 
-            this.btnThemThanhVien.BorderRadius = 10;
-            this.btnThemThanhVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThemThanhVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThemThanhVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThemThanhVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThemThanhVien.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnThemThanhVien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThemThanhVien.ForeColor = System.Drawing.Color.White;
-            this.btnThemThanhVien.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.them;
-            this.btnThemThanhVien.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnThemThanhVien.Location = new System.Drawing.Point(1107, 133);
-            this.btnThemThanhVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnThemThanhVien.Name = "btnThemThanhVien";
-            this.btnThemThanhVien.Size = new System.Drawing.Size(214, 46);
-            this.btnThemThanhVien.TabIndex = 79;
-            this.btnThemThanhVien.Text = "Thêm thành viên";
-            this.btnThemThanhVien.Click += new System.EventHandler(this.btnThemThanhVien_Click);
             // 
             // frmThanhToan
             // 
