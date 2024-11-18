@@ -40,19 +40,19 @@ namespace DAMH_Nhom2_QLPhongGym
 
         private void btnThanhVien_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "Quản lý thành viên";
+            lblTitle.Text = "Đăng ký thành viên và thanh toán";
             container(new frmThanhToan());
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "Quản lý khách hàng";
+            lblTitle.Text = "Quản lý thông tin khách hàng";
             container(new frmQuanLyKhachHang());
         }
 
         private void btnLichTap_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "Quản lý lịch tập";
+            lblTitle.Text = "Quản lý đặt lịch tập";
             container(new frmDatLichTap());
         }
 
@@ -60,12 +60,6 @@ namespace DAMH_Nhom2_QLPhongGym
         {
             lblTitle.Text = "Quản lý thiết bị dịch vụ";
             container(new frmQuanLyThietBi());
-        }
-
-        private void btnThanhToan_Click(object sender, EventArgs e)
-        {
-            lblTitle.Text = "Thanh toán";
-            container(new frmThanhToan());
         }
 
         private void btnBaoCaoThongKe_Click(object sender, EventArgs e)

@@ -40,7 +40,6 @@ namespace DAMH_Nhom2_QLPhongGym
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnBaoCaoThongKe = new System.Windows.Forms.Button();
-            this.btnThanhToan = new System.Windows.Forms.Button();
             this.btnVaiTro = new System.Windows.Forms.Button();
             this.btnThietBiDVu = new System.Windows.Forms.Button();
             this.btnLichTap = new System.Windows.Forms.Button();
@@ -107,7 +106,6 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panelMenu.BackColor = System.Drawing.Color.SlateGray;
             this.panelMenu.Controls.Add(this.guna2TabControl1);
             this.panelMenu.Controls.Add(this.btnBaoCaoThongKe);
-            this.panelMenu.Controls.Add(this.btnThanhToan);
             this.panelMenu.Controls.Add(this.btnVaiTro);
             this.panelMenu.Controls.Add(this.btnThietBiDVu);
             this.panelMenu.Controls.Add(this.btnLichTap);
@@ -177,7 +175,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnBaoCaoThongKe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnBaoCaoThongKe.ForeColor = System.Drawing.Color.Snow;
             this.btnBaoCaoThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoCaoThongKe.Location = new System.Drawing.Point(0, 305);
+            this.btnBaoCaoThongKe.Location = new System.Drawing.Point(0, 244);
             this.btnBaoCaoThongKe.Name = "btnBaoCaoThongKe";
             this.btnBaoCaoThongKe.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnBaoCaoThongKe.Size = new System.Drawing.Size(217, 61);
@@ -187,26 +185,6 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnBaoCaoThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBaoCaoThongKe.UseVisualStyleBackColor = false;
             this.btnBaoCaoThongKe.Click += new System.EventHandler(this.btnBaoCaoThongKe_Click);
-            // 
-            // btnThanhToan
-            // 
-            this.btnThanhToan.BackColor = System.Drawing.Color.SlateGray;
-            this.btnThanhToan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThanhToan.FlatAppearance.BorderSize = 0;
-            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhToan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnThanhToan.ForeColor = System.Drawing.Color.Snow;
-            this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThanhToan.Location = new System.Drawing.Point(0, 244);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnThanhToan.Size = new System.Drawing.Size(217, 61);
-            this.btnThanhToan.TabIndex = 16;
-            this.btnThanhToan.Text = "Thanh toán";
-            this.btnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThanhToan.UseVisualStyleBackColor = false;
-            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnVaiTro
             // 
@@ -300,7 +278,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnThanhVien.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnThanhVien.Size = new System.Drawing.Size(217, 61);
             this.btnThanhVien.TabIndex = 8;
-            this.btnThanhVien.Text = "Quản lý thành viên";
+            this.btnThanhVien.Text = "Đăng ký thành viên";
             this.btnThanhVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThanhVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThanhVien.UseVisualStyleBackColor = false;
@@ -351,7 +329,6 @@ namespace DAMH_Nhom2_QLPhongGym
         private Label lblUsername;
         private Button btnVaiTro;
         private Button btnBaoCaoThongKe;
-        private Button btnThanhToan;
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
