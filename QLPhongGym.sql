@@ -290,3 +290,32 @@ GO
 	(3, '2023-11-05', N'Thêm dầu mỡ và kiểm tra ốc vít'),
 	(4, '2023-09-01', N'Bảo trì định kỳ 3 tháng/lần'),
 	(5, '2023-11-03', N'Kiểm tra độ an toàn');
+
+
+-- Trigger
+CREATE TRIGGER trg_UpdateSoBuoiTapCungPT_And_ThoiGianHieuLuc
+ON [dbo].[HoaDon]
+AFTER INSERT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    -- Cập nhật SoBuoiTapCungPT dựa vào GoiThuePTID
+    UPDATE kh
+    SET kh.SoBuoiTapCungPT = kh.SoBuoiTapCungPT + pt.SoBuoiThue
+    FROM [dbo].[TheKhachHang] kh
+    INNER JOIN inserted i ON kh.TheKhachHangID = i.TheKhachHangID
+    INNER JOIN [dbo].[ThuePT] pt ON i.GoiThuePTID = pt.GoiThuePTID
+    WHERE i.GoiThuePTID IS NOT NULL;
+    -- Cập nhật ThoiGianHieuLuc dựa vào GoiTapID
+    UPDATE kh
+    SET kh.ThoiGianHieuLuc = DATEADD(DAY, gt.ThoiGian, ISNULL(kh.ThoiGianHieuLuc, GETDATE()))
+    FROM [dbo].[TheKhachHang] kh
+    INNER JOIN inserted i ON kh.TheKhachHangID = i.TheKhachHangID
+    INNER JOIN [dbo].[GoiTap] gt ON i.GoiTapID = gt.GoiTapID
+    WHERE i.GoiTapID IS NOT NULL;
+END;
+GO
+-- 
+ALTER TABLE ThietBi
+ADD NgayNhap DATE NOT NULL DEFAULT GETDATE(),
+    GiaNhap DECIMAL(18, 2) NOT NULL DEFAULT 0.0;
