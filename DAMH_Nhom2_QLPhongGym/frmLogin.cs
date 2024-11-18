@@ -28,7 +28,8 @@ namespace DAMH_Nhom2_QLPhongGym
             if (user != null)
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                frmHome mainForm = new frmHome(username, user.Quyen); 
+                int nhanVienID = user.NhanVienID ?? 0;
+                frmHome mainForm = new frmHome(username, user.Quyen,nhanVienID); 
                 mainForm.Show();
                 this.Hide(); 
             }
