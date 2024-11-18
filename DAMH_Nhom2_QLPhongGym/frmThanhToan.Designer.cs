@@ -1160,8 +1160,6 @@ namespace DAMH_Nhom2_QLPhongGym
         private Guna.UI2.WinForms.Guna2Button btnXacNhan;
         private Guna2HtmlLabel guna2HtmlLabel3;
         private Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2RadioButton rdo6Thang;
         private Guna.UI2.WinForms.Guna2RadioButton rdo24Thang;
         private Guna.UI2.WinForms.Guna2RadioButton rdo12Thang;

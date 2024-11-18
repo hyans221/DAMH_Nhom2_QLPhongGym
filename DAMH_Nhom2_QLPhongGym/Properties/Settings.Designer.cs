@@ -46,33 +46,22 @@ namespace DAMH_Nhom2_QLPhongGym.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=THY;Initial Catalog=QLPhongGym;User ID=sa;Password=sa;Encrypt=True;Tr" +
-            "ustServerCertificate=True")]
-        public string QLPhongGymConnectionString1 {
-            get {
-                return ((string)(this["QLPhongGymConnectionString1"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=THY;Initial Catalog=QLPhongGym;User ID=sa;Password=sa;TrustServerCert" +
-            "ificate=True")]
-        public string QLPhongGymConnectionString3 {
-            get {
-                return ((string)(this["QLPhongGymConnectionString3"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-B7BV3SAD\\SQLEXPRESSMAIN;Initial Catalog=QLPhongGym;User ID=sa;" +
             "Password=123;TrustServerCertificate=True")]
         public string QLPhongGymConnectionString4 {
             get {
                 return ((string)(this["QLPhongGymConnectionString4"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=THY;Initial Catalog=QLPhongGym;User ID=sa;TrustServerCertificate=True" +
+            "")]
+        public string QLPhongGymConnectionString3 {
+            get {
+                return ((string)(this["QLPhongGymConnectionString3"]));
             }
         }
     }

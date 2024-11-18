@@ -12,9 +12,15 @@ namespace DAMH_Nhom2_QLPhongGym
 {
     public partial class frmHome : Form
     {
-        public frmHome()
+        private string username;
+        private string role;
+        public frmHome(string username, string role)
         {
             InitializeComponent();
+            this.username = username;
+            this.role = role;
+            lblUsername.Text = $"{role}";
+            ConfigureUIBasedOnRole();
         }
 
         private void container(object _form)
@@ -29,23 +35,24 @@ namespace DAMH_Nhom2_QLPhongGym
             Panel_container.Controls.Add(frm);
             Panel_container.Tag = frm;
             frm.Show();
+
         }
 
         private void btnThanhVien_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "Quản lý thành viên";
+            lblTitle.Text = "Đăng ký thành viên và thanh toán";
             container(new frmThanhToan());
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "Quản lý khách hàng";
+            lblTitle.Text = "Quản lý thông tin khách hàng";
             container(new frmQuanLyKhachHang());
         }
 
         private void btnLichTap_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "Quản lý lịch tập";
+            lblTitle.Text = "Quản lý đặt lịch tập";
             container(new frmDatLichTap());
         }
 
@@ -55,18 +62,25 @@ namespace DAMH_Nhom2_QLPhongGym
             container(new frmQuanLyThietBi());
         }
 
-        private void btnThanhToan_Click(object sender, EventArgs e)
-        {
-            lblTitle.Text = "Thanh toán";
-            //container(new ());
-        }
-
         private void btnBaoCaoThongKe_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "Báo cáo và thông kê";
             container(new frmBaoCaoVaThongKe());
         }
 
+        private void frmHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmLogin dangNhap = new frmLogin();
+            dangNhap.Show();
+        }
 
+        private void ConfigureUIBasedOnRole()
+        {
+            if (role == "User")
+            {
+                btnThietBiDVu.Enabled = false;
+                btnBaoCaoThongKe.Enabled = false;
+            }
+        }
     }
 }
