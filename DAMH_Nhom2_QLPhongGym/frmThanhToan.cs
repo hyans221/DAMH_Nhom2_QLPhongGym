@@ -13,9 +13,10 @@ namespace DAMH_Nhom2_QLPhongGym
         // Cung cấp chuỗi kết nối khi khởi tạo QLPhongGymDataContext
         QLPhongGymDataContext ql = new QLPhongGymDataContext();
         
-        public frmThanhToan()
+        public frmThanhToan(int nhanVienID)
         {
             InitializeComponent();
+            txtIDNhanVien.Text = nhanVienID.ToString();
         }
 
     
@@ -359,23 +360,23 @@ namespace DAMH_Nhom2_QLPhongGym
             // Xác định gói tập dựa trên radio button được chọn
             if (rdo_1Thang.Checked)
             {
-                idGoiTap = 1;
+                idGoiTap = 5;
             }
             else if (rdo_3Thang.Checked)
             {
-                idGoiTap = 2;
+                idGoiTap = 1;
             }
             else if (rdo_6Thang.Checked)
             {
-                idGoiTap = 3;
+                idGoiTap = 2;
             }
             else if (rdo_12Thang.Checked)
             {
-                idGoiTap = 4;
+                idGoiTap = 3;
             }
             else if (rdo_24Thang.Checked)
             {
-                idGoiTap = 5;
+                idGoiTap = 4;
             }
 
             // Xác định gói thuê PT dựa trên radio button được chọn
@@ -437,6 +438,22 @@ namespace DAMH_Nhom2_QLPhongGym
             rdo3Buoi.Checked = false;
             rdo6Buoi.Checked = false;
             rdo8Buoi.Checked = false;
+        }
+
+        private void btnThemThanhVien_Click(object sender, EventArgs e)
+        {
+            // Tạo một instance của form frmQuanLyKhachHang
+            frmQuanLyKhachHang formQuanLyKhachHang = new frmQuanLyKhachHang();
+
+            // Hiển thị form frmQuanLyKhachHang dưới dạng không phải cửa sổ chính (con của frmThanhToan)
+            formQuanLyKhachHang.TopLevel = false;
+            formQuanLyKhachHang.FormBorderStyle = FormBorderStyle.None;
+            formQuanLyKhachHang.Dock = DockStyle.Fill;
+
+            // Xóa các control hiện tại và thêm form mới vào container (nếu cần)
+            this.Controls.Clear();
+            this.Controls.Add(formQuanLyKhachHang);
+            formQuanLyKhachHang.Show();
         }
     }
 }

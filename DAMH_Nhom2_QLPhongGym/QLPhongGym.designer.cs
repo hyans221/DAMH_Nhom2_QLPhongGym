@@ -75,14 +75,14 @@ namespace DAMH_Nhom2_QLPhongGym
     partial void InsertThietBi(ThietBi instance);
     partial void UpdateThietBi(ThietBi instance);
     partial void DeleteThietBi(ThietBi instance);
-    #endregion
-		
-		public QLPhongGymDataContext() : 
-				base(global::DAMH_Nhom2_QLPhongGym.Properties.Settings.Default.QLPhongGymConnectionString, mappingSource)
+		#endregion
+
+		public QLPhongGymDataContext() :
+				base(global::DAMH_Nhom2_QLPhongGym.Properties.Settings.Default.QLPhongGymConnectionString4, mappingSource)
 		{
 			OnCreated();
 		}
-		
+
 		public QLPhongGymDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
