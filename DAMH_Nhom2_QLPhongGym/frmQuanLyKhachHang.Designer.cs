@@ -32,6 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cboLoaiThanhVien = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnTim = new Guna.UI2.WinForms.Guna2Button();
             this.btnNhapLai = new Guna.UI2.WinForms.Guna2Button();
             this.dtNgaySinh = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -52,21 +56,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtMaKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cboLoaiThanhVien = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtCCCD = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtSoBuoiTap = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtCCCD = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtCCCD);
             this.panel1.Controls.Add(this.txtSoBuoiTap);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txtCCCD);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.cboLoaiThanhVien);
             this.panel1.Controls.Add(this.label1);
@@ -96,6 +96,55 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1268, 719);
             this.panel1.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label9.Location = new System.Drawing.Point(647, 233);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(145, 26);
+            this.label9.TabIndex = 75;
+            this.label9.Text = "Số Buổi Tập:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.Location = new System.Drawing.Point(178, 171);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 26);
+            this.label8.TabIndex = 73;
+            this.label8.Text = "CCCD:";
+            // 
+            // cboLoaiThanhVien
+            // 
+            this.cboLoaiThanhVien.BackColor = System.Drawing.Color.Transparent;
+            this.cboLoaiThanhVien.BorderRadius = 10;
+            this.cboLoaiThanhVien.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboLoaiThanhVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLoaiThanhVien.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboLoaiThanhVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboLoaiThanhVien.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboLoaiThanhVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboLoaiThanhVien.ItemHeight = 30;
+            this.cboLoaiThanhVien.Location = new System.Drawing.Point(291, 223);
+            this.cboLoaiThanhVien.Name = "cboLoaiThanhVien";
+            this.cboLoaiThanhVien.Size = new System.Drawing.Size(307, 36);
+            this.cboLoaiThanhVien.TabIndex = 72;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(74, 233);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(192, 26);
+            this.label1.TabIndex = 71;
+            this.label1.Text = "Loại Thành Viên:";
             // 
             // btnTim
             // 
@@ -448,32 +497,26 @@
             this.label2.TabIndex = 51;
             this.label2.Text = "Mã khách:";
             // 
-            // label1
+            // txtSoBuoiTap
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(74, 233);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 26);
-            this.label1.TabIndex = 71;
-            this.label1.Text = "Loại Thành Viên:";
-            // 
-            // cboLoaiThanhVien
-            // 
-            this.cboLoaiThanhVien.BackColor = System.Drawing.Color.Transparent;
-            this.cboLoaiThanhVien.BorderRadius = 10;
-            this.cboLoaiThanhVien.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboLoaiThanhVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboLoaiThanhVien.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboLoaiThanhVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboLoaiThanhVien.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboLoaiThanhVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboLoaiThanhVien.ItemHeight = 30;
-            this.cboLoaiThanhVien.Location = new System.Drawing.Point(291, 223);
-            this.cboLoaiThanhVien.Name = "cboLoaiThanhVien";
-            this.cboLoaiThanhVien.Size = new System.Drawing.Size(307, 36);
-            this.cboLoaiThanhVien.TabIndex = 72;
+            this.txtSoBuoiTap.BorderRadius = 10;
+            this.txtSoBuoiTap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSoBuoiTap.DefaultText = "";
+            this.txtSoBuoiTap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSoBuoiTap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSoBuoiTap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSoBuoiTap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSoBuoiTap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSoBuoiTap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSoBuoiTap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSoBuoiTap.Location = new System.Drawing.Point(807, 223);
+            this.txtSoBuoiTap.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtSoBuoiTap.Name = "txtSoBuoiTap";
+            this.txtSoBuoiTap.PasswordChar = '\0';
+            this.txtSoBuoiTap.PlaceholderText = "";
+            this.txtSoBuoiTap.SelectedText = "";
+            this.txtSoBuoiTap.Size = new System.Drawing.Size(307, 39);
+            this.txtSoBuoiTap.TabIndex = 76;
             // 
             // txtCCCD
             // 
@@ -492,54 +535,9 @@
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.PasswordChar = '\0';
             this.txtCCCD.PlaceholderText = "";
-            this.txtCCCD.ReadOnly = true;
             this.txtCCCD.SelectedText = "";
             this.txtCCCD.Size = new System.Drawing.Size(307, 39);
-            this.txtCCCD.TabIndex = 74;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label8.Location = new System.Drawing.Point(178, 171);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 26);
-            this.label8.TabIndex = 73;
-            this.label8.Text = "CCCD:";
-            // 
-            // txtSoBuoiTap
-            // 
-            this.txtSoBuoiTap.BorderRadius = 10;
-            this.txtSoBuoiTap.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSoBuoiTap.DefaultText = "";
-            this.txtSoBuoiTap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSoBuoiTap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSoBuoiTap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSoBuoiTap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSoBuoiTap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoBuoiTap.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSoBuoiTap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoBuoiTap.Location = new System.Drawing.Point(807, 227);
-            this.txtSoBuoiTap.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtSoBuoiTap.Name = "txtSoBuoiTap";
-            this.txtSoBuoiTap.PasswordChar = '\0';
-            this.txtSoBuoiTap.PlaceholderText = "";
-            this.txtSoBuoiTap.ReadOnly = true;
-            this.txtSoBuoiTap.SelectedText = "";
-            this.txtSoBuoiTap.Size = new System.Drawing.Size(307, 39);
-            this.txtSoBuoiTap.TabIndex = 76;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label9.Location = new System.Drawing.Point(647, 233);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(145, 26);
-            this.label9.TabIndex = 75;
-            this.label9.Text = "Số Buổi Tập:";
+            this.txtCCCD.TabIndex = 77;
             // 
             // frmQuanLyKhachHang
             // 
@@ -584,9 +582,9 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ComboBox cboLoaiThanhVien;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox txtSoBuoiTap;
-        private Guna.UI2.WinForms.Guna2TextBox txtCCCD;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2TextBox txtCCCD;
+        private Guna.UI2.WinForms.Guna2TextBox txtSoBuoiTap;
     }
 }
