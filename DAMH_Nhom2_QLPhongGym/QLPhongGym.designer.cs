@@ -63,9 +63,6 @@ namespace DAMH_Nhom2_QLPhongGym
     partial void InsertNhanVien(NhanVien instance);
     partial void UpdateNhanVien(NhanVien instance);
     partial void DeleteNhanVien(NhanVien instance);
-    partial void InsertSuDungThietBi(SuDungThietBi instance);
-    partial void UpdateSuDungThietBi(SuDungThietBi instance);
-    partial void DeleteSuDungThietBi(SuDungThietBi instance);
     partial void InsertTaiKhoan(TaiKhoan instance);
     partial void UpdateTaiKhoan(TaiKhoan instance);
     partial void DeleteTaiKhoan(TaiKhoan instance);
@@ -78,7 +75,7 @@ namespace DAMH_Nhom2_QLPhongGym
     #endregion
 		
 		public QLPhongGymDataContext() : 
-				base(global::DAMH_Nhom2_QLPhongGym.Properties.Settings.Default.QLPhongGymConnectionString6, mappingSource)
+				base(global::DAMH_Nhom2_QLPhongGym.Properties.Settings.Default.QLPhongGymConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -192,14 +189,6 @@ namespace DAMH_Nhom2_QLPhongGym
 			get
 			{
 				return this.GetTable<NhanVien>();
-			}
-		}
-		
-		public System.Data.Linq.Table<SuDungThietBi> SuDungThietBis
-		{
-			get
-			{
-				return this.GetTable<SuDungThietBi>();
 			}
 		}
 		
@@ -2635,181 +2624,6 @@ namespace DAMH_Nhom2_QLPhongGym
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SuDungThietBi")]
-	public partial class SuDungThietBi : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _SuDungID;
-		
-		private System.Nullable<int> _ThietBiID;
-		
-		private System.Nullable<System.DateTime> _ThoiGianBatDau;
-		
-		private System.Nullable<System.DateTime> _ThoiGianKetThuc;
-		
-		private EntityRef<ThietBi> _ThietBi;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnSuDungIDChanging(int value);
-    partial void OnSuDungIDChanged();
-    partial void OnThietBiIDChanging(System.Nullable<int> value);
-    partial void OnThietBiIDChanged();
-    partial void OnThoiGianBatDauChanging(System.Nullable<System.DateTime> value);
-    partial void OnThoiGianBatDauChanged();
-    partial void OnThoiGianKetThucChanging(System.Nullable<System.DateTime> value);
-    partial void OnThoiGianKetThucChanged();
-    #endregion
-		
-		public SuDungThietBi()
-		{
-			this._ThietBi = default(EntityRef<ThietBi>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SuDungID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int SuDungID
-		{
-			get
-			{
-				return this._SuDungID;
-			}
-			set
-			{
-				if ((this._SuDungID != value))
-				{
-					this.OnSuDungIDChanging(value);
-					this.SendPropertyChanging();
-					this._SuDungID = value;
-					this.SendPropertyChanged("SuDungID");
-					this.OnSuDungIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThietBiID", DbType="Int")]
-		public System.Nullable<int> ThietBiID
-		{
-			get
-			{
-				return this._ThietBiID;
-			}
-			set
-			{
-				if ((this._ThietBiID != value))
-				{
-					if (this._ThietBi.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnThietBiIDChanging(value);
-					this.SendPropertyChanging();
-					this._ThietBiID = value;
-					this.SendPropertyChanged("ThietBiID");
-					this.OnThietBiIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGianBatDau", DbType="Date")]
-		public System.Nullable<System.DateTime> ThoiGianBatDau
-		{
-			get
-			{
-				return this._ThoiGianBatDau;
-			}
-			set
-			{
-				if ((this._ThoiGianBatDau != value))
-				{
-					this.OnThoiGianBatDauChanging(value);
-					this.SendPropertyChanging();
-					this._ThoiGianBatDau = value;
-					this.SendPropertyChanged("ThoiGianBatDau");
-					this.OnThoiGianBatDauChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGianKetThuc", DbType="Date")]
-		public System.Nullable<System.DateTime> ThoiGianKetThuc
-		{
-			get
-			{
-				return this._ThoiGianKetThuc;
-			}
-			set
-			{
-				if ((this._ThoiGianKetThuc != value))
-				{
-					this.OnThoiGianKetThucChanging(value);
-					this.SendPropertyChanging();
-					this._ThoiGianKetThuc = value;
-					this.SendPropertyChanged("ThoiGianKetThuc");
-					this.OnThoiGianKetThucChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ThietBi_SuDungThietBi", Storage="_ThietBi", ThisKey="ThietBiID", OtherKey="ThietBiID", IsForeignKey=true)]
-		public ThietBi ThietBi
-		{
-			get
-			{
-				return this._ThietBi.Entity;
-			}
-			set
-			{
-				ThietBi previousValue = this._ThietBi.Entity;
-				if (((previousValue != value) 
-							|| (this._ThietBi.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ThietBi.Entity = null;
-						previousValue.SuDungThietBis.Remove(this);
-					}
-					this._ThietBi.Entity = value;
-					if ((value != null))
-					{
-						value.SuDungThietBis.Add(this);
-						this._ThietBiID = value.ThietBiID;
-					}
-					else
-					{
-						this._ThietBiID = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("ThietBi");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TaiKhoan")]
 	public partial class TaiKhoan : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -3365,8 +3179,6 @@ namespace DAMH_Nhom2_QLPhongGym
 		
 		private EntitySet<LichSuBaoTri> _LichSuBaoTris;
 		
-		private EntitySet<SuDungThietBi> _SuDungThietBis;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -3389,7 +3201,6 @@ namespace DAMH_Nhom2_QLPhongGym
 		{
 			this._ChiTiet_ChiNhanh_ThietBis = new EntitySet<ChiTiet_ChiNhanh_ThietBi>(new Action<ChiTiet_ChiNhanh_ThietBi>(this.attach_ChiTiet_ChiNhanh_ThietBis), new Action<ChiTiet_ChiNhanh_ThietBi>(this.detach_ChiTiet_ChiNhanh_ThietBis));
 			this._LichSuBaoTris = new EntitySet<LichSuBaoTri>(new Action<LichSuBaoTri>(this.attach_LichSuBaoTris), new Action<LichSuBaoTri>(this.detach_LichSuBaoTris));
-			this._SuDungThietBis = new EntitySet<SuDungThietBi>(new Action<SuDungThietBi>(this.attach_SuDungThietBis), new Action<SuDungThietBi>(this.detach_SuDungThietBis));
 			OnCreated();
 		}
 		
@@ -3539,19 +3350,6 @@ namespace DAMH_Nhom2_QLPhongGym
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ThietBi_SuDungThietBi", Storage="_SuDungThietBis", ThisKey="ThietBiID", OtherKey="ThietBiID")]
-		public EntitySet<SuDungThietBi> SuDungThietBis
-		{
-			get
-			{
-				return this._SuDungThietBis;
-			}
-			set
-			{
-				this._SuDungThietBis.Assign(value);
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -3591,18 +3389,6 @@ namespace DAMH_Nhom2_QLPhongGym
 		}
 		
 		private void detach_LichSuBaoTris(LichSuBaoTri entity)
-		{
-			this.SendPropertyChanging();
-			entity.ThietBi = null;
-		}
-		
-		private void attach_SuDungThietBis(SuDungThietBi entity)
-		{
-			this.SendPropertyChanging();
-			entity.ThietBi = this;
-		}
-		
-		private void detach_SuDungThietBis(SuDungThietBi entity)
 		{
 			this.SendPropertyChanging();
 			entity.ThietBi = null;

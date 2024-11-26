@@ -49,7 +49,7 @@ namespace DAMH_Nhom2_QLPhongGym
                 MessageBox.Show("Lỗi khi tải danh sách thiết bị: " + ex.Message);
             }
         }
-
+        bool isEditing = false;
         private void guna2Button1_Click(object sender, EventArgs e)
         {
 
@@ -60,7 +60,7 @@ namespace DAMH_Nhom2_QLPhongGym
                 return;
             }
 
-            if (dgvThietBi.CurrentRow != null)
+            if (isEditing == true)
             {
                 // Lấy ID của thiết bị từ hàng được chọn
                 int thietBiID = Convert.ToInt32(dgvThietBi.CurrentRow.Cells[0].Value);
@@ -134,12 +134,14 @@ namespace DAMH_Nhom2_QLPhongGym
             guna2TextBox1.Text = "";
             guna2TextBox2.Text = "";
             guna2TextBox3.Text = "";
+            isEditing = false;
         }
         private void dgvThietBi_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Kiểm tra xem có phải là hàng hợp lệ không
             if (e.RowIndex >= 0)
             {
+                isEditing = true;
                 DataGridViewRow row = dgvThietBi.Rows[e.RowIndex];
                 // Lấy dữ liệu từ hàng được chọn và hiển thị lên các TextBox
                 guna2TextBox1.Text = row.Cells[1].Value.ToString();
@@ -167,10 +169,8 @@ namespace DAMH_Nhom2_QLPhongGym
         {
             if (dgvThietBi.CurrentRow != null)
             {
-                // Lấy ID của thiết bị từ hàng được chọn
                 int thietBiID = Convert.ToInt32(dgvThietBi.CurrentRow.Cells[0].Value);
 
-                // Xác nhận xóa
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa thiết bị này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
@@ -180,6 +180,7 @@ namespace DAMH_Nhom2_QLPhongGym
                         ThietBi thietBi = data.ThietBis.SingleOrDefault(tb => tb.ThietBiID == thietBiID);
                         if (thietBi != null)
                         {
+                            data.LichSuBaoTris.DeleteAllOnSubmit(data.LichSuBaoTris.Where(lsb => lsb.ThietBiID == thietBiID));
                             // Xóa thiết bị khỏi cơ sở dữ liệu
                             data.ThietBis.DeleteOnSubmit(thietBi);
                             data.SubmitChanges();
