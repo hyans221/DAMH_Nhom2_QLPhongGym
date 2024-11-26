@@ -86,5 +86,16 @@ namespace DAMH_Nhom2_QLPhongGym.Properties {
                 return ((string)(this["QLPhongGymConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=THY;Initial Catalog=QLPhongGym;Persist Security Info=True;User ID=sa;" +
+            "Password=sa;Encrypt=True;TrustServerCertificate=True")]
+        public string QLPhongGymConnectionString6 {
+            get {
+                return ((string)(this["QLPhongGymConnectionString6"]));
+            }
+        }
     }
 }
