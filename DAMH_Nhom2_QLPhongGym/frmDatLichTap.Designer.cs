@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDatLich = new Guna.UI2.WinForms.Guna2Button();
             this.cbxDiaChi = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -39,12 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.huanluyenvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thoigianketthuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thoigianbatdau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaybatdau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.btnTraCuu = new Guna.UI2.WinForms.Guna2Button();
             this.cbxTrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -57,6 +52,11 @@
             this.DateTimeDEN = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.dgvLichTap = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaybatdau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thoigianbatdau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thoigianketthuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.huanluyenvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichTap)).BeginInit();
             this.SuspendLayout();
@@ -86,14 +86,14 @@
             this.panel1.Controls.Add(this.dgvLichTap);
             this.panel1.Location = new System.Drawing.Point(8, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(935, 545);
+            this.panel1.Size = new System.Drawing.Size(935, 568);
             this.panel1.TabIndex = 1;
             // 
             // btnDatLich
             // 
             this.btnDatLich.BorderRadius = 10;
             this.btnDatLich.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnDatLich.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDatLich.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatLich.ForeColor = System.Drawing.Color.Aqua;
             this.btnDatLich.Location = new System.Drawing.Point(739, 123);
             this.btnDatLich.Margin = new System.Windows.Forms.Padding(2);
@@ -183,37 +183,6 @@
             this.label5.TabIndex = 46;
             this.label5.Text = "Họ tên khách:";
             // 
-            // huanluyenvien
-            // 
-            this.huanluyenvien.DataPropertyName = "HuanLuyenVien";
-            this.huanluyenvien.HeaderText = "Huấn luyện viên";
-            this.huanluyenvien.MinimumWidth = 6;
-            this.huanluyenvien.Name = "huanluyenvien";
-            this.huanluyenvien.ReadOnly = true;
-            // 
-            // thoigianketthuc
-            // 
-            this.thoigianketthuc.DataPropertyName = "ThoiGianKetThuc";
-            this.thoigianketthuc.HeaderText = "Thời gian kết thúc";
-            this.thoigianketthuc.MinimumWidth = 6;
-            this.thoigianketthuc.Name = "thoigianketthuc";
-            this.thoigianketthuc.ReadOnly = true;
-            // 
-            // thoigianbatdau
-            // 
-            this.thoigianbatdau.DataPropertyName = "ThoiGianBatDau";
-            this.thoigianbatdau.HeaderText = "Thời gian bắt đầu";
-            this.thoigianbatdau.MinimumWidth = 6;
-            this.thoigianbatdau.Name = "thoigianbatdau";
-            this.thoigianbatdau.ReadOnly = true;
-            // 
-            // ngaybatdau
-            // 
-            this.ngaybatdau.DataPropertyName = "NgayBatDau";
-            this.ngaybatdau.HeaderText = "Ngày bắt đầu";
-            this.ngaybatdau.MinimumWidth = 6;
-            this.ngaybatdau.Name = "ngaybatdau";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -225,14 +194,6 @@
             this.label1.Size = new System.Drawing.Size(77, 22);
             this.label1.TabIndex = 38;
             this.label1.Text = "Lịch tập";
-            // 
-            // trangthai
-            // 
-            this.trangthai.DataPropertyName = "TrangThai";
-            this.trangthai.HeaderText = "Trạng thái";
-            this.trangthai.MinimumWidth = 6;
-            this.trangthai.Name = "trangthai";
-            this.trangthai.ReadOnly = true;
             // 
             // label8
             // 
@@ -250,8 +211,8 @@
             // 
             this.btnTraCuu.BorderRadius = 10;
             this.btnTraCuu.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnTraCuu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTraCuu.ForeColor = System.Drawing.Color.Cyan;
+            this.btnTraCuu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTraCuu.ForeColor = System.Drawing.Color.Aqua;
             this.btnTraCuu.Location = new System.Drawing.Point(462, 118);
             this.btnTraCuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnTraCuu.Name = "btnTraCuu";
@@ -292,12 +253,12 @@
             // 
             this.btnTheLichTap.BorderRadius = 10;
             this.btnTheLichTap.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnTheLichTap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTheLichTap.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTheLichTap.ForeColor = System.Drawing.Color.LightCyan;
-            this.btnTheLichTap.Location = new System.Drawing.Point(200, 123);
+            this.btnTheLichTap.Location = new System.Drawing.Point(192, 118);
             this.btnTheLichTap.Margin = new System.Windows.Forms.Padding(2);
             this.btnTheLichTap.Name = "btnTheLichTap";
-            this.btnTheLichTap.Size = new System.Drawing.Size(89, 37);
+            this.btnTheLichTap.Size = new System.Drawing.Size(130, 42);
             this.btnTheLichTap.TabIndex = 53;
             this.btnTheLichTap.Text = "Thêm lịch tập";
             // 
@@ -370,16 +331,16 @@
             // 
             // dgvLichTap
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dgvLichTap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLichTap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvLichTap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLichTap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvLichTap.ColumnHeadersHeight = 27;
             this.dgvLichTap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvLichTap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -388,14 +349,14 @@
             this.thoigianbatdau,
             this.thoigianketthuc,
             this.huanluyenvien});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLichTap.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLichTap.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvLichTap.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvLichTap.Location = new System.Drawing.Point(74, 171);
             this.dgvLichTap.Margin = new System.Windows.Forms.Padding(2);
@@ -427,6 +388,45 @@
             this.dgvLichTap.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvLichTap.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // trangthai
+            // 
+            this.trangthai.DataPropertyName = "TrangThai";
+            this.trangthai.HeaderText = "Trạng thái";
+            this.trangthai.MinimumWidth = 6;
+            this.trangthai.Name = "trangthai";
+            this.trangthai.ReadOnly = true;
+            // 
+            // ngaybatdau
+            // 
+            this.ngaybatdau.DataPropertyName = "NgayBatDau";
+            this.ngaybatdau.HeaderText = "Ngày bắt đầu";
+            this.ngaybatdau.MinimumWidth = 6;
+            this.ngaybatdau.Name = "ngaybatdau";
+            // 
+            // thoigianbatdau
+            // 
+            this.thoigianbatdau.DataPropertyName = "ThoiGianBatDau";
+            this.thoigianbatdau.HeaderText = "Thời gian bắt đầu";
+            this.thoigianbatdau.MinimumWidth = 6;
+            this.thoigianbatdau.Name = "thoigianbatdau";
+            this.thoigianbatdau.ReadOnly = true;
+            // 
+            // thoigianketthuc
+            // 
+            this.thoigianketthuc.DataPropertyName = "ThoiGianKetThuc";
+            this.thoigianketthuc.HeaderText = "Thời gian kết thúc";
+            this.thoigianketthuc.MinimumWidth = 6;
+            this.thoigianketthuc.Name = "thoigianketthuc";
+            this.thoigianketthuc.ReadOnly = true;
+            // 
+            // huanluyenvien
+            // 
+            this.huanluyenvien.DataPropertyName = "HuanLuyenVien";
+            this.huanluyenvien.HeaderText = "Huấn luyện viên";
+            this.huanluyenvien.MinimumWidth = 6;
+            this.huanluyenvien.Name = "huanluyenvien";
+            this.huanluyenvien.ReadOnly = true;
+            // 
             // frmDatLichTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -435,7 +435,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(935, 545);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDatLichTap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDatLichTap";

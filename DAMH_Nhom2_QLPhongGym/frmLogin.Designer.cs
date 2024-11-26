@@ -35,15 +35,14 @@ namespace DAMH_Nhom2_QLPhongGym
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
-            this.chkHienMatKhau = new Guna.UI2.WinForms.Guna2CheckBox();
             this.btnDangNhap = new Guna.UI2.WinForms.Guna2Button();
             this.txtTenDangNhap = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblQuenMK = new System.Windows.Forms.LinkLabel();
             this.lblDangNhap = new System.Windows.Forms.Label();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.chkHienMatKhau = new System.Windows.Forms.CheckBox();
+            this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -64,53 +63,12 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panel1.Controls.Add(this.chkHienMatKhau);
             this.panel1.Controls.Add(this.btnDangNhap);
             this.panel1.Controls.Add(this.txtTenDangNhap);
-            this.panel1.Controls.Add(this.lblQuenMK);
             this.panel1.Controls.Add(this.lblDangNhap);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(611, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(404, 461);
             this.panel1.TabIndex = 15;
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.BorderRadius = 10;
-            this.txtMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMatKhau.DefaultText = "";
-            this.txtMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatKhau.Location = new System.Drawing.Point(105, 194);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.PasswordChar = '●';
-            this.txtMatKhau.PlaceholderText = "Mật khẩu";
-            this.txtMatKhau.SelectedText = "";
-            this.txtMatKhau.Size = new System.Drawing.Size(214, 36);
-            this.txtMatKhau.TabIndex = 22;
-            this.txtMatKhau.UseSystemPasswordChar = true;
-            // 
-            // chkHienMatKhau
-            // 
-            this.chkHienMatKhau.AutoSize = true;
-            this.chkHienMatKhau.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkHienMatKhau.CheckedState.BorderRadius = 0;
-            this.chkHienMatKhau.CheckedState.BorderThickness = 0;
-            this.chkHienMatKhau.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkHienMatKhau.CheckMarkColor = System.Drawing.SystemColors.Window;
-            this.chkHienMatKhau.Location = new System.Drawing.Point(224, 248);
-            this.chkHienMatKhau.Name = "chkHienMatKhau";
-            this.chkHienMatKhau.Size = new System.Drawing.Size(95, 17);
-            this.chkHienMatKhau.TabIndex = 21;
-            this.chkHienMatKhau.Text = "Hiện mật khẩu";
-            this.chkHienMatKhau.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.chkHienMatKhau.UncheckedState.BorderRadius = 0;
-            this.chkHienMatKhau.UncheckedState.BorderThickness = 0;
-            this.chkHienMatKhau.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.chkHienMatKhau.CheckedChanged += new System.EventHandler(this.chkHienMatKhau_CheckedChanged);
             // 
             // btnDangNhap
             // 
@@ -149,17 +107,6 @@ namespace DAMH_Nhom2_QLPhongGym
             this.txtTenDangNhap.Size = new System.Drawing.Size(214, 36);
             this.txtTenDangNhap.TabIndex = 18;
             // 
-            // lblQuenMK
-            // 
-            this.lblQuenMK.AutoSize = true;
-            this.lblQuenMK.LinkColor = System.Drawing.Color.White;
-            this.lblQuenMK.Location = new System.Drawing.Point(239, 338);
-            this.lblQuenMK.Name = "lblQuenMK";
-            this.lblQuenMK.Size = new System.Drawing.Size(80, 13);
-            this.lblQuenMK.TabIndex = 16;
-            this.lblQuenMK.TabStop = true;
-            this.lblQuenMK.Text = "Quên mật khẩu";
-            // 
             // lblDangNhap
             // 
             this.lblDangNhap.AutoSize = true;
@@ -182,6 +129,40 @@ namespace DAMH_Nhom2_QLPhongGym
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
+            // 
+            // chkHienMatKhau
+            // 
+            this.chkHienMatKhau.AutoSize = true;
+            this.chkHienMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHienMatKhau.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.chkHienMatKhau.Location = new System.Drawing.Point(230, 248);
+            this.chkHienMatKhau.Name = "chkHienMatKhau";
+            this.chkHienMatKhau.Size = new System.Drawing.Size(108, 17);
+            this.chkHienMatKhau.TabIndex = 24;
+            this.chkHienMatKhau.Text = "Hiện mật khẩu";
+            this.chkHienMatKhau.UseVisualStyleBackColor = true;
+            this.chkHienMatKhau.CheckedChanged += new System.EventHandler(this.chkHienMatKhau_CheckedChanged);
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.BorderRadius = 10;
+            this.txtMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMatKhau.DefaultText = "";
+            this.txtMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatKhau.Location = new System.Drawing.Point(105, 192);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '●';
+            this.txtMatKhau.PlaceholderText = "Mật khẩu";
+            this.txtMatKhau.SelectedText = "";
+            this.txtMatKhau.Size = new System.Drawing.Size(214, 36);
+            this.txtMatKhau.TabIndex = 25;
+            this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // frmLogin
             // 
@@ -209,11 +190,10 @@ namespace DAMH_Nhom2_QLPhongGym
         private Panel panel1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private Label lblDangNhap;
-        private LinkLabel lblQuenMK;
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnDangNhap;
         private Guna.UI2.WinForms.Guna2TextBox txtTenDangNhap;
-        private Guna.UI2.WinForms.Guna2CheckBox chkHienMatKhau;
+        private CheckBox chkHienMatKhau;
         private Guna.UI2.WinForms.Guna2TextBox txtMatKhau;
     }
 
