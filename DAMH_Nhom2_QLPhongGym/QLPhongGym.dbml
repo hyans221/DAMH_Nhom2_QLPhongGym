@@ -107,15 +107,6 @@
       <Association Name="NhanVien_TaiKhoan" Member="TaiKhoans" ThisKey="NhanVienID" OtherKey="NhanVienID" Type="TaiKhoan" />
     </Type>
   </Table>
-  <Table Name="dbo.SuDungThietBi" Member="SuDungThietBis">
-    <Type Name="SuDungThietBi">
-      <Column Name="SuDungID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="ThietBiID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ThoiGianBatDau" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="ThoiGianKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Association Name="ThietBi_SuDungThietBi" Member="ThietBi" ThisKey="ThietBiID" OtherKey="ThietBiID" Type="ThietBi" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
     <Type Name="TaiKhoan">
       <Column Name="TaiKhoanID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
