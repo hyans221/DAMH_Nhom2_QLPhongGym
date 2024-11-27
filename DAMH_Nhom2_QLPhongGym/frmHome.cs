@@ -42,7 +42,7 @@ namespace DAMH_Nhom2_QLPhongGym
 
         private void btnThanhVien_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "Đăng ký thành viên và thanh toán";
+            lblTitle.Text = "Quản lý thanh toán";
             container(new frmThanhToan(idNhanVien));
         }
 

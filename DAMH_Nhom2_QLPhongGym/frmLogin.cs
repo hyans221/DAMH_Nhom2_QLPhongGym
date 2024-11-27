@@ -48,7 +48,15 @@ namespace DAMH_Nhom2_QLPhongGym
 
         private void chkHienMatKhau_CheckedChanged(object sender, EventArgs e)
         {
-            txtMatKhau.UseSystemPasswordChar = !chkHienMatKhau.Checked;
+            if(chkHienMatKhau.Checked)
+            {
+                txtMatKhau.UseSystemPasswordChar = false;
+                txtMatKhau.PasswordChar = '\0';
+            }
+            else
+            {
+                txtMatKhau.UseSystemPasswordChar = true;
+            }
         }
 
         private void lblQuenMK_Click(object sender, EventArgs e)

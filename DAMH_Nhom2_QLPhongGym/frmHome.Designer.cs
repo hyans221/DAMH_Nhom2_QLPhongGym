@@ -60,7 +60,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1184, 56);
+            this.panel2.Size = new System.Drawing.Size(1203, 56);
             this.panel2.TabIndex = 0;
             // 
             // lblTitle
@@ -82,7 +82,7 @@ namespace DAMH_Nhom2_QLPhongGym
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UserNamePanel.BackColor = System.Drawing.Color.SlateGray;
             this.UserNamePanel.Controls.Add(this.lblUsername);
-            this.UserNamePanel.Location = new System.Drawing.Point(1040, 0);
+            this.UserNamePanel.Location = new System.Drawing.Point(1059, 0);
             this.UserNamePanel.Name = "UserNamePanel";
             this.UserNamePanel.Size = new System.Drawing.Size(144, 65);
             this.UserNamePanel.TabIndex = 9;
@@ -278,7 +278,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnThanhVien.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnThanhVien.Size = new System.Drawing.Size(217, 61);
             this.btnThanhVien.TabIndex = 8;
-            this.btnThanhVien.Text = "Đăng ký thành viên";
+            this.btnThanhVien.Text = "Quản lý thanh toán";
             this.btnThanhVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThanhVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThanhVien.UseVisualStyleBackColor = false;
@@ -290,14 +290,14 @@ namespace DAMH_Nhom2_QLPhongGym
             this.Panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_container.Location = new System.Drawing.Point(217, 56);
             this.Panel_container.Name = "Panel_container";
-            this.Panel_container.Size = new System.Drawing.Size(967, 593);
+            this.Panel_container.Size = new System.Drawing.Size(986, 593);
             this.Panel_container.TabIndex = 2;
             // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 649);
+            this.ClientSize = new System.Drawing.Size(1203, 649);
             this.Controls.Add(this.Panel_container);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panel2);

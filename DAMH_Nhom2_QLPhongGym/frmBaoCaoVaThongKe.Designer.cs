@@ -28,49 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.chartCustomerStatistics = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dtpTimeFrameEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpTimeFrameStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnExportCustomerExcel = new Guna.UI2.WinForms.Guna2Button();
             this.btnExportCustomerPDF = new Guna.UI2.WinForms.Guna2Button();
             this.btnGenerateCustomerReport = new Guna.UI2.WinForms.Guna2Button();
             this.dgvCustomerStatistics = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.chartRevenue = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnExportRevenueExcel = new Guna.UI2.WinForms.Guna2Button();
             this.btnExportRevenuePDF = new Guna.UI2.WinForms.Guna2Button();
             this.btnGenerateRevenueReport = new Guna.UI2.WinForms.Guna2Button();
             this.dtpTimeFrameRevenueEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpTimeFrameRevenueStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvRevenueDetails = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbRevenueServicePackage = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -98,7 +98,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 497);
+            this.panel1.Size = new System.Drawing.Size(1059, 509);
             this.panel1.TabIndex = 0;
             // 
             // guna2TabControl1
@@ -110,7 +110,7 @@
             this.guna2TabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(120, 40);
             this.guna2TabControl1.Location = new System.Drawing.Point(0, 0);
-            this.guna2TabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2TabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
             this.guna2TabControl1.Size = new System.Drawing.Size(1021, 612);
@@ -149,27 +149,63 @@
             this.tabPage1.Controls.Add(this.cbStatus);
             this.tabPage1.ForeColor = System.Drawing.Color.Red;
             this.tabPage1.Location = new System.Drawing.Point(124, 4);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(893, 604);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Khách hàng";
             // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Snow;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(435, 36);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(126, 22);
+            this.guna2HtmlLabel2.TabIndex = 3;
+            this.guna2HtmlLabel2.Text = "Loại thành viên";
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.Snow;
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(15, 120);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(172, 22);
+            this.guna2HtmlLabel8.TabIndex = 12;
+            this.guna2HtmlLabel8.Text = "Khoảng thời gian đến";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Snow;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 36);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(161, 22);
+            this.guna2HtmlLabel1.TabIndex = 1;
+            this.guna2HtmlLabel1.Text = "Khoảng thời gian từ ";
+            // 
             // chartCustomerStatistics
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartCustomerStatistics.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartCustomerStatistics.Legends.Add(legend4);
-            this.chartCustomerStatistics.Location = new System.Drawing.Point(452, 202);
-            this.chartCustomerStatistics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            chartArea1.Name = "ChartArea1";
+            this.chartCustomerStatistics.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartCustomerStatistics.Legends.Add(legend1);
+            this.chartCustomerStatistics.Location = new System.Drawing.Point(473, 185);
+            this.chartCustomerStatistics.Margin = new System.Windows.Forms.Padding(2);
             this.chartCustomerStatistics.Name = "chartCustomerStatistics";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartCustomerStatistics.Series.Add(series4);
-            this.chartCustomerStatistics.Size = new System.Drawing.Size(416, 195);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartCustomerStatistics.Series.Add(series1);
+            this.chartCustomerStatistics.Size = new System.Drawing.Size(409, 224);
             this.chartCustomerStatistics.TabIndex = 16;
             this.chartCustomerStatistics.Text = "chart1";
             // 
@@ -183,7 +219,7 @@
             this.dtpTimeFrameEnd.ForeColor = System.Drawing.Color.Black;
             this.dtpTimeFrameEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpTimeFrameEnd.Location = new System.Drawing.Point(203, 112);
-            this.dtpTimeFrameEnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTimeFrameEnd.Margin = new System.Windows.Forms.Padding(2);
             this.dtpTimeFrameEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTimeFrameEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTimeFrameEnd.Name = "dtpTimeFrameEnd";
@@ -201,25 +237,13 @@
             this.dtpTimeFrameStart.ForeColor = System.Drawing.Color.Black;
             this.dtpTimeFrameStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpTimeFrameStart.Location = new System.Drawing.Point(203, 28);
-            this.dtpTimeFrameStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTimeFrameStart.Margin = new System.Windows.Forms.Padding(2);
             this.dtpTimeFrameStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTimeFrameStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTimeFrameStart.Name = "dtpTimeFrameStart";
             this.dtpTimeFrameStart.Size = new System.Drawing.Size(200, 38);
             this.dtpTimeFrameStart.TabIndex = 14;
             this.dtpTimeFrameStart.Value = new System.DateTime(2024, 10, 29, 9, 28, 33, 345);
-            // 
-            // guna2HtmlLabel8
-            // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.Snow;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(15, 120);
-            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(172, 22);
-            this.guna2HtmlLabel8.TabIndex = 12;
-            this.guna2HtmlLabel8.Text = "Khoảng thời gian đến";
             // 
             // btnExportCustomerExcel
             // 
@@ -231,7 +255,7 @@
             this.btnExportCustomerExcel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExportCustomerExcel.ForeColor = System.Drawing.Color.White;
             this.btnExportCustomerExcel.Location = new System.Drawing.Point(532, 430);
-            this.btnExportCustomerExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportCustomerExcel.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportCustomerExcel.Name = "btnExportCustomerExcel";
             this.btnExportCustomerExcel.Size = new System.Drawing.Size(120, 39);
             this.btnExportCustomerExcel.TabIndex = 10;
@@ -248,7 +272,7 @@
             this.btnExportCustomerPDF.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExportCustomerPDF.ForeColor = System.Drawing.Color.White;
             this.btnExportCustomerPDF.Location = new System.Drawing.Point(311, 430);
-            this.btnExportCustomerPDF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportCustomerPDF.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportCustomerPDF.Name = "btnExportCustomerPDF";
             this.btnExportCustomerPDF.Size = new System.Drawing.Size(120, 39);
             this.btnExportCustomerPDF.TabIndex = 9;
@@ -265,7 +289,7 @@
             this.btnGenerateCustomerReport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateCustomerReport.ForeColor = System.Drawing.Color.White;
             this.btnGenerateCustomerReport.Location = new System.Drawing.Point(90, 430);
-            this.btnGenerateCustomerReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGenerateCustomerReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerateCustomerReport.Name = "btnGenerateCustomerReport";
             this.btnGenerateCustomerReport.Size = new System.Drawing.Size(120, 39);
             this.btnGenerateCustomerReport.TabIndex = 8;
@@ -274,35 +298,35 @@
             // 
             // dgvCustomerStatistics
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dgvCustomerStatistics.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvCustomerStatistics.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCustomerStatistics.BackgroundColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomerStatistics.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomerStatistics.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCustomerStatistics.ColumnHeadersHeight = 4;
             this.dgvCustomerStatistics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomerStatistics.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomerStatistics.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCustomerStatistics.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvCustomerStatistics.Location = new System.Drawing.Point(12, 202);
-            this.dgvCustomerStatistics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCustomerStatistics.Location = new System.Drawing.Point(23, 185);
+            this.dgvCustomerStatistics.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCustomerStatistics.Name = "dgvCustomerStatistics";
             this.dgvCustomerStatistics.RowHeadersVisible = false;
             this.dgvCustomerStatistics.RowHeadersWidth = 62;
             this.dgvCustomerStatistics.RowTemplate.Height = 28;
-            this.dgvCustomerStatistics.Size = new System.Drawing.Size(408, 196);
+            this.dgvCustomerStatistics.Size = new System.Drawing.Size(428, 224);
             this.dgvCustomerStatistics.TabIndex = 6;
             this.dgvCustomerStatistics.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvCustomerStatistics.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -326,18 +350,6 @@
             this.dgvCustomerStatistics.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCustomerStatistics.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Snow;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(435, 36);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(126, 22);
-            this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.Text = "Loại thành viên";
-            // 
             // cbStatus
             // 
             this.cbStatus.BackColor = System.Drawing.Color.Transparent;
@@ -350,22 +362,10 @@
             this.cbStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbStatus.ItemHeight = 30;
             this.cbStatus.Location = new System.Drawing.Point(621, 28);
-            this.cbStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbStatus.Margin = new System.Windows.Forms.Padding(2);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(152, 36);
             this.cbStatus.TabIndex = 2;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Snow;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 36);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(161, 22);
-            this.guna2HtmlLabel1.TabIndex = 1;
-            this.guna2HtmlLabel1.Text = "Khoảng thời gian từ ";
             // 
             // tabPage2
             // 
@@ -382,27 +382,63 @@
             this.tabPage2.Controls.Add(this.dgvRevenueDetails);
             this.tabPage2.Controls.Add(this.cbRevenueServicePackage);
             this.tabPage2.Location = new System.Drawing.Point(124, 4);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(893, 604);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Doanh thu";
             // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Snow;
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(473, 25);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(93, 22);
+            this.guna2HtmlLabel5.TabIndex = 5;
+            this.guna2HtmlLabel5.Text = "Gói dịch vụ";
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Snow;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(33, 107);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(172, 22);
+            this.guna2HtmlLabel4.TabIndex = 16;
+            this.guna2HtmlLabel4.Text = "Khoảng thời gian đến";
+            // 
+            // guna2HtmlLabel9
+            // 
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.Snow;
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(33, 33);
+            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(161, 22);
+            this.guna2HtmlLabel9.TabIndex = 14;
+            this.guna2HtmlLabel9.Text = "Khoảng thời gian từ ";
+            // 
             // chartRevenue
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartRevenue.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartRevenue.Legends.Add(legend5);
-            this.chartRevenue.Location = new System.Drawing.Point(483, 184);
-            this.chartRevenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            chartArea2.Name = "ChartArea1";
+            this.chartRevenue.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartRevenue.Legends.Add(legend2);
+            this.chartRevenue.Location = new System.Drawing.Point(480, 184);
+            this.chartRevenue.Margin = new System.Windows.Forms.Padding(2);
             this.chartRevenue.Name = "chartRevenue";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartRevenue.Series.Add(series5);
-            this.chartRevenue.Size = new System.Drawing.Size(401, 195);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartRevenue.Series.Add(series2);
+            this.chartRevenue.Size = new System.Drawing.Size(417, 219);
             this.chartRevenue.TabIndex = 23;
             this.chartRevenue.Text = "chart1";
             // 
@@ -416,7 +452,7 @@
             this.btnExportRevenueExcel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExportRevenueExcel.ForeColor = System.Drawing.Color.White;
             this.btnExportRevenueExcel.Location = new System.Drawing.Point(556, 437);
-            this.btnExportRevenueExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportRevenueExcel.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportRevenueExcel.Name = "btnExportRevenueExcel";
             this.btnExportRevenueExcel.Size = new System.Drawing.Size(120, 39);
             this.btnExportRevenueExcel.TabIndex = 22;
@@ -433,7 +469,7 @@
             this.btnExportRevenuePDF.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExportRevenuePDF.ForeColor = System.Drawing.Color.White;
             this.btnExportRevenuePDF.Location = new System.Drawing.Point(335, 437);
-            this.btnExportRevenuePDF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportRevenuePDF.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportRevenuePDF.Name = "btnExportRevenuePDF";
             this.btnExportRevenuePDF.Size = new System.Drawing.Size(120, 39);
             this.btnExportRevenuePDF.TabIndex = 21;
@@ -450,7 +486,7 @@
             this.btnGenerateRevenueReport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateRevenueReport.ForeColor = System.Drawing.Color.White;
             this.btnGenerateRevenueReport.Location = new System.Drawing.Point(114, 437);
-            this.btnGenerateRevenueReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGenerateRevenueReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerateRevenueReport.Name = "btnGenerateRevenueReport";
             this.btnGenerateRevenueReport.Size = new System.Drawing.Size(120, 39);
             this.btnGenerateRevenueReport.TabIndex = 20;
@@ -466,7 +502,7 @@
             this.dtpTimeFrameRevenueEnd.ForeColor = System.Drawing.Color.Black;
             this.dtpTimeFrameRevenueEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpTimeFrameRevenueEnd.Location = new System.Drawing.Point(226, 99);
-            this.dtpTimeFrameRevenueEnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTimeFrameRevenueEnd.Margin = new System.Windows.Forms.Padding(2);
             this.dtpTimeFrameRevenueEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTimeFrameRevenueEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTimeFrameRevenueEnd.Name = "dtpTimeFrameRevenueEnd";
@@ -483,7 +519,7 @@
             this.dtpTimeFrameRevenueStart.ForeColor = System.Drawing.Color.Black;
             this.dtpTimeFrameRevenueStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpTimeFrameRevenueStart.Location = new System.Drawing.Point(226, 25);
-            this.dtpTimeFrameRevenueStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTimeFrameRevenueStart.Margin = new System.Windows.Forms.Padding(2);
             this.dtpTimeFrameRevenueStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTimeFrameRevenueStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTimeFrameRevenueStart.Name = "dtpTimeFrameRevenueStart";
@@ -491,61 +527,37 @@
             this.dtpTimeFrameRevenueStart.TabIndex = 18;
             this.dtpTimeFrameRevenueStart.Value = new System.DateTime(2024, 10, 29, 9, 28, 33, 345);
             // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Snow;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(33, 107);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(172, 22);
-            this.guna2HtmlLabel4.TabIndex = 16;
-            this.guna2HtmlLabel4.Text = "Khoảng thời gian đến";
-            // 
-            // guna2HtmlLabel9
-            // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.Snow;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(33, 33);
-            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(161, 22);
-            this.guna2HtmlLabel9.TabIndex = 14;
-            this.guna2HtmlLabel9.Text = "Khoảng thời gian từ ";
-            // 
             // dgvRevenueDetails
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dgvRevenueDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvRevenueDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvRevenueDetails.BackgroundColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRevenueDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRevenueDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvRevenueDetails.ColumnHeadersHeight = 4;
             this.dgvRevenueDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRevenueDetails.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRevenueDetails.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvRevenueDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvRevenueDetails.Location = new System.Drawing.Point(18, 184);
-            this.dgvRevenueDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvRevenueDetails.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRevenueDetails.Name = "dgvRevenueDetails";
             this.dgvRevenueDetails.RowHeadersVisible = false;
             this.dgvRevenueDetails.RowHeadersWidth = 62;
             this.dgvRevenueDetails.RowTemplate.Height = 28;
-            this.dgvRevenueDetails.Size = new System.Drawing.Size(408, 196);
+            this.dgvRevenueDetails.Size = new System.Drawing.Size(437, 219);
             this.dgvRevenueDetails.TabIndex = 8;
             this.dgvRevenueDetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvRevenueDetails.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -569,18 +581,6 @@
             this.dgvRevenueDetails.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvRevenueDetails.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Snow;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(473, 25);
-            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(93, 22);
-            this.guna2HtmlLabel5.TabIndex = 5;
-            this.guna2HtmlLabel5.Text = "Gói dịch vụ";
-            // 
             // cbRevenueServicePackage
             // 
             this.cbRevenueServicePackage.BackColor = System.Drawing.Color.Transparent;
@@ -593,7 +593,7 @@
             this.cbRevenueServicePackage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbRevenueServicePackage.ItemHeight = 30;
             this.cbRevenueServicePackage.Location = new System.Drawing.Point(589, 25);
-            this.cbRevenueServicePackage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbRevenueServicePackage.Margin = new System.Windows.Forms.Padding(2);
             this.cbRevenueServicePackage.Name = "cbRevenueServicePackage";
             this.cbRevenueServicePackage.Size = new System.Drawing.Size(192, 36);
             this.cbRevenueServicePackage.TabIndex = 4;
@@ -608,9 +608,9 @@
             this.tabPage3.Controls.Add(this.btnGeneratePackageReport);
             this.tabPage3.Controls.Add(this.dgvServicePackageDetails);
             this.tabPage3.Location = new System.Drawing.Point(124, 4);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage3.Size = new System.Drawing.Size(893, 604);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Gói dịch vụ";
@@ -621,7 +621,7 @@
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(389, 57);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(114, 39);
             this.guna2HtmlLabel6.TabIndex = 33;
@@ -629,17 +629,17 @@
             // 
             // chartServicePackages
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chartServicePackages.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chartServicePackages.Legends.Add(legend6);
+            chartArea3.Name = "ChartArea1";
+            this.chartServicePackages.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartServicePackages.Legends.Add(legend3);
             this.chartServicePackages.Location = new System.Drawing.Point(467, 170);
-            this.chartServicePackages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartServicePackages.Margin = new System.Windows.Forms.Padding(2);
             this.chartServicePackages.Name = "chartServicePackages";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chartServicePackages.Series.Add(series6);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartServicePackages.Series.Add(series3);
             this.chartServicePackages.Size = new System.Drawing.Size(431, 195);
             this.chartServicePackages.TabIndex = 32;
             this.chartServicePackages.Text = "chart1";
@@ -654,7 +654,7 @@
             this.btnExportPackageExcel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExportPackageExcel.ForeColor = System.Drawing.Color.White;
             this.btnExportPackageExcel.Location = new System.Drawing.Point(577, 423);
-            this.btnExportPackageExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportPackageExcel.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportPackageExcel.Name = "btnExportPackageExcel";
             this.btnExportPackageExcel.Size = new System.Drawing.Size(120, 39);
             this.btnExportPackageExcel.TabIndex = 29;
@@ -671,7 +671,7 @@
             this.btnExportPackagePDF.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExportPackagePDF.ForeColor = System.Drawing.Color.White;
             this.btnExportPackagePDF.Location = new System.Drawing.Point(356, 423);
-            this.btnExportPackagePDF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportPackagePDF.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportPackagePDF.Name = "btnExportPackagePDF";
             this.btnExportPackagePDF.Size = new System.Drawing.Size(120, 39);
             this.btnExportPackagePDF.TabIndex = 28;
@@ -688,7 +688,7 @@
             this.btnGeneratePackageReport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeneratePackageReport.ForeColor = System.Drawing.Color.White;
             this.btnGeneratePackageReport.Location = new System.Drawing.Point(135, 423);
-            this.btnGeneratePackageReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGeneratePackageReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnGeneratePackageReport.Name = "btnGeneratePackageReport";
             this.btnGeneratePackageReport.Size = new System.Drawing.Size(120, 39);
             this.btnGeneratePackageReport.TabIndex = 27;
@@ -697,30 +697,30 @@
             // 
             // dgvServicePackageDetails
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.dgvServicePackageDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgvServicePackageDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvServicePackageDetails.BackgroundColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvServicePackageDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvServicePackageDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvServicePackageDetails.ColumnHeadersHeight = 4;
             this.dgvServicePackageDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvServicePackageDetails.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvServicePackageDetails.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvServicePackageDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvServicePackageDetails.Location = new System.Drawing.Point(13, 169);
-            this.dgvServicePackageDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvServicePackageDetails.Margin = new System.Windows.Forms.Padding(2);
             this.dgvServicePackageDetails.Name = "dgvServicePackageDetails";
             this.dgvServicePackageDetails.RowHeadersVisible = false;
             this.dgvServicePackageDetails.RowHeadersWidth = 62;
@@ -754,9 +754,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1008, 497);
+            this.ClientSize = new System.Drawing.Size(1059, 509);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmBaoCaoVaThongKe";
             this.Text = "frmBaoCaoVaThongKe";
             this.panel1.ResumeLayout(false);
