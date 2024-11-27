@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDatLich = new Guna.UI2.WinForms.Guna2Button();
             this.cbxDiaChi = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -44,7 +44,6 @@
             this.btnTraCuu = new Guna.UI2.WinForms.Guna2Button();
             this.cbxTrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnTheLichTap = new Guna.UI2.WinForms.Guna2Button();
             this.txtTenKhach = new System.Windows.Forms.TextBox();
             this.txtSoBuoi = new System.Windows.Forms.TextBox();
             this.btnTim = new Guna.UI2.WinForms.Guna2Button();
@@ -76,7 +75,6 @@
             this.panel1.Controls.Add(this.btnTraCuu);
             this.panel1.Controls.Add(this.cbxTrangThai);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.btnTheLichTap);
             this.panel1.Controls.Add(this.txtTenKhach);
             this.panel1.Controls.Add(this.txtSoBuoi);
             this.panel1.Controls.Add(this.btnTim);
@@ -101,6 +99,7 @@
             this.btnDatLich.Size = new System.Drawing.Size(121, 37);
             this.btnDatLich.TabIndex = 44;
             this.btnDatLich.Text = "Đặt lịch";
+            this.btnDatLich.Click += new System.EventHandler(this.btnDatLich_Click_1);
             // 
             // cbxDiaChi
             // 
@@ -219,6 +218,7 @@
             this.btnTraCuu.Size = new System.Drawing.Size(105, 42);
             this.btnTraCuu.TabIndex = 56;
             this.btnTraCuu.Text = "Tra cứu";
+            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click_1);
             // 
             // cbxTrangThai
             // 
@@ -248,19 +248,6 @@
             this.label7.Size = new System.Drawing.Size(101, 22);
             this.label7.TabIndex = 54;
             this.label7.Text = "Trạng thái:";
-            // 
-            // btnTheLichTap
-            // 
-            this.btnTheLichTap.BorderRadius = 10;
-            this.btnTheLichTap.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnTheLichTap.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTheLichTap.ForeColor = System.Drawing.Color.LightCyan;
-            this.btnTheLichTap.Location = new System.Drawing.Point(192, 118);
-            this.btnTheLichTap.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTheLichTap.Name = "btnTheLichTap";
-            this.btnTheLichTap.Size = new System.Drawing.Size(130, 42);
-            this.btnTheLichTap.TabIndex = 53;
-            this.btnTheLichTap.Text = "Thêm lịch tập";
             // 
             // txtTenKhach
             // 
@@ -292,6 +279,7 @@
             this.btnTim.Size = new System.Drawing.Size(89, 37);
             this.btnTim.TabIndex = 50;
             this.btnTim.Text = "Tìm";
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtMaKhach
             // 
@@ -331,16 +319,16 @@
             // 
             // dgvLichTap
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvLichTap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLichTap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.dgvLichTap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLichTap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvLichTap.ColumnHeadersHeight = 27;
             this.dgvLichTap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvLichTap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -349,14 +337,14 @@
             this.thoigianbatdau,
             this.thoigianketthuc,
             this.huanluyenvien});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLichTap.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLichTap.DefaultCellStyle = dataGridViewCellStyle18;
             this.dgvLichTap.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvLichTap.Location = new System.Drawing.Point(74, 171);
             this.dgvLichTap.Margin = new System.Windows.Forms.Padding(2);
@@ -461,7 +449,6 @@
         private Guna.UI2.WinForms.Guna2Button btnTraCuu;
         private Guna.UI2.WinForms.Guna2ComboBox cbxTrangThai;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2Button btnTheLichTap;
         private System.Windows.Forms.TextBox txtTenKhach;
         private System.Windows.Forms.TextBox txtSoBuoi;
         private Guna.UI2.WinForms.Guna2Button btnTim;
