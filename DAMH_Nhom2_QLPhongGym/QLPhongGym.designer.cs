@@ -75,7 +75,7 @@ namespace DAMH_Nhom2_QLPhongGym
     #endregion
 		
 		public QLPhongGymDataContext() : 
-				base(global::DAMH_Nhom2_QLPhongGym.Properties.Settings.Default.QLPhongGymConnectionString, mappingSource)
+				base(global::DAMH_Nhom2_QLPhongGym.Properties.Settings.Default.QLPhongGymConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
