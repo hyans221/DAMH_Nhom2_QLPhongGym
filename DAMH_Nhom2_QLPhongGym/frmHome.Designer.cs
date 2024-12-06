@@ -114,7 +114,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 56);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(217, 593);
+            this.panelMenu.Size = new System.Drawing.Size(217, 657);
             this.panelMenu.TabIndex = 1;
             // 
             // guna2TabControl1
@@ -195,7 +195,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnVaiTro.Font = new System.Drawing.Font("Ebrima", 12.25F);
             this.btnVaiTro.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnVaiTro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVaiTro.Location = new System.Drawing.Point(0, 532);
+            this.btnVaiTro.Location = new System.Drawing.Point(0, 596);
             this.btnVaiTro.Name = "btnVaiTro";
             this.btnVaiTro.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnVaiTro.Size = new System.Drawing.Size(217, 61);
@@ -290,14 +290,14 @@ namespace DAMH_Nhom2_QLPhongGym
             this.Panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_container.Location = new System.Drawing.Point(217, 56);
             this.Panel_container.Name = "Panel_container";
-            this.Panel_container.Size = new System.Drawing.Size(986, 593);
+            this.Panel_container.Size = new System.Drawing.Size(986, 657);
             this.Panel_container.TabIndex = 2;
             // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 649);
+            this.ClientSize = new System.Drawing.Size(1203, 713);
             this.Controls.Add(this.Panel_container);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panel2);
