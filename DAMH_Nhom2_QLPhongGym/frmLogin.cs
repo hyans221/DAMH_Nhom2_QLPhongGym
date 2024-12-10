@@ -65,5 +65,9 @@ namespace DAMH_Nhom2_QLPhongGym
             //frmForgotPassword.Show();
         }
 
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
