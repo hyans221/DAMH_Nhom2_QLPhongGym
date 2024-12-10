@@ -362,7 +362,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2GroupBox3.Name = "guna2GroupBox3";
             this.guna2GroupBox3.Size = new System.Drawing.Size(1031, 223);
             this.guna2GroupBox3.TabIndex = 55;
-            this.guna2GroupBox3.Text = "Các gói tập cùng huấn luyện viên:";
+            this.guna2GroupBox3.Text = "Các thẻ tập tại phòng gym:";
             // 
             // label14
             // 
