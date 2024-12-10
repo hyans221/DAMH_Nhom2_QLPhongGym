@@ -12,16 +12,65 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using Rectangle = System.Drawing.Rectangle;
+
 
 namespace DAMH_Nhom2_QLPhongGym
 {
     public partial class frmBaoCaoVaThongKe : Form
     {
+        private Dictionary<Control, Rectangle> originalSizes = new Dictionary<Control, Rectangle>();
+        private Size originalFormSize;
         public frmBaoCaoVaThongKe()
         {
             InitializeComponent();
             LoadLoaiThanhVienIntoComboBox();
             LoadServicePackages();
+            SaveOriginalSizes();
+            this.Resize += FrmBaoCaoVaThongKe_Resize;
+        }
+
+        private void FrmBaoCaoVaThongKe_Resize(object sender, EventArgs e)
+        {
+            float xRatio = (float)this.Width / originalFormSize.Width;
+            float yRatio = (float)this.Height / originalFormSize.Height;
+
+            foreach (var item in originalSizes)
+            {
+                Control control = item.Key;
+                Rectangle originalRect = item.Value;
+
+                // Tính toán vị trí và kích thước mới
+                int newX = (int)(originalRect.X * xRatio);
+                int newY = (int)(originalRect.Y * yRatio);
+                int newWidth = (int)(originalRect.Width * xRatio);
+                int newHeight = (int)(originalRect.Height * yRatio);
+
+                // Áp dụng thay đổi
+                control.Location = new Point(newX, newY);
+                control.Size = new Size(newWidth, newHeight);
+            }
+        }
+
+        private void SaveOriginalSizes()
+        {
+            originalFormSize = this.Size;
+
+            foreach (Control control in this.Controls)
+            {
+                SaveControlSizes(control);
+            }
+        }
+
+        private void SaveControlSizes(Control control)
+        {
+            originalSizes[control] = new Rectangle(control.Location, control.Size);
+
+            // Lưu kích thước của các control con
+            foreach (Control childControl in control.Controls)
+            {
+                SaveControlSizes(childControl);
+            }
         }
         private void btnGeneratePackageReport_Click(object sender, EventArgs e)
         {
