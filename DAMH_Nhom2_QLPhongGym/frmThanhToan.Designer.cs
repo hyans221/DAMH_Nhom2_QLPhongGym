@@ -32,46 +32,35 @@ namespace DAMH_Nhom2_QLPhongGym
         {
             this.rdo3Thang = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.rdo3Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rdo8Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rdo6Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rdo2Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdo1Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdo2Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdo6Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdo8Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
             this.txtNhanVien = new System.Windows.Forms.Label();
+            this.txtThanhTien = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.rdo_6Thang = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rdo_24Thang = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rdo_12Thang = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rdo_3Thang = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdo_1Thang = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdo_3Thang = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdo_12Thang = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdo_24Thang = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdo_6Thang = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_XacNhan = new Guna.UI2.WinForms.Guna2Button();
             this.txt_ThanhTien = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemThanhVien = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtLoaiHoaDon = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnKiemTraID = new Guna.UI2.WinForms.Guna2Button();
-            this.btnXacNhan = new Guna.UI2.WinForms.Guna2Button();
-            this.txtIDNhanVien = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtIDKhachHang = new Guna.UI2.WinForms.Guna2TextBox();
+            this.rdo3Buoi = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdo1Thang = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.label15 = new System.Windows.Forms.Label();
             this.rdo12Thang = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdo24Thang = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdo6Thang = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -87,6 +76,19 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2RadioButton6 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtIDKhachHang = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtIDNhanVien = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnXacNhan = new Guna.UI2.WinForms.Guna2Button();
+            this.btnKiemTraID = new Guna.UI2.WinForms.Guna2Button();
+            this.txtLoaiHoaDon = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2GroupBox2.SuspendLayout();
             this.guna2GroupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -132,174 +134,12 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2GroupBox2.Controls.Add(this.rdo1Buoi);
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox2.Location = new System.Drawing.Point(182, 555);
-            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(121, 361);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(641, 265);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(415, 172);
             this.guna2GroupBox2.TabIndex = 54;
             this.guna2GroupBox2.Text = "Các gói tập cùng huấn luyện viên:";
             this.guna2GroupBox2.Click += new System.EventHandler(this.guna2GroupBox2_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label19.ForeColor = System.Drawing.Color.Brown;
-            this.label19.Location = new System.Drawing.Point(477, 126);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(85, 22);
-            this.label19.TabIndex = 86;
-            this.label19.Text = "950.000đ";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label18.ForeColor = System.Drawing.Color.Brown;
-            this.label18.Location = new System.Drawing.Point(260, 226);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(100, 22);
-            this.label18.TabIndex = 85;
-            this.label18.Text = "2.500.000đ";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label17.ForeColor = System.Drawing.Color.Brown;
-            this.label17.Location = new System.Drawing.Point(54, 226);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 22);
-            this.label17.TabIndex = 84;
-            this.label17.Text = "1.800.000đ";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label16.ForeColor = System.Drawing.Color.Brown;
-            this.label16.Location = new System.Drawing.Point(260, 126);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 22);
-            this.label16.TabIndex = 83;
-            this.label16.Text = "500.000đ";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label15.ForeColor = System.Drawing.Color.Brown;
-            this.label15.Location = new System.Drawing.Point(40, 126);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 22);
-            this.label15.TabIndex = 82;
-            this.label15.Text = "300.000đ";
-            // 
-            // rdo3Buoi
-            // 
-            this.rdo3Buoi.AutoSize = true;
-            this.rdo3Buoi.BackColor = System.Drawing.Color.Transparent;
-            this.rdo3Buoi.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.rdo3Buoi.CheckedState.BorderThickness = 0;
-            this.rdo3Buoi.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.rdo3Buoi.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo3Buoi.CheckedState.InnerOffset = -4;
-            this.rdo3Buoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.rdo3Buoi.ForeColor = System.Drawing.Color.DimGray;
-            this.rdo3Buoi.Location = new System.Drawing.Point(468, 85);
-            this.rdo3Buoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo3Buoi.Name = "rdo3Buoi";
-            this.rdo3Buoi.Size = new System.Drawing.Size(130, 36);
-            this.rdo3Buoi.TabIndex = 0;
-            this.rdo3Buoi.Text = "10 buổi";
-            this.rdo3Buoi.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.rdo3Buoi.UncheckedState.BorderThickness = 2;
-            this.rdo3Buoi.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo3Buoi.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdo3Buoi.UseVisualStyleBackColor = false;
-            this.rdo3Buoi.CheckedChanged += new System.EventHandler(this.rdo3Buoi_CheckedChanged);
-            // 
-            // rdo8Buoi
-            // 
-            this.rdo8Buoi.AutoSize = true;
-            this.rdo8Buoi.BackColor = System.Drawing.Color.Transparent;
-            this.rdo8Buoi.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.rdo8Buoi.CheckedState.BorderThickness = 0;
-            this.rdo8Buoi.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.rdo8Buoi.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo8Buoi.CheckedState.InnerOffset = -4;
-            this.rdo8Buoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.rdo8Buoi.ForeColor = System.Drawing.Color.DimGray;
-            this.rdo8Buoi.Location = new System.Drawing.Point(244, 185);
-            this.rdo8Buoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo8Buoi.Name = "rdo8Buoi";
-            this.rdo8Buoi.Size = new System.Drawing.Size(130, 36);
-            this.rdo8Buoi.TabIndex = 0;
-            this.rdo8Buoi.Text = "30 buổi";
-            this.rdo8Buoi.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.rdo8Buoi.UncheckedState.BorderThickness = 2;
-            this.rdo8Buoi.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo8Buoi.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdo8Buoi.UseVisualStyleBackColor = false;
-            this.rdo8Buoi.CheckedChanged += new System.EventHandler(this.rdo8Buoi_CheckedChanged);
-            // 
-            // rdo6Buoi
-            // 
-            this.rdo6Buoi.AutoSize = true;
-            this.rdo6Buoi.BackColor = System.Drawing.Color.Transparent;
-            this.rdo6Buoi.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.rdo6Buoi.CheckedState.BorderThickness = 0;
-            this.rdo6Buoi.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.rdo6Buoi.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo6Buoi.CheckedState.InnerOffset = -4;
-            this.rdo6Buoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.rdo6Buoi.ForeColor = System.Drawing.Color.DimGray;
-            this.rdo6Buoi.Location = new System.Drawing.Point(34, 185);
-            this.rdo6Buoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo6Buoi.Name = "rdo6Buoi";
-            this.rdo6Buoi.Size = new System.Drawing.Size(130, 36);
-            this.rdo6Buoi.TabIndex = 0;
-            this.rdo6Buoi.Text = "20 buổi";
-            this.rdo6Buoi.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.rdo6Buoi.UncheckedState.BorderThickness = 2;
-            this.rdo6Buoi.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo6Buoi.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdo6Buoi.UseVisualStyleBackColor = false;
-            this.rdo6Buoi.CheckedChanged += new System.EventHandler(this.rdo6Buoi_CheckedChanged);
-            // 
-            // rdo2Buoi
-            // 
-            this.rdo2Buoi.AutoSize = true;
-            this.rdo2Buoi.BackColor = System.Drawing.Color.Transparent;
-            this.rdo2Buoi.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.rdo2Buoi.CheckedState.BorderThickness = 0;
-            this.rdo2Buoi.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.rdo2Buoi.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo2Buoi.CheckedState.InnerOffset = -4;
-            this.rdo2Buoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.rdo2Buoi.ForeColor = System.Drawing.Color.DimGray;
-            this.rdo2Buoi.Location = new System.Drawing.Point(246, 85);
-            this.rdo2Buoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo2Buoi.Name = "rdo2Buoi";
-            this.rdo2Buoi.Size = new System.Drawing.Size(115, 36);
-            this.rdo2Buoi.TabIndex = 0;
-            this.rdo2Buoi.Text = "5 buổi";
-            this.rdo2Buoi.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.rdo2Buoi.UncheckedState.BorderThickness = 2;
-            this.rdo2Buoi.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo2Buoi.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdo2Buoi.UseVisualStyleBackColor = false;
-            this.rdo2Buoi.CheckedChanged += new System.EventHandler(this.rdo2Buoi_CheckedChanged);
             // 
             // rdo1Buoi
             // 
@@ -312,10 +152,9 @@ namespace DAMH_Nhom2_QLPhongGym
             this.rdo1Buoi.CheckedState.InnerOffset = -4;
             this.rdo1Buoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.rdo1Buoi.ForeColor = System.Drawing.Color.DimGray;
-            this.rdo1Buoi.Location = new System.Drawing.Point(34, 85);
-            this.rdo1Buoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rdo1Buoi.Location = new System.Drawing.Point(23, 55);
             this.rdo1Buoi.Name = "rdo1Buoi";
-            this.rdo1Buoi.Size = new System.Drawing.Size(115, 36);
+            this.rdo1Buoi.Size = new System.Drawing.Size(78, 26);
             this.rdo1Buoi.TabIndex = 0;
             this.rdo1Buoi.Text = "3 buổi";
             this.rdo1Buoi.UncheckedState.BorderColor = System.Drawing.Color.Snow;
@@ -325,18 +164,121 @@ namespace DAMH_Nhom2_QLPhongGym
             this.rdo1Buoi.UseVisualStyleBackColor = false;
             this.rdo1Buoi.CheckedChanged += new System.EventHandler(this.rdo1Buoi_CheckedChanged);
             // 
+            // rdo2Buoi
+            // 
+            this.rdo2Buoi.AutoSize = true;
+            this.rdo2Buoi.BackColor = System.Drawing.Color.Transparent;
+            this.rdo2Buoi.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.rdo2Buoi.CheckedState.BorderThickness = 0;
+            this.rdo2Buoi.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.rdo2Buoi.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo2Buoi.CheckedState.InnerOffset = -4;
+            this.rdo2Buoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.rdo2Buoi.ForeColor = System.Drawing.Color.DimGray;
+            this.rdo2Buoi.Location = new System.Drawing.Point(164, 55);
+            this.rdo2Buoi.Name = "rdo2Buoi";
+            this.rdo2Buoi.Size = new System.Drawing.Size(78, 26);
+            this.rdo2Buoi.TabIndex = 0;
+            this.rdo2Buoi.Text = "5 buổi";
+            this.rdo2Buoi.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.rdo2Buoi.UncheckedState.BorderThickness = 2;
+            this.rdo2Buoi.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo2Buoi.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo2Buoi.UseVisualStyleBackColor = false;
+            this.rdo2Buoi.CheckedChanged += new System.EventHandler(this.rdo2Buoi_CheckedChanged);
+            // 
+            // rdo6Buoi
+            // 
+            this.rdo6Buoi.AutoSize = true;
+            this.rdo6Buoi.BackColor = System.Drawing.Color.Transparent;
+            this.rdo6Buoi.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.rdo6Buoi.CheckedState.BorderThickness = 0;
+            this.rdo6Buoi.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.rdo6Buoi.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo6Buoi.CheckedState.InnerOffset = -4;
+            this.rdo6Buoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.rdo6Buoi.ForeColor = System.Drawing.Color.DimGray;
+            this.rdo6Buoi.Location = new System.Drawing.Point(23, 120);
+            this.rdo6Buoi.Name = "rdo6Buoi";
+            this.rdo6Buoi.Size = new System.Drawing.Size(88, 26);
+            this.rdo6Buoi.TabIndex = 0;
+            this.rdo6Buoi.Text = "20 buổi";
+            this.rdo6Buoi.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.rdo6Buoi.UncheckedState.BorderThickness = 2;
+            this.rdo6Buoi.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo6Buoi.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo6Buoi.UseVisualStyleBackColor = false;
+            this.rdo6Buoi.CheckedChanged += new System.EventHandler(this.rdo6Buoi_CheckedChanged);
+            // 
+            // rdo8Buoi
+            // 
+            this.rdo8Buoi.AutoSize = true;
+            this.rdo8Buoi.BackColor = System.Drawing.Color.Transparent;
+            this.rdo8Buoi.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.rdo8Buoi.CheckedState.BorderThickness = 0;
+            this.rdo8Buoi.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.rdo8Buoi.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo8Buoi.CheckedState.InnerOffset = -4;
+            this.rdo8Buoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.rdo8Buoi.ForeColor = System.Drawing.Color.DimGray;
+            this.rdo8Buoi.Location = new System.Drawing.Point(163, 120);
+            this.rdo8Buoi.Name = "rdo8Buoi";
+            this.rdo8Buoi.Size = new System.Drawing.Size(88, 26);
+            this.rdo8Buoi.TabIndex = 0;
+            this.rdo8Buoi.Text = "30 buổi";
+            this.rdo8Buoi.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.rdo8Buoi.UncheckedState.BorderThickness = 2;
+            this.rdo8Buoi.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo8Buoi.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo8Buoi.UseVisualStyleBackColor = false;
+            this.rdo8Buoi.CheckedChanged += new System.EventHandler(this.rdo8Buoi_CheckedChanged);
+            // 
             // txtNhanVien
             // 
             this.txtNhanVien.AutoSize = true;
             this.txtNhanVien.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtNhanVien.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNhanVien.Location = new System.Drawing.Point(16, 155);
-            this.txtNhanVien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtNhanVien.Location = new System.Drawing.Point(11, 101);
             this.txtNhanVien.Name = "txtNhanVien";
-            this.txtNhanVien.Size = new System.Drawing.Size(322, 32);
+            this.txtNhanVien.Size = new System.Drawing.Size(211, 22);
             this.txtNhanVien.TabIndex = 68;
             this.txtNhanVien.Text = "ID nhân viên thanh toán:";
             this.txtNhanVien.Click += new System.EventHandler(this.txtNhanVien_Click);
+            // 
+            // txtThanhTien
+            // 
+            this.txtThanhTien.BackColor = System.Drawing.Color.White;
+            this.txtThanhTien.BorderRadius = 10;
+            this.txtThanhTien.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtThanhTien.DefaultText = "";
+            this.txtThanhTien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtThanhTien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtThanhTien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtThanhTien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtThanhTien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtThanhTien.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.txtThanhTien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtThanhTien.Location = new System.Drawing.Point(815, 695);
+            this.txtThanhTien.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtThanhTien.Name = "txtThanhTien";
+            this.txtThanhTien.PasswordChar = '\0';
+            this.txtThanhTien.PlaceholderText = "";
+            this.txtThanhTien.SelectedText = "";
+            this.txtThanhTien.Size = new System.Drawing.Size(322, 51);
+            this.txtThanhTien.TabIndex = 73;
+            this.txtThanhTien.TextChanged += new System.EventHandler(this.txtThanhTien_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label9.Location = new System.Drawing.Point(612, 705);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 26);
+            this.label9.TabIndex = 74;
+            this.label9.Text = "Thành tiền:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // guna2GroupBox3
             // 
@@ -357,195 +299,11 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2GroupBox3.Controls.Add(this.rdo_1Thang);
             this.guna2GroupBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox3.Location = new System.Drawing.Point(182, 254);
-            this.guna2GroupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GroupBox3.Location = new System.Drawing.Point(121, 165);
             this.guna2GroupBox3.Name = "guna2GroupBox3";
-            this.guna2GroupBox3.Size = new System.Drawing.Size(1051, 223);
+            this.guna2GroupBox3.Size = new System.Drawing.Size(688, 145);
             this.guna2GroupBox3.TabIndex = 55;
             this.guna2GroupBox3.Text = "Các gói tập cùng huấn luyện viên:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label14.ForeColor = System.Drawing.Color.Brown;
-            this.label14.Location = new System.Drawing.Point(530, 186);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 22);
-            this.label14.TabIndex = 81;
-            this.label14.Text = "2.700.000đ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.ForeColor = System.Drawing.Color.Brown;
-            this.label13.Location = new System.Drawing.Point(254, 186);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 22);
-            this.label13.TabIndex = 80;
-            this.label13.Text = "1.500.000đ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.ForeColor = System.Drawing.Color.Brown;
-            this.label12.Location = new System.Drawing.Point(796, 112);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 22);
-            this.label12.TabIndex = 79;
-            this.label12.Text = "850.000đ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.ForeColor = System.Drawing.Color.Brown;
-            this.label11.Location = new System.Drawing.Point(530, 112);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 22);
-            this.label11.TabIndex = 78;
-            this.label11.Text = "300.000đ";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.ForeColor = System.Drawing.Color.Brown;
-            this.label10.Location = new System.Drawing.Point(256, 112);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 22);
-            this.label10.TabIndex = 77;
-            this.label10.Text = "100.000đ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(16, 148);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 32);
-            this.label8.TabIndex = 76;
-            this.label8.Text = "Nâng cao:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(15, 74);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 32);
-            this.label7.TabIndex = 75;
-            this.label7.Text = "Tiêu chuẩn:";
-            // 
-            // rdo_6Thang
-            // 
-            this.rdo_6Thang.AutoSize = true;
-            this.rdo_6Thang.BackColor = System.Drawing.Color.Transparent;
-            this.rdo_6Thang.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.rdo_6Thang.CheckedState.BorderThickness = 0;
-            this.rdo_6Thang.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.rdo_6Thang.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo_6Thang.CheckedState.InnerOffset = -4;
-            this.rdo_6Thang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.rdo_6Thang.ForeColor = System.Drawing.Color.Gray;
-            this.rdo_6Thang.Location = new System.Drawing.Point(734, 71);
-            this.rdo_6Thang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo_6Thang.Name = "rdo_6Thang";
-            this.rdo_6Thang.Size = new System.Drawing.Size(233, 36);
-            this.rdo_6Thang.TabIndex = 0;
-            this.rdo_6Thang.Text = "Gói tập 90 ngày";
-            this.rdo_6Thang.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.rdo_6Thang.UncheckedState.BorderThickness = 2;
-            this.rdo_6Thang.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo_6Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdo_6Thang.UseVisualStyleBackColor = false;
-            // 
-            // rdo_24Thang
-            // 
-            this.rdo_24Thang.AutoSize = true;
-            this.rdo_24Thang.BackColor = System.Drawing.Color.Transparent;
-            this.rdo_24Thang.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.rdo_24Thang.CheckedState.BorderThickness = 0;
-            this.rdo_24Thang.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.rdo_24Thang.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo_24Thang.CheckedState.InnerOffset = -4;
-            this.rdo_24Thang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.rdo_24Thang.ForeColor = System.Drawing.Color.DimGray;
-            this.rdo_24Thang.Location = new System.Drawing.Point(476, 145);
-            this.rdo_24Thang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo_24Thang.Name = "rdo_24Thang";
-            this.rdo_24Thang.Size = new System.Drawing.Size(248, 36);
-            this.rdo_24Thang.TabIndex = 0;
-            this.rdo_24Thang.Text = "Gói tập 365 ngày";
-            this.rdo_24Thang.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.rdo_24Thang.UncheckedState.BorderThickness = 2;
-            this.rdo_24Thang.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo_24Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdo_24Thang.UseVisualStyleBackColor = false;
-            // 
-            // rdo_12Thang
-            // 
-            this.rdo_12Thang.AutoSize = true;
-            this.rdo_12Thang.BackColor = System.Drawing.Color.Transparent;
-            this.rdo_12Thang.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.rdo_12Thang.CheckedState.BorderThickness = 0;
-            this.rdo_12Thang.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.rdo_12Thang.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo_12Thang.CheckedState.InnerOffset = -4;
-            this.rdo_12Thang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.rdo_12Thang.ForeColor = System.Drawing.Color.DimGray;
-            this.rdo_12Thang.Location = new System.Drawing.Point(194, 145);
-            this.rdo_12Thang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo_12Thang.Name = "rdo_12Thang";
-            this.rdo_12Thang.Size = new System.Drawing.Size(248, 36);
-            this.rdo_12Thang.TabIndex = 0;
-            this.rdo_12Thang.Text = "Gói tập 180 ngày";
-            this.rdo_12Thang.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.rdo_12Thang.UncheckedState.BorderThickness = 2;
-            this.rdo_12Thang.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo_12Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdo_12Thang.UseVisualStyleBackColor = false;
-            // 
-            // rdo_3Thang
-            // 
-            this.rdo_3Thang.AutoSize = true;
-            this.rdo_3Thang.BackColor = System.Drawing.Color.Transparent;
-            this.rdo_3Thang.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.rdo_3Thang.CheckedState.BorderThickness = 0;
-            this.rdo_3Thang.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.rdo_3Thang.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo_3Thang.CheckedState.InnerOffset = -4;
-            this.rdo_3Thang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.rdo_3Thang.ForeColor = System.Drawing.Color.Gray;
-            this.rdo_3Thang.Location = new System.Drawing.Point(466, 71);
-            this.rdo_3Thang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo_3Thang.Name = "rdo_3Thang";
-            this.rdo_3Thang.Size = new System.Drawing.Size(233, 36);
-            this.rdo_3Thang.TabIndex = 0;
-            this.rdo_3Thang.Text = "Gói tập 30 ngày";
-            this.rdo_3Thang.UncheckedState.BorderColor = System.Drawing.Color.Snow;
-            this.rdo_3Thang.UncheckedState.BorderThickness = 2;
-            this.rdo_3Thang.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo_3Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rdo_3Thang.UseVisualStyleBackColor = false;
             // 
             // rdo_1Thang
             // 
@@ -558,10 +316,9 @@ namespace DAMH_Nhom2_QLPhongGym
             this.rdo_1Thang.CheckedState.InnerOffset = -4;
             this.rdo_1Thang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.rdo_1Thang.ForeColor = System.Drawing.Color.Gray;
-            this.rdo_1Thang.Location = new System.Drawing.Point(194, 71);
-            this.rdo_1Thang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rdo_1Thang.Location = new System.Drawing.Point(129, 46);
             this.rdo_1Thang.Name = "rdo_1Thang";
-            this.rdo_1Thang.Size = new System.Drawing.Size(218, 36);
+            this.rdo_1Thang.Size = new System.Drawing.Size(148, 26);
             this.rdo_1Thang.TabIndex = 0;
             this.rdo_1Thang.Text = "Gói tập 7 ngày";
             this.rdo_1Thang.UncheckedState.BorderColor = System.Drawing.Color.Snow;
@@ -569,6 +326,178 @@ namespace DAMH_Nhom2_QLPhongGym
             this.rdo_1Thang.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rdo_1Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.rdo_1Thang.UseVisualStyleBackColor = false;
+            // 
+            // rdo_3Thang
+            // 
+            this.rdo_3Thang.AutoSize = true;
+            this.rdo_3Thang.BackColor = System.Drawing.Color.Transparent;
+            this.rdo_3Thang.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.rdo_3Thang.CheckedState.BorderThickness = 0;
+            this.rdo_3Thang.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.rdo_3Thang.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo_3Thang.CheckedState.InnerOffset = -4;
+            this.rdo_3Thang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.rdo_3Thang.ForeColor = System.Drawing.Color.Gray;
+            this.rdo_3Thang.Location = new System.Drawing.Point(311, 46);
+            this.rdo_3Thang.Name = "rdo_3Thang";
+            this.rdo_3Thang.Size = new System.Drawing.Size(158, 26);
+            this.rdo_3Thang.TabIndex = 0;
+            this.rdo_3Thang.Text = "Gói tập 30 ngày";
+            this.rdo_3Thang.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.rdo_3Thang.UncheckedState.BorderThickness = 2;
+            this.rdo_3Thang.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo_3Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo_3Thang.UseVisualStyleBackColor = false;
+            // 
+            // rdo_12Thang
+            // 
+            this.rdo_12Thang.AutoSize = true;
+            this.rdo_12Thang.BackColor = System.Drawing.Color.Transparent;
+            this.rdo_12Thang.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.rdo_12Thang.CheckedState.BorderThickness = 0;
+            this.rdo_12Thang.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.rdo_12Thang.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo_12Thang.CheckedState.InnerOffset = -4;
+            this.rdo_12Thang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.rdo_12Thang.ForeColor = System.Drawing.Color.DimGray;
+            this.rdo_12Thang.Location = new System.Drawing.Point(129, 94);
+            this.rdo_12Thang.Name = "rdo_12Thang";
+            this.rdo_12Thang.Size = new System.Drawing.Size(168, 26);
+            this.rdo_12Thang.TabIndex = 0;
+            this.rdo_12Thang.Text = "Gói tập 180 ngày";
+            this.rdo_12Thang.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.rdo_12Thang.UncheckedState.BorderThickness = 2;
+            this.rdo_12Thang.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo_12Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo_12Thang.UseVisualStyleBackColor = false;
+            // 
+            // rdo_24Thang
+            // 
+            this.rdo_24Thang.AutoSize = true;
+            this.rdo_24Thang.BackColor = System.Drawing.Color.Transparent;
+            this.rdo_24Thang.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.rdo_24Thang.CheckedState.BorderThickness = 0;
+            this.rdo_24Thang.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.rdo_24Thang.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo_24Thang.CheckedState.InnerOffset = -4;
+            this.rdo_24Thang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.rdo_24Thang.ForeColor = System.Drawing.Color.DimGray;
+            this.rdo_24Thang.Location = new System.Drawing.Point(317, 94);
+            this.rdo_24Thang.Name = "rdo_24Thang";
+            this.rdo_24Thang.Size = new System.Drawing.Size(168, 26);
+            this.rdo_24Thang.TabIndex = 0;
+            this.rdo_24Thang.Text = "Gói tập 365 ngày";
+            this.rdo_24Thang.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.rdo_24Thang.UncheckedState.BorderThickness = 2;
+            this.rdo_24Thang.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo_24Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo_24Thang.UseVisualStyleBackColor = false;
+            // 
+            // rdo_6Thang
+            // 
+            this.rdo_6Thang.AutoSize = true;
+            this.rdo_6Thang.BackColor = System.Drawing.Color.Transparent;
+            this.rdo_6Thang.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.rdo_6Thang.CheckedState.BorderThickness = 0;
+            this.rdo_6Thang.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.rdo_6Thang.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo_6Thang.CheckedState.InnerOffset = -4;
+            this.rdo_6Thang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.rdo_6Thang.ForeColor = System.Drawing.Color.Gray;
+            this.rdo_6Thang.Location = new System.Drawing.Point(489, 46);
+            this.rdo_6Thang.Name = "rdo_6Thang";
+            this.rdo_6Thang.Size = new System.Drawing.Size(158, 26);
+            this.rdo_6Thang.TabIndex = 0;
+            this.rdo_6Thang.Text = "Gói tập 90 ngày";
+            this.rdo_6Thang.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.rdo_6Thang.UncheckedState.BorderThickness = 2;
+            this.rdo_6Thang.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo_6Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo_6Thang.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(10, 48);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 22);
+            this.label7.TabIndex = 75;
+            this.label7.Text = "Tiêu chuẩn:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.ForeColor = System.Drawing.Color.Gray;
+            this.label8.Location = new System.Drawing.Point(11, 96);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(93, 22);
+            this.label8.TabIndex = 76;
+            this.label8.Text = "Nâng cao:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label10.ForeColor = System.Drawing.Color.Brown;
+            this.label10.Location = new System.Drawing.Point(171, 73);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(60, 16);
+            this.label10.TabIndex = 77;
+            this.label10.Text = "100.000đ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.ForeColor = System.Drawing.Color.Brown;
+            this.label11.Location = new System.Drawing.Point(353, 73);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(60, 16);
+            this.label11.TabIndex = 78;
+            this.label11.Text = "300.000đ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.ForeColor = System.Drawing.Color.Brown;
+            this.label12.Location = new System.Drawing.Point(531, 73);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(60, 16);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "850.000đ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label13.ForeColor = System.Drawing.Color.Brown;
+            this.label13.Location = new System.Drawing.Point(169, 121);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(71, 16);
+            this.label13.TabIndex = 80;
+            this.label13.Text = "1.500.000đ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.ForeColor = System.Drawing.Color.Brown;
+            this.label14.Location = new System.Drawing.Point(353, 121);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(71, 16);
+            this.label14.TabIndex = 81;
+            this.label14.Text = "2.700.000đ";
             // 
             // guna2Button4
             // 
@@ -582,10 +511,9 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button4.Location = new System.Drawing.Point(934, 889);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Button4.Location = new System.Drawing.Point(623, 578);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(279, 65);
+            this.guna2Button4.Size = new System.Drawing.Size(186, 42);
             this.guna2Button4.TabIndex = 75;
             this.guna2Button4.Text = "Hủy";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -601,10 +529,9 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btn_XacNhan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XacNhan.ForeColor = System.Drawing.Color.White;
             this.btn_XacNhan.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_XacNhan.Location = new System.Drawing.Point(348, 889);
-            this.btn_XacNhan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_XacNhan.Location = new System.Drawing.Point(232, 578);
             this.btn_XacNhan.Name = "btn_XacNhan";
-            this.btn_XacNhan.Size = new System.Drawing.Size(279, 65);
+            this.btn_XacNhan.Size = new System.Drawing.Size(186, 42);
             this.btn_XacNhan.TabIndex = 76;
             this.btn_XacNhan.Text = "Xác nhận";
             this.btn_XacNhan.Click += new System.EventHandler(this.btn_XacNhan_Click);
@@ -622,13 +549,13 @@ namespace DAMH_Nhom2_QLPhongGym
             this.txt_ThanhTien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_ThanhTien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ThanhTien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_ThanhTien.Location = new System.Drawing.Point(957, 715);
-            this.txt_ThanhTien.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
+            this.txt_ThanhTien.Location = new System.Drawing.Point(625, 465);
+            this.txt_ThanhTien.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txt_ThanhTien.Name = "txt_ThanhTien";
             this.txt_ThanhTien.PasswordChar = '\0';
             this.txt_ThanhTien.PlaceholderText = "";
             this.txt_ThanhTien.SelectedText = "";
-            this.txt_ThanhTien.Size = new System.Drawing.Size(279, 65);
+            this.txt_ThanhTien.Size = new System.Drawing.Size(186, 42);
             this.txt_ThanhTien.TabIndex = 77;
             // 
             // guna2Button5
@@ -644,10 +571,9 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.iconNhap2;
             this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(953, 585);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Button5.Location = new System.Drawing.Point(623, 380);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(279, 65);
+            this.guna2Button5.Size = new System.Drawing.Size(186, 42);
             this.guna2Button5.TabIndex = 78;
             this.guna2Button5.Text = "Tính tiền";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
@@ -665,10 +591,9 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnThemThanhVien.ForeColor = System.Drawing.Color.White;
             this.btnThemThanhVien.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.iconAdd2;
             this.btnThemThanhVien.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnThemThanhVien.Location = new System.Drawing.Point(808, 145);
-            this.btnThemThanhVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnThemThanhVien.Location = new System.Drawing.Point(751, 91);
             this.btnThemThanhVien.Name = "btnThemThanhVien";
-            this.btnThemThanhVien.Size = new System.Drawing.Size(279, 65);
+            this.btnThemThanhVien.Size = new System.Drawing.Size(186, 42);
             this.btnThemThanhVien.TabIndex = 79;
             this.btnThemThanhVien.Text = "Thêm thành viên";
             this.btnThemThanhVien.Click += new System.EventHandler(this.btnThemThanhVien_Click);
@@ -681,6 +606,8 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panel1.Controls.Add(this.btn_XacNhan);
             this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.guna2GroupBox3);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.txtThanhTien);
             this.panel1.Controls.Add(this.txtNhanVien);
             this.panel1.Controls.Add(this.guna2GroupBox2);
             this.panel1.Controls.Add(this.label3);
@@ -694,173 +621,33 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panel1.Controls.Add(this.txtIDKhachHang);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1468, 984);
+            this.panel1.Size = new System.Drawing.Size(966, 653);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label3
+            // rdo3Buoi
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(802, 43);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(204, 32);
-            this.label3.TabIndex = 68;
-            this.label3.Text = "ID khách hàng:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(15, 43);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(219, 32);
-            this.label2.TabIndex = 67;
-            this.label2.Text = "Loại thanh toán:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(186, 217);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 32);
-            this.label1.TabIndex = 66;
-            this.label1.Text = "Thẻ tập:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(186, 518);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(288, 32);
-            this.label6.TabIndex = 65;
-            this.label6.Text = "Thuê huấn luyện viên:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // txtLoaiHoaDon
-            // 
-            this.txtLoaiHoaDon.BackColor = System.Drawing.Color.Transparent;
-            this.txtLoaiHoaDon.BorderRadius = 10;
-            this.txtLoaiHoaDon.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtLoaiHoaDon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtLoaiHoaDon.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLoaiHoaDon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLoaiHoaDon.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtLoaiHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtLoaiHoaDon.ItemHeight = 30;
-            this.txtLoaiHoaDon.Items.AddRange(new object[] {
-            "Thanh toán mới",
-            "Gia hạn",
-            "Thuê huấn luyện viên"});
-            this.txtLoaiHoaDon.Location = new System.Drawing.Point(362, 32);
-            this.txtLoaiHoaDon.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.txtLoaiHoaDon.Name = "txtLoaiHoaDon";
-            this.txtLoaiHoaDon.Size = new System.Drawing.Size(380, 36);
-            this.txtLoaiHoaDon.StartIndex = 0;
-            this.txtLoaiHoaDon.TabIndex = 57;
-            this.txtLoaiHoaDon.SelectedIndexChanged += new System.EventHandler(this.txtLoaiHoaDon_SelectedIndexChanged);
-            // 
-            // btnKiemTraID
-            // 
-            this.btnKiemTraID.BorderRadius = 10;
-            this.btnKiemTraID.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnKiemTraID.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnKiemTraID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKiemTraID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnKiemTraID.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnKiemTraID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnKiemTraID.ForeColor = System.Drawing.Color.White;
-            this.btnKiemTraID.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.iconFind2;
-            this.btnKiemTraID.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnKiemTraID.Location = new System.Drawing.Point(1142, 145);
-            this.btnKiemTraID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnKiemTraID.Name = "btnKiemTraID";
-            this.btnKiemTraID.Size = new System.Drawing.Size(279, 65);
-            this.btnKiemTraID.TabIndex = 56;
-            this.btnKiemTraID.Text = "Kiểm tra thông tin";
-            this.btnKiemTraID.Click += new System.EventHandler(this.btnKiemTraID_Click);
-            // 
-            // btnXacNhan
-            // 
-            this.btnXacNhan.BorderRadius = 10;
-            this.btnXacNhan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXacNhan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXacNhan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXacNhan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXacNhan.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btnXacNhan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXacNhan.ForeColor = System.Drawing.Color.White;
-            this.btnXacNhan.Location = new System.Drawing.Point(574, 1265);
-            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(270, 89);
-            this.btnXacNhan.TabIndex = 54;
-            this.btnXacNhan.Text = "Xác nhận";
-            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
-            // 
-            // txtIDNhanVien
-            // 
-            this.txtIDNhanVien.BorderRadius = 10;
-            this.txtIDNhanVien.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtIDNhanVien.DefaultText = "";
-            this.txtIDNhanVien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtIDNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtIDNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDNhanVien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDNhanVien.Enabled = false;
-            this.txtIDNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtIDNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDNhanVien.Location = new System.Drawing.Point(362, 145);
-            this.txtIDNhanVien.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
-            this.txtIDNhanVien.Name = "txtIDNhanVien";
-            this.txtIDNhanVien.PasswordChar = '\0';
-            this.txtIDNhanVien.PlaceholderText = "";
-            this.txtIDNhanVien.SelectedText = "";
-            this.txtIDNhanVien.Size = new System.Drawing.Size(382, 55);
-            this.txtIDNhanVien.TabIndex = 52;
-            this.txtIDNhanVien.TextChanged += new System.EventHandler(this.txtIDNhanVien_TextChanged);
-            // 
-            // txtIDKhachHang
-            // 
-            this.txtIDKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIDKhachHang.BorderRadius = 10;
-            this.txtIDKhachHang.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtIDKhachHang.DefaultText = "";
-            this.txtIDKhachHang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtIDKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtIDKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDKhachHang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDKhachHang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtIDKhachHang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDKhachHang.Location = new System.Drawing.Point(1020, 32);
-            this.txtIDKhachHang.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
-            this.txtIDKhachHang.Name = "txtIDKhachHang";
-            this.txtIDKhachHang.PasswordChar = '\0';
-            this.txtIDKhachHang.PlaceholderText = "";
-            this.txtIDKhachHang.SelectedText = "";
-            this.txtIDKhachHang.Size = new System.Drawing.Size(401, 55);
-            this.txtIDKhachHang.TabIndex = 52;
-            this.txtIDKhachHang.TextChanged += new System.EventHandler(this.txtIDKhachHang_TextChanged);
+            this.rdo3Buoi.AutoSize = true;
+            this.rdo3Buoi.BackColor = System.Drawing.Color.Transparent;
+            this.rdo3Buoi.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.rdo3Buoi.CheckedState.BorderThickness = 0;
+            this.rdo3Buoi.CheckedState.FillColor = System.Drawing.Color.DimGray;
+            this.rdo3Buoi.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo3Buoi.CheckedState.InnerOffset = -4;
+            this.rdo3Buoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.rdo3Buoi.ForeColor = System.Drawing.Color.DimGray;
+            this.rdo3Buoi.Location = new System.Drawing.Point(312, 55);
+            this.rdo3Buoi.Name = "rdo3Buoi";
+            this.rdo3Buoi.Size = new System.Drawing.Size(88, 26);
+            this.rdo3Buoi.TabIndex = 0;
+            this.rdo3Buoi.Text = "10 buổi";
+            this.rdo3Buoi.UncheckedState.BorderColor = System.Drawing.Color.Snow;
+            this.rdo3Buoi.UncheckedState.BorderThickness = 2;
+            this.rdo3Buoi.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo3Buoi.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo3Buoi.UseVisualStyleBackColor = false;
+            this.rdo3Buoi.CheckedChanged += new System.EventHandler(this.rdo3Buoi_CheckedChanged);
             // 
             // rdo1Thang
             // 
@@ -884,6 +671,18 @@ namespace DAMH_Nhom2_QLPhongGym
             this.rdo1Thang.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.rdo1Thang.UseVisualStyleBackColor = false;
             this.rdo1Thang.CheckedChanged += new System.EventHandler(this.rdo1Thang_CheckedChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label15.ForeColor = System.Drawing.Color.Brown;
+            this.label15.Location = new System.Drawing.Point(27, 82);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(60, 16);
+            this.label15.TabIndex = 82;
+            this.label15.Text = "300.000đ";
             // 
             // rdo12Thang
             // 
@@ -1085,13 +884,218 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2HtmlLabel3.Text = null;
             this.guna2HtmlLabel3.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
             // 
+            // txtIDKhachHang
+            // 
+            this.txtIDKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIDKhachHang.BorderRadius = 10;
+            this.txtIDKhachHang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDKhachHang.DefaultText = "";
+            this.txtIDKhachHang.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDKhachHang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDKhachHang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtIDKhachHang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDKhachHang.Location = new System.Drawing.Point(680, 21);
+            this.txtIDKhachHang.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtIDKhachHang.Name = "txtIDKhachHang";
+            this.txtIDKhachHang.PasswordChar = '\0';
+            this.txtIDKhachHang.PlaceholderText = "";
+            this.txtIDKhachHang.SelectedText = "";
+            this.txtIDKhachHang.Size = new System.Drawing.Size(255, 36);
+            this.txtIDKhachHang.TabIndex = 52;
+            this.txtIDKhachHang.TextChanged += new System.EventHandler(this.txtIDKhachHang_TextChanged);
+            // 
+            // txtIDNhanVien
+            // 
+            this.txtIDNhanVien.BorderRadius = 10;
+            this.txtIDNhanVien.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDNhanVien.DefaultText = "";
+            this.txtIDNhanVien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDNhanVien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDNhanVien.Enabled = false;
+            this.txtIDNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtIDNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDNhanVien.Location = new System.Drawing.Point(241, 94);
+            this.txtIDNhanVien.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtIDNhanVien.Name = "txtIDNhanVien";
+            this.txtIDNhanVien.PasswordChar = '\0';
+            this.txtIDNhanVien.PlaceholderText = "";
+            this.txtIDNhanVien.SelectedText = "";
+            this.txtIDNhanVien.Size = new System.Drawing.Size(255, 36);
+            this.txtIDNhanVien.TabIndex = 52;
+            this.txtIDNhanVien.TextChanged += new System.EventHandler(this.txtIDNhanVien_TextChanged);
+            // 
+            // btnXacNhan
+            // 
+            this.btnXacNhan.BorderRadius = 10;
+            this.btnXacNhan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXacNhan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXacNhan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXacNhan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXacNhan.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btnXacNhan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXacNhan.ForeColor = System.Drawing.Color.White;
+            this.btnXacNhan.Location = new System.Drawing.Point(383, 822);
+            this.btnXacNhan.Name = "btnXacNhan";
+            this.btnXacNhan.Size = new System.Drawing.Size(180, 58);
+            this.btnXacNhan.TabIndex = 54;
+            this.btnXacNhan.Text = "Xác nhận";
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
+            // 
+            // btnKiemTraID
+            // 
+            this.btnKiemTraID.BorderRadius = 10;
+            this.btnKiemTraID.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTraID.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTraID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKiemTraID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKiemTraID.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btnKiemTraID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnKiemTraID.ForeColor = System.Drawing.Color.White;
+            this.btnKiemTraID.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.iconFind2;
+            this.btnKiemTraID.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnKiemTraID.Location = new System.Drawing.Point(541, 91);
+            this.btnKiemTraID.Name = "btnKiemTraID";
+            this.btnKiemTraID.Size = new System.Drawing.Size(186, 42);
+            this.btnKiemTraID.TabIndex = 56;
+            this.btnKiemTraID.Text = "Kiểm tra thông tin";
+            this.btnKiemTraID.Click += new System.EventHandler(this.btnKiemTraID_Click);
+            // 
+            // txtLoaiHoaDon
+            // 
+            this.txtLoaiHoaDon.BackColor = System.Drawing.Color.Transparent;
+            this.txtLoaiHoaDon.BorderRadius = 10;
+            this.txtLoaiHoaDon.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtLoaiHoaDon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtLoaiHoaDon.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLoaiHoaDon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLoaiHoaDon.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtLoaiHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtLoaiHoaDon.ItemHeight = 30;
+            this.txtLoaiHoaDon.Items.AddRange(new object[] {
+            "Thanh toán mới",
+            "Gia hạn",
+            "Thuê huấn luyện viên"});
+            this.txtLoaiHoaDon.Location = new System.Drawing.Point(241, 21);
+            this.txtLoaiHoaDon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLoaiHoaDon.Name = "txtLoaiHoaDon";
+            this.txtLoaiHoaDon.Size = new System.Drawing.Size(255, 36);
+            this.txtLoaiHoaDon.StartIndex = 0;
+            this.txtLoaiHoaDon.TabIndex = 57;
+            this.txtLoaiHoaDon.SelectedIndexChanged += new System.EventHandler(this.txtLoaiHoaDon_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Location = new System.Drawing.Point(124, 337);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(188, 22);
+            this.label6.TabIndex = 65;
+            this.label6.Text = "Thuê huấn luyện viên:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(124, 141);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 22);
+            this.label1.TabIndex = 66;
+            this.label1.Text = "Thẻ tập:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(10, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 22);
+            this.label2.TabIndex = 67;
+            this.label2.Text = "Loại thanh toán:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label16.ForeColor = System.Drawing.Color.Brown;
+            this.label16.Location = new System.Drawing.Point(173, 82);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(60, 16);
+            this.label16.TabIndex = 83;
+            this.label16.Text = "500.000đ";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label17.ForeColor = System.Drawing.Color.Brown;
+            this.label17.Location = new System.Drawing.Point(36, 147);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(71, 16);
+            this.label17.TabIndex = 84;
+            this.label17.Text = "1.800.000đ";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label18.ForeColor = System.Drawing.Color.Brown;
+            this.label18.Location = new System.Drawing.Point(173, 147);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(71, 16);
+            this.label18.TabIndex = 85;
+            this.label18.Text = "2.500.000đ";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label19.ForeColor = System.Drawing.Color.Brown;
+            this.label19.Location = new System.Drawing.Point(318, 82);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(60, 16);
+            this.label19.TabIndex = 86;
+            this.label19.Text = "950.000đ";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(535, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(136, 22);
+            this.label3.TabIndex = 68;
+            this.label3.Text = "ID khách hàng:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // frmThanhToan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1468, 984);
+            this.ClientSize = new System.Drawing.Size(966, 653);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmThanhToan";
             this.Text = "frmThemThanhVien";
             this.guna2GroupBox2.ResumeLayout(false);
@@ -1119,6 +1123,8 @@ namespace DAMH_Nhom2_QLPhongGym
         private Guna2RadioButton rdo2Buoi;
         private Guna2RadioButton rdo1Buoi;
         private System.Windows.Forms.Label txtNhanVien;
+        private Guna2TextBox txtThanhTien;
+        private System.Windows.Forms.Label label9;
         private Guna2GroupBox guna2GroupBox3;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;

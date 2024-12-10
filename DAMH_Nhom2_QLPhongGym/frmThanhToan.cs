@@ -318,7 +318,7 @@ namespace DAMH_Nhom2_QLPhongGym
                     ql.SubmitChanges();
 
                     // Hiển thị thông báo thành công và cập nhật tổng tiền trong textbox
-                    txt_ThanhTien.Text = tongTien.ToString("N0") + " đồng"; // Định dạng tiền tệ
+                    txtThanhTien.Text = tongTien.ToString("N0") + " đồng"; // Định dạng tiền tệ
                     MessageBox.Show("Hóa đơn đã được tạo thành công!\n" + "Tong tien:" + txt_ThanhTien.Text, "Thông báo");
                     txt_ThanhTien.Text = "";
                     txtIDKhachHang.Text = "";
