@@ -315,6 +315,34 @@ BEGIN
     WHERE i.GoiTapID IS NOT NULL;
 END;
 GO
+CREATE TRIGGER trg_UpdateLoaiThanhVien
+ON HoaDon
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    -- Tính lại tổng tiền cho các khách hàng có liên quan
+    WITH UpdatedHoaDon AS (
+        SELECT DISTINCT TheKhachHangID
+        FROM INSERTED
+    )
+    UPDATE TheKhachHang
+    SET LoaiThanhVien = CASE
+        WHEN TotalTongTien >= 10000000 THEN 'Royal'
+        ELSE 'Classic'
+    END
+    FROM TheKhachHang
+    JOIN (
+        -- Tính tổng tiền của các khách hàng có hóa đơn mới
+        SELECT 
+            TheKhachHangID,
+            SUM(TongTien) AS TotalTongTien
+        FROM HoaDon
+        WHERE TheKhachHangID IN (SELECT TheKhachHangID FROM UpdatedHoaDon)
+        GROUP BY TheKhachHangID
+    ) AS HoaDonSummary
+    ON TheKhachHang.TheKhachHangID = HoaDonSummary.TheKhachHangID;
+END;
+GO
 -- 
 ALTER TABLE ThietBi
 ADD NgayNhap DATE NOT NULL DEFAULT GETDATE(),
