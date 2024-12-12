@@ -403,5 +403,20 @@ namespace DAMH_Nhom2_QLPhongGym
             frmThemLich.ShowDialog();
             this.Show();
         }
+
+        private void guna2ShadowPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIDNhanVien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

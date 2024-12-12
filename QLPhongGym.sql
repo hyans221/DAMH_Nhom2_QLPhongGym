@@ -172,28 +172,42 @@ GO
 --Thêm dữ liệu
 
 	-- Thêm dữ liệu vào bảng NhanVien
-	INSERT INTO NhanVien (HoTen, ChucVu, SoDienThoai, Email, NgayVaoLam) VALUES
-	(N'Nguyễn Văn A', N'Quản lý', '0912345678', 'nguyenvana@example.com', '2023-01-15'),
-	(N'Lê Thị B', N'Nhân viên lễ tân', '0987654321', 'lethib@example.com', '2022-12-01'),
-	(N'Trần Văn C', N'Nhân viên bán hàng', '0911122233', 'tranvanc@example.com', '2023-02-20'),
-	(N'Phạm Thị D', N'Nhân viên kế toán', '0933445566', 'phamthid@example.com', '2023-03-10'),
-	(N'Võ Văn E', N'Nhân viên chăm sóc khách hàng', '0944556677', 'vovane@example.com', '2023-04-05');
+INSERT INTO NhanVien (HoTen, ChucVu, SoDienThoai, Email, NgayVaoLam) VALUES
+    (N'Nguyễn Văn An', N'Quản lý', '0912345678', 'nguyenvan.an@gmail.com', '2023-01-15'),
+    (N'Lê Thị Bích', N'Nhân viên lễ tân', '0987654321', 'lethibich@gmail.com', '2022-12-01'),
+    (N'Trần Văn Cường', N'Nhân viên bán hàng', '0911122233', 'tranvancuong@gmail.com', '2023-02-20'),
+    (N'Phạm Thị Dung', N'Nhân viên kế toán', '0933445566', 'phamthidung@gmail.com', '2023-03-10'),
+    (N'Nguyễn Thị Hoa', N'Quản lý', '0912345679', 'nguyenthihhoa@gmail.com', '2023-05-15'),
+    (N'Lê Văn Hùng', N'Nhân viên lễ tân', '0987654322', 'levanhung@gmail.com', '2022-11-01'),
+    (N'Trần Thị Hạnh', N'Nhân viên bán hàng', '0911122234', 'tranthihanh@gmail.com', '2023-06-20'),
+    (N'Phạm Văn Khánh', N'Nhân viên kế toán', '0933445567', 'phamvankhanh@gmail.com', '2023-07-10'),
+    (N'Võ Thị Lan', N'Nhân viên chăm sóc khách hàng', '0944556678', 'vothilan@gmail.com', '2023-08-05'),
+    (N'Nguyễn Văn Minh', N'Quản lý', '0912345680', 'nguyenvanminh@gmail.com', '2023-09-15'),
+    (N'Lê Thị Ngọc', N'Nhân viên lễ tân', '0987654323', 'lethingoc@gmail.com', '2022-10-01'),
+    (N'Trần Văn Phúc', N'Nhân viên bán hàng', '0911122235', 'tranvanphuc@gmail.com', '2023-10-20'),
+    (N'Phạm Thị Quỳnh', N'Nhân viên kế toán', '0933445568', 'phamthiquynh@gmail.com', '2023-11-10'),
+    (N'Võ Văn Sơn', N'Nhân viên chăm sóc khách hàng', '0944556679', 'vovanson@gmail.com', '2023-12-05');
 
 	-- Thêm dữ liệu vào bảng TaiKhoan
 	INSERT INTO TaiKhoan (TenDN, MatKhau, NhanVienID, Quyen) VALUES
-	(N'nguyenvana', 'password123', 1, N'Admin'),
-	(N'lethib', 'password456', 2, N'User'),
+	(N'vana', 'password123', 1, N'Admin'),
+	(N'thibich', 'password456', 2, N'User'),
 	(N'tranvanc', 'password789', 3, N'User'),
 	(N'phamthid', 'password012', 4, N'User'),
 	(N'vovane', 'password345', 5, N'User');
 
 	-- Thêm dữ liệu vào bảng HuanLuyenVien
-	INSERT INTO HuanLuyenVien (NhanVienID, HoTen, ChuyenMon, SoDienThoai, Email) VALUES
-	(1, N'Nguyễn Văn A', N'Tập thể hình', '0912345678', 'hlv_nguyenvana@example.com'),
-	(2, N'Lê Thị B', N'Aerobics', '0987654321', 'hlv_lethib@example.com'),
-	(3, N'Trần Văn C', N'Yoga', '0911122233', 'hlv_tranvanc@example.com'),
-	(4, N'Phạm Thị D', N'Zumba', '0933445566', 'hlv_phamthid@example.com'),
-	(5, N'Võ Văn E', N'Training Fitness', '0944556677', 'hlv_vovane@example.com');
+INSERT INTO HuanLuyenVien (NhanVienID, HoTen, ChuyenMon, SoDienThoai, Email) VALUES
+    (1, N'Nguyễn Văn Bình', N'Tập thể hình', '0912345678', 'hlv_nguyenvanbinh@gmail.com'),
+    (2, N'Lê Thị Cẩm', N'Aerobics', '0987654321', 'hlv_lethicam@gmail.com'),
+    (3, N'Trần Văn Dũng', N'Yoga', '0911122233', 'hlv_tranvandung@gmail.com'),
+    (4, N'Phạm Thị Hương', N'Zumba', '0933445566', 'hlv_phamthihuong@gmail.com'),
+    (5, N'Võ Văn Khôi', N'Training Fitness', '0944556677', 'hlv_vovankhoi@gmail.com'),
+    (6, N'Nguyễn Thị Lan', N'Tập thể hình', '0912345679', 'hlv_nguyenthilan@gmail.com'),
+    (7, N'Lê Văn Minh', N'Aerobics', '0987654322', 'hlv_levanminh@gmail.com'),
+    (8, N'Trần Thị Ngọc', N'Yoga', '0911122234', 'hlv_tranthingoc@gmail.com'),
+    (9, N'Phạm Văn Phát', N'Zumba', '0933445567', 'hlv_phamvanphat@gmail.com'),
+    (10, N'Võ Thị Quỳnh', N'Training Fitness', '0944556678', 'hlv_vothiquynh@gmail.com');
 
 	-- Thêm dữ liệu vào bảng ChiNhanh
 	INSERT INTO ChiNhanh (TenDiaDiem, DiaDiem, MoTa) VALUES
@@ -205,11 +219,11 @@ GO
 
 	-- Thêm dữ liệu vào bảng TheKhachHang
 	INSERT INTO TheKhachHang (HoTen, NgaySinh, CCCD, GioiTinh, SoDienThoai, DiaChi, LoaiThanhVien, ThoiGianHieuLuc, SoBuoiTapCungPT) VALUES
-	(N'Trần Văn K', '1990-05-15', '123456789012', N'Nam', '0901234567', N'Quận 1, TP.HCM', N'Classic', '2024-05-15', 2),
-	(N'Nguyễn Thị L', '1985-08-20', '234567890123', N'Nữ', '0907654321', N'Bình Thạnh, TP.HCM', N'Royal', '2025-08-20', 1),
-	(N'Phạm Văn M', '1992-11-10', '345678901234', N'Nam', '0900987654', N'Gò Vấp, TP.HCM', N'Classic', '2023-11-10', 0),
-	(N'Lê Thị N', '1998-03-25', '456789012345', N'Nữ', '0900123456', N'Phú Nhuận, TP.HCM', N'Royal', '2024-03-25', 20),
-	(N'Võ Văn P', '1987-07-05', '567890123456', N'Nam', '0906543210', N'Bình Tân, TP.HCM', N'Classic', '2025-07-05', 5);
+	(N'Trần Văn Khánh', '1990-05-15', '123456789012', N'Nam', '0901234567', N'Quận 1, TP.HCM', N'Classic', '2024-05-15', 2),
+	(N'Nguyễn Thị Linh', '1985-08-20', '234567890123', N'Nữ', '0907654321', N'Bình Thạnh, TP.HCM', N'Royal', '2025-08-20', 1),
+	(N'Phạm Văn Minh', '1992-11-10', '345678901234', N'Nam', '0900987654', N'Gò Vấp, TP.HCM', N'Classic', '2023-11-10', 0),
+	(N'Lê Thị Ninh', '1998-03-25', '456789012345', N'Nữ', '0900123456', N'Phú Nhuận, TP.HCM', N'Royal', '2024-03-25', 20),
+	(N'Võ Văn Phương', '1987-07-05', '567890123456', N'Nam', '0906543210', N'Bình Tân, TP.HCM', N'Classic', '2025-07-05', 5);
 
 	-- Thêm dữ liệu vào bảng GoiTap
 	INSERT INTO GoiTap (ThoiGian, GiaTien, Mota) VALUES

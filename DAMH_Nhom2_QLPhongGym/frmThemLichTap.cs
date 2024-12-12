@@ -259,5 +259,10 @@ namespace DAMH_Nhom2_QLPhongGym
                 MessageBox.Show("Lỗi khi thêm lịch tập: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void frmThemLichTap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

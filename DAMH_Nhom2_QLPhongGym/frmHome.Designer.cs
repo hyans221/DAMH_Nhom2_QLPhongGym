@@ -40,7 +40,6 @@ namespace DAMH_Nhom2_QLPhongGym
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnBaoCaoThongKe = new System.Windows.Forms.Button();
-            this.btnVaiTro = new System.Windows.Forms.Button();
             this.btnThietBiDVu = new System.Windows.Forms.Button();
             this.btnLichTap = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
@@ -103,10 +102,9 @@ namespace DAMH_Nhom2_QLPhongGym
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.SlateGray;
+            this.panelMenu.BackColor = System.Drawing.Color.LightSlateGray;
             this.panelMenu.Controls.Add(this.guna2TabControl1);
             this.panelMenu.Controls.Add(this.btnBaoCaoThongKe);
-            this.panelMenu.Controls.Add(this.btnVaiTro);
             this.panelMenu.Controls.Add(this.btnThietBiDVu);
             this.panelMenu.Controls.Add(this.btnLichTap);
             this.panelMenu.Controls.Add(this.btnKhachHang);
@@ -185,24 +183,6 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnBaoCaoThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBaoCaoThongKe.UseVisualStyleBackColor = false;
             this.btnBaoCaoThongKe.Click += new System.EventHandler(this.btnBaoCaoThongKe_Click);
-            // 
-            // btnVaiTro
-            // 
-            this.btnVaiTro.BackColor = System.Drawing.Color.LightSlateGray;
-            this.btnVaiTro.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnVaiTro.FlatAppearance.BorderSize = 0;
-            this.btnVaiTro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVaiTro.Font = new System.Drawing.Font("Ebrima", 12.25F);
-            this.btnVaiTro.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnVaiTro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVaiTro.Location = new System.Drawing.Point(0, 596);
-            this.btnVaiTro.Name = "btnVaiTro";
-            this.btnVaiTro.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnVaiTro.Size = new System.Drawing.Size(217, 61);
-            this.btnVaiTro.TabIndex = 13;
-            this.btnVaiTro.Text = ".";
-            this.btnVaiTro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVaiTro.UseVisualStyleBackColor = false;
             // 
             // btnThietBiDVu
             // 
@@ -327,7 +307,6 @@ namespace DAMH_Nhom2_QLPhongGym
         private Panel Panel_container;
         private Panel UserNamePanel;
         private Label lblUsername;
-        private Button btnVaiTro;
         private Button btnBaoCaoThongKe;
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private TabPage tabPage1;
