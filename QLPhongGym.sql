@@ -205,9 +205,9 @@ GO
 
 	-- Thêm dữ liệu vào bảng TheKhachHang
 	INSERT INTO TheKhachHang (HoTen, NgaySinh, CCCD, GioiTinh, SoDienThoai, DiaChi, LoaiThanhVien, ThoiGianHieuLuc, SoBuoiTapCungPT) VALUES
-	(N'Trần Văn K', '1990-05-15', '123456789012', N'Nam', '0901234567', N'Quận 1, TP.HCM', N'Classic', '2024-05-15', 10),
-	(N'Nguyễn Thị L', '1985-08-20', '234567890123', N'Nữ', '0907654321', N'Bình Thạnh, TP.HCM', N'Royal', '2025-08-20', 15),
-	(N'Phạm Văn M', '1992-11-10', '345678901234', N'Nam', '0900987654', N'Gò Vấp, TP.HCM', N'Classic', '2023-11-10', 8),
+	(N'Trần Văn K', '1990-05-15', '123456789012', N'Nam', '0901234567', N'Quận 1, TP.HCM', N'Classic', '2024-05-15', 2),
+	(N'Nguyễn Thị L', '1985-08-20', '234567890123', N'Nữ', '0907654321', N'Bình Thạnh, TP.HCM', N'Royal', '2025-08-20', 1),
+	(N'Phạm Văn M', '1992-11-10', '345678901234', N'Nam', '0900987654', N'Gò Vấp, TP.HCM', N'Classic', '2023-11-10', 0),
 	(N'Lê Thị N', '1998-03-25', '456789012345', N'Nữ', '0900123456', N'Phú Nhuận, TP.HCM', N'Royal', '2024-03-25', 20),
 	(N'Võ Văn P', '1987-07-05', '567890123456', N'Nam', '0906543210', N'Bình Tân, TP.HCM', N'Classic', '2025-07-05', 5);
 
@@ -236,20 +236,42 @@ GO
 	(5, 5, '2023-11-20', N'Thanh toán mới', 5, 5, 400000);
 
 	-- Thêm dữ liệu vào bảng LichTap
+	-- Thêm 15 dữ liệu vào bảng LichTap cho năm 2024
 	INSERT INTO LichTap (HLV_ID, ThoiGianBatDau, ThoiGianKetThuc, NgayBatDau, TrangThai) VALUES
-	(1, '08:00', '09:00', '2023-11-01', N'Đã đặt'),
-	(2, '10:00', '11:00', '2023-11-02', N'Trống'),
-	(3, '14:00', '15:00', '2023-11-03', N'Đã đặt'),
-	(4, '16:00', '17:00', '2023-11-04', N'Trống'),
-	(5, '18:00', '19:00', '2023-11-05', N'Đã đặt');
+	(1, '07:00', '08:00', '2024-11-05', N'Trống'),
+	(2, '08:30', '09:30', '2024-11-06', N'Trống'),
+	(3, '10:00', '11:00', '2024-11-07', N'Đã đặt'),
+	(4, '14:00', '15:00', '2024-11-08', N'Trống'),
+	(5, '15:30', '16:30', '2024-11-09', N'Trống'),
+	(1, '07:30', '08:30', '2024-11-10', N'Trống'),
+	(2, '09:00', '10:00', '2024-11-11', N'Đã đặt'),
+	(3, '16:00', '17:00', '2024-11-12', N'Trống'),
+	(4, '17:30', '18:30', '2024-01-13', N'Trống'),
+	(5, '19:00', '20:00', '2024-01-14', N'Trống'),
+	(1, '06:00', '07:00', '2024-01-15', N'Trống'),
+	(2, '08:00', '09:00', '2024-12-12', N'Trống'),
+	(3, '10:00', '11:00', '2024-12-12', N'Trống'),
+	(4, '13:00', '14:00', '2024-12-12', N'Trống'),
+	(5, '16:00', '17:00', '2024-12-12', N'Trống');
 
-	-- Thêm dữ liệu vào bảng ChiTiet_ChiNhanh_LichTap
+
+	-- Thêm 15 dữ liệu vào bảng ChiTiet_ChiNhanh_LichTap
 	INSERT INTO ChiTiet_ChiNhanh_LichTap (ChiNhanhID, LichTapID) VALUES
 	(1, 1),
 	(2, 2),
 	(3, 3),
 	(4, 4),
-	(5, 5);
+	(5, 5),
+	(1, 6),
+	(2, 7),
+	(3, 8),
+	(4, 9),
+	(5, 10),
+	(1, 11),
+	(1, 12),
+	(1, 13),
+	(1, 14),
+	(1, 15);
 
 	-- Thêm dữ liệu vào bảng DangKyLichTap
 	INSERT INTO DangKyLichTap (TheKhachHangID, LichTapID) VALUES
