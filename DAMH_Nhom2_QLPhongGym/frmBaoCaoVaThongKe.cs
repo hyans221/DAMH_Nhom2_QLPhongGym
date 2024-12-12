@@ -12,16 +12,65 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using Rectangle = System.Drawing.Rectangle;
+
 
 namespace DAMH_Nhom2_QLPhongGym
 {
     public partial class frmBaoCaoVaThongKe : Form
     {
+        private Dictionary<Control, Rectangle> originalSizes = new Dictionary<Control, Rectangle>();
+        private Size originalFormSize;
         public frmBaoCaoVaThongKe()
         {
             InitializeComponent();
             LoadLoaiThanhVienIntoComboBox();
             LoadServicePackages();
+            SaveOriginalSizes();
+            this.Resize += FrmBaoCaoVaThongKe_Resize;
+        }
+
+        private void FrmBaoCaoVaThongKe_Resize(object sender, EventArgs e)
+        {
+            float xRatio = (float)this.Width / originalFormSize.Width;
+            float yRatio = (float)this.Height / originalFormSize.Height;
+
+            foreach (var item in originalSizes)
+            {
+                Control control = item.Key;
+                Rectangle originalRect = item.Value;
+
+                // Tính toán vị trí và kích thước mới
+                int newX = (int)(originalRect.X * xRatio);
+                int newY = (int)(originalRect.Y * yRatio);
+                int newWidth = (int)(originalRect.Width * xRatio);
+                int newHeight = (int)(originalRect.Height * yRatio);
+
+                // Áp dụng thay đổi
+                control.Location = new Point(newX, newY);
+                control.Size = new Size(newWidth, newHeight);
+            }
+        }
+
+        private void SaveOriginalSizes()
+        {
+            originalFormSize = this.Size;
+
+            foreach (Control control in this.Controls)
+            {
+                SaveControlSizes(control);
+            }
+        }
+
+        private void SaveControlSizes(Control control)
+        {
+            originalSizes[control] = new Rectangle(control.Location, control.Size);
+
+            // Lưu kích thước của các control con
+            foreach (Control childControl in control.Controls)
+            {
+                SaveControlSizes(childControl);
+            }
         }
         private void btnGeneratePackageReport_Click(object sender, EventArgs e)
         {
@@ -175,92 +224,124 @@ namespace DAMH_Nhom2_QLPhongGym
        
         private void ExportDataToExcel(DataGridView dgv)
         {
-            var workbook = new XLWorkbook();
-            var worksheet = workbook.Worksheets.Add("Report");
-
-            // Thêm tiêu đề cột vào worksheet
-            for (int i = 0; i < dgv.Columns.Count; i++)
+            try
             {
-                worksheet.Cell(1, i + 1).Value = dgv.Columns[i].HeaderText;
-            }
+                var workbook = new XLWorkbook();
+                var worksheet = workbook.Worksheets.Add("Report");
 
-            // Thêm dữ liệu từ DataGridView vào worksheet
-            for (int i = 0; i < dgv.Rows.Count; i++)
-            {
-                for (int j = 0; j < dgv.Columns.Count; j++)
+                // Khởi tạo vị trí bắt đầu
+                int startRow = 1;
+
+                for (int row = 0; row < dgv.Rows.Count; row++)
                 {
-                    worksheet.Cell(i + 2, j + 1).Value = dgv.Rows[i].Cells[j].Value?.ToString() ?? string.Empty;
+                    // Duyệt qua từng cột (tiêu đề và dữ liệu) trong dòng hiện tại
+                    for (int col = 0; col < dgv.Columns.Count; col++)
+                    {
+                        // Lấy tiêu đề (header) của cột
+                        var headerText = dgv.Columns[col].HeaderText;
+
+                        // Lấy dữ liệu tương ứng từ dòng hiện tại
+                        var cellValue = dgv.Rows[row].Cells[col].Value?.ToString() ?? string.Empty;
+
+                        // Thêm tiêu đề vào cột 1
+                        worksheet.Cell(startRow + col, 1).Value = headerText;
+                        worksheet.Cell(startRow + col, 1).Style.Font.Bold = true;
+                        worksheet.Cell(startRow + col, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Left;
+
+                        // Thêm dữ liệu vào cột 2
+                        worksheet.Cell(startRow + col, 2).Value = cellValue;
+                        worksheet.Cell(startRow + col, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Left;
+                    }
+
+                    // Sau khi thêm xong bảng cho dòng hiện tại, cách dòng tiếp theo 2 dòng
+                    startRow += dgv.Columns.Count + 2;
+                }
+
+                SaveFileDialog saveFileDialog = new SaveFileDialog
+                {
+                    Filter = "Excel Files|*.xlsx",
+                    Title = "Save Excel File"
+                };
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    workbook.SaveAs(saveFileDialog.FileName);
+                    MessageBox.Show("Xuất file thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-
-            // Lưu file Excel
-            SaveFileDialog saveFileDialog = new SaveFileDialog
+            catch (Exception ex)
             {
-                Filter = "Excel Files|*.xlsx",
-                Title = "Save Excel File"
-            };
-
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                workbook.SaveAs(saveFileDialog.FileName);
+                MessageBox.Show($"Xuất file thất bại!\nLỗi: {ex.Message}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void ExportDataToPDF(DataGridView dgv)
         {
-            // Tạo hộp thoại để lưu file PDF
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "PDF Files|*.pdf";
-            saveFileDialog.Title = "Save PDF File";
-
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            try
             {
-                try
+                // Tạo hộp thoại để lưu file PDF
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "PDF Files|*.pdf";
+                saveFileDialog.Title = "Save PDF File";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     // Tạo một file stream để ghi dữ liệu vào file PDF
                     using (FileStream fs = new FileStream(saveFileDialog.FileName, FileMode.Create, FileAccess.Write))
                     {
                         // Tạo PdfDocument
-                        Document document = new Document();
+                        Document document = new Document(PageSize.A4, 50, 50, 25, 25);
                         PdfWriter writer = PdfWriter.GetInstance(document, fs);
 
-                        // Mở document để thêm nội dung
                         document.Open();
 
-                        // Tạo bảng với số cột tương ứng với số cột trong DataGridView
-                        PdfPTable table = new PdfPTable(dgv.Columns.Count);
-
-                        // Thêm tiêu đề cột vào table PDF
-                        foreach (DataGridViewColumn column in dgv.Columns)
+                        for (int row = 0; row < dgv.Rows.Count; row++)
                         {
-                            table.AddCell(new Phrase(column.HeaderText));
-                        }
+                            // Tạo bảng cho dòng hiện tại
+                            PdfPTable table = new PdfPTable(2) { WidthPercentage = 100 };
 
-                        // Thêm các dòng dữ liệu vào table PDF
-                        foreach (DataGridViewRow row in dgv.Rows)
-                        {
-                            // Kiểm tra xem dòng có dữ liệu không
-                            if (!row.IsNewRow)
+                            // Duyệt qua từng cột trong dòng hiện tại
+                            for (int col = 0; col < dgv.Columns.Count; col++)
                             {
-                                foreach (DataGridViewCell cell in row.Cells)
+                                // Lấy tiêu đề (header) của cột
+                                var headerText = dgv.Columns[col].HeaderText;
+
+                                // Lấy dữ liệu tương ứng từ dòng hiện tại
+                                var cellValue = dgv.Rows[row].Cells[col].Value?.ToString() ?? string.Empty;
+
+                                // Thêm tiêu đề vào cột 
+                                PdfPCell headerCell = new PdfPCell(new Phrase(headerText))
                                 {
-                                    table.AddCell(new Phrase(cell.Value?.ToString() ?? string.Empty));
-                                }
+                                    BackgroundColor = BaseColor.LIGHT_GRAY,
+                                    HorizontalAlignment = Element.ALIGN_LEFT,
+                                    VerticalAlignment = Element.ALIGN_MIDDLE,
+                                    MinimumHeight = 20f
+                                };
+                                table.AddCell(headerCell);
+
+                                // Thêm dữ liệu vào cột 
+                                PdfPCell dataCell = new PdfPCell(new Phrase(cellValue))
+                                {
+                                    HorizontalAlignment = Element.ALIGN_LEFT,
+                                    VerticalAlignment = Element.ALIGN_MIDDLE,
+                                    MinimumHeight = 20f
+                                };
+                                table.AddCell(dataCell);
                             }
+
+                            document.Add(table);
+
+                            // Thêm khoảng cách giữa các bảng (2 dòng)
+                            document.Add(new Paragraph("\n"));
                         }
 
-                        // Thêm bảng vào document
-                        document.Add(table);
-
-                        // Đóng document để lưu vào file PDF
                         document.Close();
                     }
-
-                    MessageBox.Show("Dữ liệu đã được xuất thành công!");
+                    MessageBox.Show("Dữ liệu đã được xuất thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Đã xảy ra lỗi khi xuất PDF: {ex.Message}");
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Xuất file thất bại!\nLỗi: {ex.Message}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -293,5 +374,7 @@ namespace DAMH_Nhom2_QLPhongGym
         {
             ExportDataToExcel(dgvServicePackageDetails);
         }
+
+       
     }
 }

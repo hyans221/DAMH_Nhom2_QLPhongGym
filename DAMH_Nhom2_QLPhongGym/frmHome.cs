@@ -55,7 +55,7 @@ namespace DAMH_Nhom2_QLPhongGym
         private void btnLichTap_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "Quản lý đặt lịch tập";
-            container(new frmDatLichTap());
+            container(new frmDatLichTap(idNhanVien));
         }
 
         private void btnThietBiDVu_Click(object sender, EventArgs e)

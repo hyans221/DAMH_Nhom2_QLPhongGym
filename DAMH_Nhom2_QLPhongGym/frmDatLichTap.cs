@@ -13,13 +13,38 @@ namespace DAMH_Nhom2_QLPhongGym
     public partial class frmDatLichTap : Form
     {
         QLPhongGymDataContext data = new QLPhongGymDataContext();
-        public frmDatLichTap()
+        int idnv = 0;
+        public frmDatLichTap(int nhanVienID)
         {
             InitializeComponent();
+            txtIDNhanVien.Text = nhanVienID.ToString();
+            idnv = nhanVienID;
             btnDatLich.Enabled = false;
             btnTraCuu.Enabled = false;
             loadDiaChi();
             loadTrangThai();
+
+            DateTimeTU.ValueChanged += DateTimeTU_ValueChanged;
+            DateTimeDEN.ValueChanged += DateTimeDEN_ValueChanged;
+        }
+
+        private void CheckTimeValidity()
+        {
+            if (DateTimeDEN.Value.Date < DateTimeTU.Value.Date)
+            {
+                MessageBox.Show("Thời gian 'Đến' không được trước thời gian 'Từ'. Vui lòng chọn lại.", "Lỗi thời gian", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                DateTimeDEN.Value = DateTimeTU.Value;
+            }
+        }
+
+        private void DateTimeTU_ValueChanged(object sender, EventArgs e)
+        {
+            CheckTimeValidity();
+        }
+
+        private void DateTimeDEN_ValueChanged(object sender, EventArgs e)
+        {
+            CheckTimeValidity();
         }
 
         public void loadDiaChi()
@@ -44,7 +69,7 @@ namespace DAMH_Nhom2_QLPhongGym
             cbxTrangThai.Items.Clear();
             cbxTrangThai.Items.Add("Đã đặt");
             cbxTrangThai.Items.Add("Trống");
-            cbxTrangThai.SelectedIndex = 0;
+            cbxTrangThai.SelectedIndex = 1;
         }
 
         private void btnTim_Click(object sender, EventArgs e)
@@ -238,10 +263,22 @@ namespace DAMH_Nhom2_QLPhongGym
                         txtSoBuoi.Text = khachHang.SoBuoiTapCungPT.ToString();
                         if (khachHang.SoBuoiTapCungPT == 0)
                         {
-                            MessageBox.Show("Bạn không đủ buổi tập, muốn gia hạn thêm không?");
-                            btnDatLich.Enabled = false;
+                            var result = MessageBox.Show("Bạn không đủ buổi tập, muốn gia hạn thêm không?",
+                                                         "Thông báo",
+                                                         MessageBoxButtons.YesNo,
+                                                         MessageBoxIcon.Question);
+                            if (result == DialogResult.Yes)
+                            {
+                                // Mở form frmThanhToan
+                                frmThanhToan frm = new frmThanhToan(idnv);
+                                frm.ShowDialog(); // Hiển thị form dưới dạng hộp thoại
+                            }
+                            else
+                            {
+                                return;
+                            }
                         }
-                        btnTraCuu_Click(sender, e);
+                        btnTraCuu_Click_1(sender, e);
                     }
                     else
                     {
