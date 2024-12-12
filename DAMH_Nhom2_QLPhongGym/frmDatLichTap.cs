@@ -17,16 +17,45 @@ namespace DAMH_Nhom2_QLPhongGym
         public frmDatLichTap(int nhanVienID)
         {
             InitializeComponent();
-            txtIDNhanVien.Text = nhanVienID.ToString();
+            string tenNhanVien = GetTenNhanVien(nhanVienID);
+            if (!string.IsNullOrEmpty(tenNhanVien))
+            {
+                txtIDNhanVien.Text = tenNhanVien;
+            }
             idnv = nhanVienID;
             btnDatLich.Enabled = false;
             btnTraCuu.Enabled = false;
             loadDiaChi();
             loadTrangThai();
-
+            DateTime now = DateTime.Now;
+            DateTimeTU.Value = now;
+            DateTimeDEN.Value = now;
             DateTimeTU.ValueChanged += DateTimeTU_ValueChanged;
             DateTimeDEN.ValueChanged += DateTimeDEN_ValueChanged;
         }
+
+        private string GetTenNhanVien(int nhanVienID)
+        {
+            try
+            {
+                var nhanVien = data.NhanViens.FirstOrDefault(nv => nv.NhanVienID == nhanVienID);
+                if (nhanVien != null)
+                {
+                    return nhanVien.HoTen;
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy nhân viên.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return string.Empty;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi truy xuất tên nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return string.Empty;
+            }
+        }
+
 
         private void CheckTimeValidity()
         {
@@ -87,9 +116,19 @@ namespace DAMH_Nhom2_QLPhongGym
                     btnDatLich.Enabled = khachHang.SoBuoiTapCungPT > 0;
                     btnTraCuu.Enabled = khachHang.SoBuoiTapCungPT > 0;
 
-                    if (khachHang.SoBuoiTapCungPT == 0)
+                    var result = MessageBox.Show("Bạn không đủ buổi tập, muốn gia hạn thêm không?",
+                                                         "Thông báo",
+                                                         MessageBoxButtons.YesNo,
+                                                         MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
                     {
-                        MessageBox.Show("Bạn không đủ buổi tập, muốn gia hạn thêm không?");
+                        // Mở form frmThanhToan
+                        frmThanhToan frm = new frmThanhToan(idnv);
+                        frm.ShowDialog(); // Hiển thị form dưới dạng hộp thoại
+                    }
+                    else
+                    {
+                        return;
                     }
                 }
                 else
@@ -99,10 +138,9 @@ namespace DAMH_Nhom2_QLPhongGym
             }
             catch
             {
-                MessageBox.Show("Chỉ nhận số");
+                MessageBox.Show("Hãy nhập thông tin!!!");
             }
         }
-
         private void btnTraCuu_Click(object sender, EventArgs e)
         {
             try
@@ -146,7 +184,6 @@ namespace DAMH_Nhom2_QLPhongGym
                 MessageBox.Show("Lỗi khi tìm kiếm: " + ex.Message);
             }
         }
-
         private void btnDatLich_Click(object sender, EventArgs e)
         {
             try
@@ -217,7 +254,20 @@ namespace DAMH_Nhom2_QLPhongGym
 
                     if (khachHang.SoBuoiTapCungPT == 0)
                     {
-                        MessageBox.Show("Bạn không đủ buổi tập, muốn gia hạn thêm không?");
+                        var result = MessageBox.Show("Bạn không đủ buổi tập, muốn gia hạn thêm không?",
+                                                         "Thông báo",
+                                                         MessageBoxButtons.YesNo,
+                                                         MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            // Mở form frmThanhToan
+                            frmThanhToan frm = new frmThanhToan(idnv);
+                            frm.ShowDialog(); // Hiển thị form dưới dạng hộp thoại
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
                 }
                 else
@@ -317,7 +367,8 @@ namespace DAMH_Nhom2_QLPhongGym
                                    lt.NgayBatDau,
                                    lt.ThoiGianBatDau,
                                    lt.ThoiGianKetThuc,
-                                   HuanLuyenVien = hlv.HoTen
+                                   HuanLuyenVien = hlv.HoTen,
+                                   ChiNhanh = cn.ChiNhanh.TenDiaDiem
                                };
                 if (lichTaps.Any())
                 {
@@ -343,6 +394,14 @@ namespace DAMH_Nhom2_QLPhongGym
         private void btnTheLichTap_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnThemLichTap_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmThemLichTap frmThemLich = new frmThemLichTap();
+            frmThemLich.ShowDialog();
+            this.Show();
         }
     }
 }
