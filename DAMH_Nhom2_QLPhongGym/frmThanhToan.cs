@@ -38,13 +38,13 @@ namespace DAMH_Nhom2_QLPhongGym
             {
                 // Nếu tìm thấy khách hàng có ID này, hiển thị thông tin chi tiết
                 string customerInfo = $"Họ tên: {existingCustomer.HoTen}\n" +
-                                      $"Ngày sinh: {existingCustomer.NgaySinh}\n" +
+                                      $"Ngày sinh: {existingCustomer.NgaySinh:dd/MM/yyyy}\n" + // Định dạng ngày sinh
                                       $"CCCD: {existingCustomer.CCCD}\n" +
                                       $"Giới tính: {existingCustomer.GioiTinh}\n" +
                                       $"Số điện thoại: {existingCustomer.SoDienThoai}\n" +
                                       $"Địa chỉ: {existingCustomer.DiaChi}\n" +
                                       $"Loại thành viên: {existingCustomer.LoaiThanhVien}\n" +
-                                      $"Thời gian hiệu lực: {existingCustomer.ThoiGianHieuLuc}\n" +
+                                      $"Thời gian hiệu lực: {existingCustomer.ThoiGianHieuLuc:dd/MM/yyyy}\n" + // Định dạng thời gian hiệu lực
                                       $"Số buổi tập cùng PT: {existingCustomer.SoBuoiTapCungPT}";
 
                 // Hiển thị thông tin chi tiết trong MessageBox
@@ -246,47 +246,47 @@ namespace DAMH_Nhom2_QLPhongGym
                 decimal tongTien = 0;
 
                 // Xác định gói tập dựa trên radio button được chọn
-                if (rdo_1Thang.Checked)
-                {
-                    idGoiTap = 1;
-                }
-                else if (rdo_3Thang.Checked)
-                {
-                    idGoiTap = 2;
-                }
-                else if (rdo_6Thang.Checked)
-                {
-                    idGoiTap = 3;
-                }
-                else if (rdo_12Thang.Checked)
-                {
-                    idGoiTap = 4;
-                }
-                else if (rdo_24Thang.Checked)
+                if (rdo_7Ngay.Checked)
                 {
                     idGoiTap = 5;
                 }
+                else if (rdo_30Ngay.Checked)
+                {
+                    idGoiTap = 1;
+                }
+                else if (rdo_90Ngay.Checked)
+                {
+                    idGoiTap = 2;
+                }
+                else if (rdo_180Ngay.Checked)
+                {
+                    idGoiTap = 3;
+                }
+                else if (rdo_365Ngay.Checked)
+                {
+                    idGoiTap = 4;
+                }
 
                 // Xác định gói thuê PT dựa trên radio button được chọn
-                if (rdo1Buoi.Checked)
+                if (rdo_3Buoi.Checked)
+                {
+                    idGoiThuePT = 5;
+                }
+                else if (rdo_5Buoi.Checked)
                 {
                     idGoiThuePT = 1;
                 }
-                else if (rdo2Buoi.Checked)
+                else if (rdo_10Buoi.Checked)
                 {
                     idGoiThuePT = 2;
                 }
-                else if (rdo3Buoi.Checked)
+                else if (rdo_20Buoi.Checked)
                 {
                     idGoiThuePT = 3;
                 }
-                else if (rdo6Buoi.Checked)
+                else if (rdo_30Buoi.Checked)
                 {
                     idGoiThuePT = 4;
-                }
-                else if (rdo8Buoi.Checked)
-                {
-                    idGoiThuePT = 5;
                 }
 
                 // Lấy thông tin gói tập và gói thuê PT từ database
@@ -319,21 +319,22 @@ namespace DAMH_Nhom2_QLPhongGym
 
                     // Hiển thị thông báo thành công và cập nhật tổng tiền trong textbox
                     txt_ThanhTien.Text = tongTien.ToString("N0") + " đồng"; // Định dạng tiền tệ
-                    MessageBox.Show("Hóa đơn đã được tạo thành công!\n" + "Tong tien:" + txt_ThanhTien.Text, "Thông báo");
+                    MessageBox.Show("Hóa đơn đã được tạo thành công!\n" + "Tổng tiền:" + txt_ThanhTien.Text, "Thông báo thanh toán thành công!");
                     txt_ThanhTien.Text = "";
                     txtIDKhachHang.Text = "";
                     // Đặt lại các radio button trong group box
-                    rdo_1Thang.Checked = false;
-                    rdo_3Thang.Checked = false;
-                    rdo_6Thang.Checked = false;
-                    rdo_12Thang.Checked = false;
-                    rdo_24Thang.Checked = false;
+                    rdo_7Ngay.Checked = false;
+                    rdo_30Ngay.Checked = false;
+                    rdo_90Ngay.Checked = false;
+                    rdo_180Ngay.Checked = false;
+                    rdo_365Ngay.Checked = false;
 
-                    rdo1Buoi.Checked = false;
-                    rdo2Buoi.Checked = false;
-                    rdo3Buoi.Checked = false;
-                    rdo6Buoi.Checked = false;
-                    rdo8Buoi.Checked = false;
+                    rdo_3Buoi.Checked = false;
+                    rdo_5Buoi.Checked = false;
+                    rdo_10Buoi.Checked = false;
+                    rdo_20Buoi.Checked = false;
+                    rdo_30Buoi.Checked = false;
+
 
                 }
                 else
@@ -358,45 +359,45 @@ namespace DAMH_Nhom2_QLPhongGym
             int idGoiThuePT = 0;
             decimal tongTien = 0;
             // Xác định gói tập dựa trên radio button được chọn
-            if (rdo_1Thang.Checked)
+            if (rdo_7Ngay.Checked)
             {
                 idGoiTap = 5;
             }
-            else if (rdo_3Thang.Checked)
+            else if (rdo_30Ngay.Checked)
             {
                 idGoiTap = 1;
             }
-            else if (rdo_6Thang.Checked)
+            else if (rdo_90Ngay.Checked)
             {
                 idGoiTap = 2;
             }
-            else if (rdo_12Thang.Checked)
+            else if (rdo_180Ngay.Checked)
             {
                 idGoiTap = 3;
             }
-            else if (rdo_24Thang.Checked)
+            else if (rdo_365Ngay.Checked)
             {
                 idGoiTap = 4;
             }
 
             // Xác định gói thuê PT dựa trên radio button được chọn
-            if (rdo1Buoi.Checked)
+            if (rdo_3Buoi.Checked)
             {
                 idGoiThuePT = 5;
             }
-            else if (rdo2Buoi.Checked)
+            else if (rdo_5Buoi.Checked)
             {
                 idGoiThuePT = 1;
             }
-            else if (rdo3Buoi.Checked)
+            else if (rdo_10Buoi.Checked)
             {
                 idGoiThuePT = 2;
             }
-            else if (rdo6Buoi.Checked)
+            else if (rdo_20Buoi.Checked)
             {
                 idGoiThuePT = 3;
             }
-            else if (rdo8Buoi.Checked)
+            else if (rdo_30Buoi.Checked)
             {
                 idGoiThuePT = 4;
             }
@@ -427,17 +428,17 @@ namespace DAMH_Nhom2_QLPhongGym
             txt_ThanhTien.Text = "";
             txtIDKhachHang.Text = "";
             // Đặt lại các radio button trong group box
-            rdo_1Thang.Checked = false;
-            rdo_3Thang.Checked = false;
-            rdo_6Thang.Checked = false;
-            rdo_12Thang.Checked = false;
-            rdo_24Thang.Checked = false;
+            rdo_7Ngay.Checked = false;
+            rdo_30Ngay.Checked = false;
+            rdo_90Ngay.Checked = false;
+            rdo_180Ngay.Checked = false;
+            rdo_365Ngay.Checked = false;
 
-            rdo1Buoi.Checked = false;
-            rdo2Buoi.Checked = false;
-            rdo3Buoi.Checked = false;
-            rdo6Buoi.Checked = false;
-            rdo8Buoi.Checked = false;
+            rdo_3Buoi.Checked = false;
+            rdo_5Buoi.Checked = false;
+            rdo_10Buoi.Checked = false;
+            rdo_20Buoi.Checked = false;
+            rdo_30Buoi.Checked = false;
         }
 
         private void btnThemThanhVien_Click(object sender, EventArgs e)
