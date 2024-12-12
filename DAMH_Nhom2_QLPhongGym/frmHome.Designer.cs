@@ -59,7 +59,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1203, 56);
+            this.panel2.Size = new System.Drawing.Size(1203, 48);
             this.panel2.TabIndex = 0;
             // 
             // lblTitle
@@ -67,7 +67,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTitle.Location = new System.Drawing.Point(220, -5);
+            this.lblTitle.Location = new System.Drawing.Point(210, -12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Padding = new System.Windows.Forms.Padding(9, 17, 0, 0);
             this.lblTitle.Size = new System.Drawing.Size(240, 56);
@@ -83,7 +83,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.UserNamePanel.Controls.Add(this.lblUsername);
             this.UserNamePanel.Location = new System.Drawing.Point(1059, 0);
             this.UserNamePanel.Name = "UserNamePanel";
-            this.UserNamePanel.Size = new System.Drawing.Size(144, 65);
+            this.UserNamePanel.Size = new System.Drawing.Size(144, 48);
             this.UserNamePanel.TabIndex = 9;
             // 
             // lblUsername
@@ -93,7 +93,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(38, 2);
+            this.lblUsername.Location = new System.Drawing.Point(27, 1);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Padding = new System.Windows.Forms.Padding(0, 13, 0, 0);
             this.lblUsername.Size = new System.Drawing.Size(28, 43);
@@ -110,9 +110,9 @@ namespace DAMH_Nhom2_QLPhongGym
             this.panelMenu.Controls.Add(this.btnKhachHang);
             this.panelMenu.Controls.Add(this.btnThanhVien);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 56);
+            this.panelMenu.Location = new System.Drawing.Point(0, 48);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(217, 657);
+            this.panelMenu.Size = new System.Drawing.Size(198, 665);
             this.panelMenu.TabIndex = 1;
             // 
             // guna2TabControl1
@@ -176,7 +176,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnBaoCaoThongKe.Location = new System.Drawing.Point(0, 244);
             this.btnBaoCaoThongKe.Name = "btnBaoCaoThongKe";
             this.btnBaoCaoThongKe.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnBaoCaoThongKe.Size = new System.Drawing.Size(217, 61);
+            this.btnBaoCaoThongKe.Size = new System.Drawing.Size(198, 61);
             this.btnBaoCaoThongKe.TabIndex = 17;
             this.btnBaoCaoThongKe.Text = "Báo cáo và thống kê";
             this.btnBaoCaoThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,7 +196,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnThietBiDVu.Location = new System.Drawing.Point(0, 183);
             this.btnThietBiDVu.Name = "btnThietBiDVu";
             this.btnThietBiDVu.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnThietBiDVu.Size = new System.Drawing.Size(217, 61);
+            this.btnThietBiDVu.Size = new System.Drawing.Size(198, 61);
             this.btnThietBiDVu.TabIndex = 11;
             this.btnThietBiDVu.Text = "Quản lý thiết bị";
             this.btnThietBiDVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -216,7 +216,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnLichTap.Location = new System.Drawing.Point(0, 122);
             this.btnLichTap.Name = "btnLichTap";
             this.btnLichTap.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnLichTap.Size = new System.Drawing.Size(217, 61);
+            this.btnLichTap.Size = new System.Drawing.Size(198, 61);
             this.btnLichTap.TabIndex = 10;
             this.btnLichTap.Text = "Quản lý lịch tập";
             this.btnLichTap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,7 +236,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnKhachHang.Location = new System.Drawing.Point(0, 61);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnKhachHang.Size = new System.Drawing.Size(217, 61);
+            this.btnKhachHang.Size = new System.Drawing.Size(198, 61);
             this.btnKhachHang.TabIndex = 9;
             this.btnKhachHang.Text = "Quản lý khách hàng";
             this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,7 +256,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btnThanhVien.Location = new System.Drawing.Point(0, 0);
             this.btnThanhVien.Name = "btnThanhVien";
             this.btnThanhVien.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnThanhVien.Size = new System.Drawing.Size(217, 61);
+            this.btnThanhVien.Size = new System.Drawing.Size(198, 61);
             this.btnThanhVien.TabIndex = 8;
             this.btnThanhVien.Text = "Quản lý thanh toán";
             this.btnThanhVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -268,9 +268,9 @@ namespace DAMH_Nhom2_QLPhongGym
             // 
             this.Panel_container.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_container.Location = new System.Drawing.Point(217, 56);
+            this.Panel_container.Location = new System.Drawing.Point(198, 48);
             this.Panel_container.Name = "Panel_container";
-            this.Panel_container.Size = new System.Drawing.Size(986, 657);
+            this.Panel_container.Size = new System.Drawing.Size(1005, 665);
             this.Panel_container.TabIndex = 2;
             // 
             // frmHome

@@ -239,46 +239,7 @@ namespace DAMH_Nhom2_QLPhongGym
 
         private void btnTim_Click_1(object sender, EventArgs e)
         {
-            try
-            {
-                int maKhach = Int32.Parse(txtMaKhach.Text.Trim());
-                var khachHang = data.TheKhachHangs.FirstOrDefault(kh => kh.TheKhachHangID == maKhach);
-                if (khachHang != null)
-                {
-                    txtTenKhach.Text = khachHang.HoTen;
-                    txtSoBuoi.Text = khachHang.SoBuoiTapCungPT.ToString();
 
-                    // Chỉ kích hoạt nút nếu số buổi tập lớn hơn 0
-                    btnDatLich.Enabled = khachHang.SoBuoiTapCungPT > 0;
-                    btnTraCuu.Enabled = khachHang.SoBuoiTapCungPT > 0;
-
-                    if (khachHang.SoBuoiTapCungPT == 0)
-                    {
-                        var result = MessageBox.Show("Bạn không đủ buổi tập, muốn gia hạn thêm không?",
-                                                         "Thông báo",
-                                                         MessageBoxButtons.YesNo,
-                                                         MessageBoxIcon.Question);
-                        if (result == DialogResult.Yes)
-                        {
-                            // Mở form frmThanhToan
-                            frmThanhToan frm = new frmThanhToan(idnv);
-                            frm.ShowDialog(); // Hiển thị form dưới dạng hộp thoại
-                        }
-                        else
-                        {
-                            return;
-                        }
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Không tìm thấy khách hàng.");
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Chỉ nhận số");
-            }
         }
 
         private void btnDatLich_Click_1(object sender, EventArgs e)

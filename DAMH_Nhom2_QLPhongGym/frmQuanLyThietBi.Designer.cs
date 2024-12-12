@@ -288,7 +288,7 @@
             this.guna2Button4.FillColor = System.Drawing.Color.LightSlateGray;
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(326, 262);
+            this.guna2Button4.Location = new System.Drawing.Point(332, 262);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(103, 45);
             this.guna2Button4.TabIndex = 6;
@@ -306,7 +306,7 @@
             this.guna2Button2.FillColor = System.Drawing.Color.LightSlateGray;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(180, 262);
+            this.guna2Button2.Location = new System.Drawing.Point(186, 262);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(103, 45);
             this.guna2Button2.TabIndex = 6;
@@ -324,7 +324,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.LightSlateGray;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(38, 262);
+            this.guna2Button1.Location = new System.Drawing.Point(44, 262);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(103, 45);
             this.guna2Button1.TabIndex = 5;

@@ -173,41 +173,51 @@ namespace DAMH_Nhom2_QLPhongGym
                             from subdk in gj.DefaultIfEmpty()
                             join kh in data.TheKhachHangs on subdk.TheKhachHangID equals kh.TheKhachHangID into gkh
                             from subkh in gkh.DefaultIfEmpty()
+                            join hlv in data.HuanLuyenViens on lt.HLV_ID equals hlv.HLV_ID
+                            join cn in data.ChiTiet_ChiNhanh_LichTaps on lt.LichTapID equals cn.LichTapID
                             select new
                             {
                                 TrangThai = lt.TrangThai,
                                 NgayBatDau = lt.NgayBatDau,
                                 ThoiGianBatDau = lt.ThoiGianBatDau,
                                 ThoiGianKetThuc = lt.ThoiGianKetThuc,
-                                HuanLuyenVien = lt.HuanLuyenVien.HoTen,
-                                KhachHang = subkh != null ? subkh.HoTen : "Chưa có"
+                                HuanLuyenVien = hlv.HoTen,
+                                KhachHang = subkh != null ? subkh.HoTen : "Chưa có",
+                                ChiNhanh = cn.ChiNhanh.TenDiaDiem
                             };
 
+                // Lọc theo địa chỉ (Chi nhánh)
                 if (cbxDiaChi.SelectedItem != null)
                 {
                     var diaChi = cbxDiaChi.SelectedItem.ToString();
-                    query = query.Where(x => x.TrangThai == diaChi);
+                    query = query.Where(x => x.ChiNhanh == diaChi);
                 }
 
+                // Lọc theo trạng thái
                 if (cbxTrangThai.SelectedItem != null)
                 {
                     var trangThai = cbxTrangThai.SelectedItem.ToString();
                     query = query.Where(x => x.TrangThai == trangThai);
                 }
 
+                // Lọc theo huấn luyện viên
                 if (cbxPT.SelectedItem != null)
                 {
                     var huanLuyenVien = cbxPT.SelectedItem.ToString();
                     query = query.Where(x => x.HuanLuyenVien == huanLuyenVien);
                 }
 
-                if (DateTimeTU.Value != null && DateTimeDEN.Value != null)
+                // Đổ dữ liệu vào DataGridView
+                var result = query.ToList();
+                if (result.Any())
                 {
-                    query = query.Where(x => x.NgayBatDau >= DateTimeTU.Value.Date && x.NgayBatDau <= DateTimeDEN.Value.Date);
+                    dgvLichTap.DataSource = result;
+                    ConfigureDataGridView();
                 }
-
-                dgvLichTap.DataSource = query.ToList();
-                ConfigureDataGridView();
+                else
+                {
+                    MessageBox.Show("Không có dữ liệu phù hợp.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {

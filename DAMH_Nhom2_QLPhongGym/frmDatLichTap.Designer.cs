@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThemLichTap = new Guna.UI2.WinForms.Guna2Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -91,10 +91,10 @@
             this.btnThemLichTap.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemLichTap.ForeColor = System.Drawing.Color.Black;
             this.btnThemLichTap.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.iconAdd2;
-            this.btnThemLichTap.Location = new System.Drawing.Point(86, 127);
+            this.btnThemLichTap.Location = new System.Drawing.Point(115, 126);
             this.btnThemLichTap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemLichTap.Name = "btnThemLichTap";
-            this.btnThemLichTap.Size = new System.Drawing.Size(127, 42);
+            this.btnThemLichTap.Size = new System.Drawing.Size(132, 42);
             this.btnThemLichTap.TabIndex = 60;
             this.btnThemLichTap.Text = "Thêm lịch tập";
             this.btnThemLichTap.Click += new System.EventHandler(this.btnThemLichTap_Click);
@@ -143,10 +143,10 @@
             this.btnDatLich.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatLich.ForeColor = System.Drawing.Color.Black;
             this.btnDatLich.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.iconAdd;
-            this.btnDatLich.Location = new System.Drawing.Point(160, 131);
+            this.btnDatLich.Location = new System.Drawing.Point(149, 126);
             this.btnDatLich.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDatLich.Name = "btnDatLich";
-            this.btnDatLich.Size = new System.Drawing.Size(121, 37);
+            this.btnDatLich.Size = new System.Drawing.Size(132, 42);
             this.btnDatLich.TabIndex = 44;
             this.btnDatLich.Text = "Đặt lịch";
             this.btnDatLich.Click += new System.EventHandler(this.btnDatLich_Click_1);
@@ -268,14 +268,14 @@
             this.btnTraCuu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTraCuu.BorderRadius = 10;
-            this.btnTraCuu.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btnTraCuu.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btnTraCuu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraCuu.ForeColor = System.Drawing.Color.White;
+            this.btnTraCuu.ForeColor = System.Drawing.Color.Black;
             this.btnTraCuu.Image = global::DAMH_Nhom2_QLPhongGym.Properties.Resources.iconNhap;
-            this.btnTraCuu.Location = new System.Drawing.Point(164, 125);
+            this.btnTraCuu.Location = new System.Drawing.Point(151, 126);
             this.btnTraCuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTraCuu.Name = "btnTraCuu";
-            this.btnTraCuu.Size = new System.Drawing.Size(102, 42);
+            this.btnTraCuu.Size = new System.Drawing.Size(132, 42);
             this.btnTraCuu.TabIndex = 56;
             this.btnTraCuu.Text = "Tra cứu";
             this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click_1);
@@ -347,7 +347,7 @@
             this.btnTim.Size = new System.Drawing.Size(89, 37);
             this.btnTim.TabIndex = 50;
             this.btnTim.Text = "Tìm";
-            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click_1);
             // 
             // txtMaKhach
             // 
@@ -388,18 +388,18 @@
             // 
             // dgvLichTap
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvLichTap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dgvLichTap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvLichTap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLichTap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLichTap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvLichTap.ColumnHeadersHeight = 27;
             this.dgvLichTap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvLichTap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -408,14 +408,14 @@
             this.thoigianbatdau,
             this.thoigianketthuc,
             this.huanluyenvien});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLichTap.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLichTap.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvLichTap.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvLichTap.Location = new System.Drawing.Point(26, 194);
             this.dgvLichTap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);

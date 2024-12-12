@@ -564,9 +564,9 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button4.Location = new System.Drawing.Point(559, 567);
+            this.guna2Button4.Location = new System.Drawing.Point(542, 567);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(186, 42);
+            this.guna2Button4.Size = new System.Drawing.Size(203, 42);
             this.guna2Button4.TabIndex = 75;
             this.guna2Button4.Text = "Hủy";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -582,7 +582,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.btn_XacNhan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XacNhan.ForeColor = System.Drawing.Color.White;
             this.btn_XacNhan.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_XacNhan.Location = new System.Drawing.Point(168, 567);
+            this.btn_XacNhan.Location = new System.Drawing.Point(144, 567);
             this.btn_XacNhan.Name = "btn_XacNhan";
             this.btn_XacNhan.Size = new System.Drawing.Size(186, 42);
             this.btn_XacNhan.TabIndex = 76;
@@ -608,7 +608,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.txt_ThanhTien.PasswordChar = '\0';
             this.txt_ThanhTien.PlaceholderText = "";
             this.txt_ThanhTien.SelectedText = "";
-            this.txt_ThanhTien.Size = new System.Drawing.Size(186, 42);
+            this.txt_ThanhTien.Size = new System.Drawing.Size(203, 42);
             this.txt_ThanhTien.TabIndex = 77;
             // 
             // guna2Button5
@@ -626,7 +626,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button5.Location = new System.Drawing.Point(37, 35);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(186, 42);
+            this.guna2Button5.Size = new System.Drawing.Size(203, 42);
             this.guna2Button5.TabIndex = 78;
             this.guna2Button5.Text = "Tính tiền";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
@@ -671,7 +671,6 @@ namespace DAMH_Nhom2_QLPhongGym
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
