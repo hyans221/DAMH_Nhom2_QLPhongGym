@@ -285,6 +285,7 @@ namespace DAMH_Nhom2_QLPhongGym
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "+";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHome_FormClosing);
+            this.Load += new System.EventHandler(this.frmHome_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.UserNamePanel.ResumeLayout(false);

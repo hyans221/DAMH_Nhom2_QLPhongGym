@@ -84,5 +84,11 @@ namespace DAMH_Nhom2_QLPhongGym
                 btnBaoCaoThongKe.Enabled = false;
             }
         }
+
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+            lblTitle.Text = "Quản lý thông tin khách hàng";
+            container(new frmQuanLyKhachHang());
+        }
     }
 }
