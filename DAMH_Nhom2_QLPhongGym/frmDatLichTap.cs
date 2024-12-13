@@ -116,19 +116,24 @@ namespace DAMH_Nhom2_QLPhongGym
                     btnDatLich.Enabled = khachHang.SoBuoiTapCungPT > 0;
                     btnTraCuu.Enabled = khachHang.SoBuoiTapCungPT > 0;
 
-                    var result = MessageBox.Show("Bạn không đủ buổi tập, muốn gia hạn thêm không?",
-                                                         "Thông báo",
-                                                         MessageBoxButtons.YesNo,
-                                                         MessageBoxIcon.Question);
-                    if (result == DialogResult.Yes)
+                    if (khachHang.SoBuoiTapCungPT <= 0)
                     {
-                        // Mở form frmThanhToan
-                        frmThanhToan frm = new frmThanhToan(idnv);
-                        frm.ShowDialog(); // Hiển thị form dưới dạng hộp thoại
-                    }
-                    else
-                    {
-                        return;
+                        var result = MessageBox.Show(
+                            "Bạn không đủ buổi tập, muốn gia hạn thêm không?",
+                            "Thông báo",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question);
+
+                        if (result == DialogResult.Yes)
+                        {
+                            // Mở form frmThanhToan
+                            frmThanhToan frm = new frmThanhToan(idnv);
+                            frm.ShowDialog(); // Hiển thị form dưới dạng hộp thoại
+                        }
+                        else
+                        {   
+                            return;
+                        }
                     }
                 }
                 else
@@ -138,7 +143,7 @@ namespace DAMH_Nhom2_QLPhongGym
             }
             catch
             {
-                MessageBox.Show("Hãy nhập thông tin!!!");
+                MessageBox.Show("Sai định dạng, vui lòng nhập lại!!!");
             }
         }
         private void btnTraCuu_Click(object sender, EventArgs e)
@@ -235,11 +240,6 @@ namespace DAMH_Nhom2_QLPhongGym
             {
                 MessageBox.Show("Lỗi khi đặt lịch: " + ex.Message);
             }
-        }
-
-        private void btnTim_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void btnDatLich_Click_1(object sender, EventArgs e)

@@ -29,7 +29,12 @@ namespace DAMH_Nhom2_QLPhongGym
                 return;
             }
             // Lấy giá trị ID khách hàng từ textbox
-            int customerId = int.Parse(txtIDKhachHang.Text);
+            // Kiểm tra nếu nhập vào chứa ký tự không phải số
+            if (!int.TryParse(txtIDKhachHang.Text, out int customerId))
+            {
+                MessageBox.Show("ID khách hàng hợp lệ!");
+                return;
+            }
 
             // Kiểm tra ID khách hàng trong database
             var existingCustomer = ql.TheKhachHangs.FirstOrDefault(kh => kh.TheKhachHangID == customerId);
